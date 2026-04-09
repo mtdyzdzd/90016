@@ -24,7 +24,7 @@ The project uses the standard Scrum roles of Scrum Master, Product Owner, and De
 | **Product Owner**    | [Fill in: team member] | Translate the case study into backlog items, maintain alignment between sprint outcomes and acceptance criteria, monitor official teaching-staff guidance, and ensure scope assumptions are recorded consistently across the PEP artefacts. |
 | **Development Team** | @Fazheng Xu            | Prepare the initial draft of the PEP based on the case study, rubric, and provided templates. Translating the published project requirements into structured assumptions, constraints, user stories, acceptance criteria, Sprint 1 planning content, and backlog tasks, while ensuring consistency across the Main and Sprint_1 documents. Identified key dependencies, delivery risks, and scope boundaries to support more accurate team discussion, refinement, and later sprint execution. |
 | **Development Team** | @Jiajun Jiang | Define the expected behaviour for marker interaction and basic direction finding, support consistent user-facing wording in the backlog, and identify any interface-level dependencies or ambiguities. |
-| **Development Team** | [Fill in: team member] | Review artefacts for rubric coverage, maintain cross-document consistency, define the initial Definition of Done, and ensure assumptions, risks, backlog items, and Sprint 1 planning references remain traceable. |
+| **Development Team** | @Conghao Lin | Review artefacts for rubric coverage, maintain cross-document consistency, define the initial Definition of Done, and ensure assumptions, risks, backlog items, and Sprint 1 planning references remain traceable. |
 
 ### Planned Sprint 1 Phase (13 April 2026 to 27 April 2026)
 
@@ -34,7 +34,7 @@ The project uses the standard Scrum roles of Scrum Master, Product Owner, and De
 | **Product Owner**    | [Fill in: team member] | Confirm the accepted interpretation of "selected locations" and "basic direction finding," maintain backlog order, and record any clarification received from the teaching staff. |
 | **Development Team** | @Fazheng Xu            | Assess how the WordPress environment can represent selected locations, identify the minimum dataset needed for buildings and libraries, and document technical dependencies and assumptions that affect Sprint 1 mapping work. Prepare the selected university building and library location data, configure map-related content and marker placement, and support any technical setup needed for the Sprint 1 mapping stories. |
 | **Development Team** | @Jiajun Jiang | Implement or configure the marker detail interaction, support the direction input and selection workflow, and ensure the visible user flow matches the Sprint 1 acceptance criteria. |
-| **Development Team** | [Fill in: team member] | Validate Sprint 1 work against the Definition of Done, maintain the Sprint Backlog and supporting evidence, review acceptance criteria coverage, and check that documented progress matches the actual sprint scope. |
+| **Development Team** | @Conghao Lin | Validate Sprint 1 work against the Definition of Done, maintain the Sprint Backlog and supporting evidence, review acceptance criteria coverage, and check that documented progress matches the actual sprint scope. |
 
 ## Role Alignment with Other Artefacts
 
