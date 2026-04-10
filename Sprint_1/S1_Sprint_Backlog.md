@@ -31,6 +31,9 @@
 
 The Sprint 1 backlog breaks each selected user story into a small set of executable tasks covering scope confirmation, data or configuration preparation, implementation or integration, and validation against acceptance criteria. This structure keeps the backlog traceable to the Sprint 1 Planning artefact while remaining practical for stand-up updates and execution tracking once Sprint 1 begins.
 
+Task ownership reflects the functional responsibilities agreed upon during the sprint 1 planning meeting.This supports balanced workload distribution across configuration, data preparation and validation activities.
+
+
 ## Updating Notes
 
 - Story points burn down at the user story level, not independently for every task.
@@ -38,3 +41,4 @@ The Sprint 1 backlog breaks each selected user story into a small set of executa
 - Status values are intentionally set to "Not Started" because Sprint 1 has not begun at the time of the Week 5 submission.
 - The daily tracking columns are left blank and should be updated only after Sprint 1 commences and actual progress is observed.
 - The story IDs and point estimates in this backlog are intentionally identical to the Sprint 1 Planning and Product Backlog artefacts for traceability.
+- Task ownership reflects the functional responsibilities agreed during the Sprint 1 planning phase. It supports realistic allocation of configuration, data preparation and validation activities within teams.

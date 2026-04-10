@@ -22,6 +22,8 @@ The remaining stories were then estimated relative to this baseline. **US-03** w
 
 This resulted in a total Sprint 1 commitment of **10 story points**. This commitment is intentionally conservative and aligns with the course guidance for a new student Scrum team working in a two-week sprint, where an expected delivery range of approximately **7–10 story points** is considered realistic.
 
+This estimation approach makes sure consistency between story level effort assumptions documents here and the execution level task structure define later on the sprint 1 backlog.
+
 ## Sprint Goal
 
 Deliver the published Sprint 1 outcome by presenting an interactive map that shows selected university building and library locations, allows users to view basic location details, and supports a basic direction-finding flow from a nominated starting point to a selected location.
