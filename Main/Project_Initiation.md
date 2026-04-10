@@ -26,9 +26,9 @@ The teaching staff (==NAME==) are the clients for this software project.
 
    According to the document *Sprint Planning and Velocity Estimation for New Agile Teams*, our team does not have historical velocity for this project, so Sprint 1 planning assumes a total delivery range of 7-10 story points, with 10 story points used only because the selected stories are tightly scoped and closely related. This assumption should be revisited after Sprint 1. 
 
-    `[Fill in: number of team members with WordPress experience: [0, 0, ?, ?, ?] / 5]` 
+    `[Fill in: number of team members with WordPress experience: [0, 0, 0, ?, ?] / 5]` 
 
-    `[Fill in: number of team members with prior front-end or back-end development experience: [1, 1, ?, ?, ?] / 5]`  **Influence on the PEP:** This assumption directly limits Sprint 1 scope, supports the 10-point commitment in Sprint Planning, and explains the capacity risk recorded in the Risk Register.
+    `[Fill in: number of team members with prior front-end or back-end development experience: [1, 1, 1, ?, ?] / 5]`  **Influence on the PEP:** This assumption directly limits Sprint 1 scope, supports the 10-point commitment in Sprint Planning, and explains the capacity risk recorded in the Risk Register.
 
 2. **The provided WordPress environment and approved plugins will be sufficient for the required baseline features.**  
 
