@@ -8,7 +8,7 @@
 
 The project is to deliver a website that supports university outreach activities with secondary and primary schools in Melbourne, including features that help university staff and students identify relevant locations and participate in outreach activities.
 
-The teaching staff (==NAME==) are the clients for this software project.
+The teaching staff (Andrew Valentine and Rajesh Chittor Sundaram) are the clients for this software project.
 
 ## Project Context and Planned Sprint Outcomes
 
@@ -26,9 +26,8 @@ The teaching staff (==NAME==) are the clients for this software project.
 
    According to the document *Sprint Planning and Velocity Estimation for New Agile Teams*, our team does not have historical velocity for this project, so Sprint 1 planning assumes a total delivery range of 7-10 story points, with 10 story points used only because the selected stories are tightly scoped and closely related. This assumption should be revisited after Sprint 1. 
 
-    `[Fill in: number of team members with WordPress experience: [0, 0, 0, 0, 0] / 5]` 
-
-    `[Fill in: number of team members with prior front-end or back-end development experience: [1, 1, 1, 1, 1] / 5]`  **Influence on the PEP:** This assumption directly limits Sprint 1 scope, supports the 10-point commitment in Sprint Planning, and explains the capacity risk recorded in the Risk Register.
+<<<<<<< HEAD
+    None of the 5 team members have prior WordPress experience, and 5 out of 5 have front-end or back-end development experience. The lack of WordPress familiarity introduces a learning curve that is reflected in the capacity risk recorded in the Risk Register and supports the conservative story point commitment in Sprint Planning.
 
 2. **The provided WordPress environment and approved plugins will be sufficient for the required baseline features.**  
 
@@ -40,7 +39,7 @@ The teaching staff (==NAME==) are the clients for this software project.
 
    The published sprint outcomes will be treated as the scope baseline for the project unless the teaching staff (stakeholder) release an explicit change before a later sprint.  
 
-   **Influence on the PEP:** This assumption fixes the initial priority of the Product Backlog, explains why all published stories are marked as Must-have==【这里可能需要补充】==, and supports the limited scope selected for Sprint 1.
+   **Influence on the PEP:** This assumption fixes the initial priority of the Product Backlog, explains why all published stories are marked as Must-have given the team's need to focus on core functionality without exploring optional features, and supports the limited scope selected for Sprint 1.
 
 4. **The required location data can be sourced, entered, or represented at a level suitable for the published outcomes.**  
 
@@ -97,8 +96,6 @@ The teaching staff (==NAME==) are the clients for this software project.
    The team cannot plan around paid external services, premium plugins, or unsupported deployment infrastructure.  
 
    **Rationale:** This keeps the project feasible within the subject environment but may reduce flexibility in technical design choices.
-
-   
 
 ### Constraint Interrelationships
 
