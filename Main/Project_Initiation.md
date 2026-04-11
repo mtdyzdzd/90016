@@ -24,36 +24,35 @@ The teaching staff (Andrew Valentine and Rajesh Chittor Sundaram) are the client
 
 1. **Initial team capacity and velocity can only be estimated conservatively.**  
 
-   According to the document *Sprint Planning and Velocity Estimation for New Agile Teams*, our team does not have historical velocity for this project, so Sprint 1 planning assumes a total delivery range of 7-10 story points, with 10 story points used only because the selected stories are tightly scoped and closely related. This assumption should be revisited after Sprint 1. 
-
-<<<<<<< HEAD
+   Sprint 1 planning uses the team's consensus-based story point estimates. As this is the first sprint without historical velocity data, the team treats Sprint 1 as a calibration exercise. The initial commitment reflects the team's best estimate of capacity given part-time student availability and a learning curve with WordPress and Scrum tooling. This assumption will be revisited after Sprint 1 based on actual delivery outcomes.
+   
     None of the 5 team members have prior WordPress experience, and 5 out of 5 have front-end or back-end development experience. The lack of WordPress familiarity introduces a learning curve that is reflected in the capacity risk recorded in the Risk Register and supports the conservative story point commitment in Sprint Planning.
 
-2. **The provided WordPress environment and approved plugins will be sufficient for the required baseline features.**  
+3. **The provided WordPress environment and approved plugins will be sufficient for the required baseline features.**  
 
    Assumes that the university-hosted WordPress installation, together with the plugins already provided or permitted for the subject, will support map display, marker interaction, and a basic direction-finding workflow without requiring an external application stack.  
 
    **Influence on the PEP:** This assumption shapes backlog dependencies, keeps the project aligned with the platform constraint, and is reflected in the technical risks related to plugin limitations and configuration issues.
 
-3. **The project will continue to follow a controlled Scrum model with each sprint outcomes.**  
+4. **The project will continue to follow a controlled Scrum model with each sprint outcomes.**  
 
    The published sprint outcomes will be treated as the scope baseline for the project unless the teaching staff (stakeholder) release an explicit change before a later sprint.  
 
    **Influence on the PEP:** This assumption fixes the initial priority of the Product Backlog, explains why all published stories are marked as Must-have given the team's need to focus on core functionality without exploring optional features, and supports the limited scope selected for Sprint 1.
 
-4. **The required location data can be sourced, entered, or represented at a level suitable for the published outcomes.**  
+5. **The required location data can be sourced, entered, or represented at a level suitable for the published outcomes.**  
 
    Assumes that the selected university building, library, and later school location data can be prepared in a usable form for map visualization, even if some data needs manual cleaning or formatting.  
 
    **Influence on the PEP:** This assumption affects backlog dependencies for mapping stories, supports effort estimation, and is linked to the data accuracy and completeness risk in the Risk Register.
 
-5. **The teaching staff are the only formal stakeholder channel for requirements clarification and acceptance.**  
+6. **The teaching staff are the only formal stakeholder channel for requirements clarification and acceptance.**  
 
    Assumes that requirement interpretation, clarification, and feedback will occur through the teaching staff rather than through direct access to real outreach officers, students, or schools.  
 
    **Influence on the PEP:** This assumption informs the Communication Strategy, limits stakeholder decision recording at the initial PEP stage, and explains the stakeholder clarification risk.
 
-6. **Early validation will rely on simulated user scenarios rather than public deployment or large-scale real-user testing.**  
+7. **Early validation will rely on simulated user scenarios rather than public deployment or large-scale real-user testing.**  
 
    Our team assumes that, at least for the PEP and early sprint planning stage, validation will be based on acceptance criteria, team review, and sprint demonstrations rather than production-scale field testing.  
 
