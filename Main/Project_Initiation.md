@@ -26,7 +26,7 @@ The teaching staff (Andrew Valentine and Rajesh Chittor Sundaram) are the client
 
    Sprint 1 planning uses the team's consensus-based story point estimates. As this is the first sprint without historical velocity data, the team treats Sprint 1 as a calibration exercise. The initial commitment reflects the team's best estimate of capacity given part-time student availability and a learning curve with WordPress and Scrum tooling. This assumption will be revisited after Sprint 1 based on actual delivery outcomes.
    
-    None of the 5 team members have prior WordPress experience, and 5 out of 5 have front-end or back-end development experience. The lack of WordPress familiarity introduces a learning curve that is reflected in the capacity risk recorded in the Risk Register and supports the conservative story point commitment in Sprint Planning.
+   None of the 5 team members have prior WordPress experience, and 5 out of 5 have front-end or back-end development experience. The lack of WordPress familiarity introduces a learning curve that is reflected in the capacity risk recorded in the Risk Register and supports the conservative story point commitment in Sprint Planning. Therefore Sprint 1 planning assumes a total delivery range of 7-10 story points, with 10 story points used only because the selected stories are tightly scoped and closely related. This assumption should be revisited after Sprint 1. 
 
 3. **The provided WordPress environment and approved plugins will be sufficient for the required baseline features.**  
 
