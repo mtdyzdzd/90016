@@ -6,6 +6,8 @@
 
 ------
 
+The estimates recorded in this Sprint 1 plan are initial planning values. As actual development progresses, the team may refine these estimates if implementation reveals different levels of complexity, uncertainty, dependencies, or testing effort than originally anticipated. Any adjustment will be documented clearly and used to improve estimation accuracy in later sprints.
+
 ## Controlled Scrum Context
 
 Sprint 1 planning is based on the published document outcome for Sprint 1 rather than on a re-prioritized client backlog. As a result, the team's main planning decisions are the level of scope to commit, the story-point estimates, the task breakdown, and the work ownership needed to deliver the required map and basic direction outcomes.
