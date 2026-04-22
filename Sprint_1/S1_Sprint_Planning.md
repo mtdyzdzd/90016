@@ -160,6 +160,8 @@ Sprint 1 moved beyond planning into WordPress configuration, data preparation, v
 
 These activities are tracked in more detail in the Sprint Backlog, the Daily Stand-Up / checkpoint log, the Quality Assurance artefact, and the Defect Log.
 
+This evidence supports the consistency between the Sprint planning hypothesis and the Sprint Backlog execution records at the Sprint boundary.
+
 ## Detailed Task Breakdown
 
 `🟣` marks a risk-mitigation task folded into the relevant user story rather than separated as a standalone risk story. In Sprint 1 this is used for `R004` because the direction workflow carried environment uncertainty around WP Go Maps, OpenRouteService, and WordPress permissions.
@@ -198,8 +200,10 @@ This story is broken down so that scope, interaction, data wiring, and QA can be
 - `US4_T3 🟣` Connect the selected destination to the available basic direction response within the approved environment, or document why the current WordPress-compatible options are not yet sufficient. Owner: `@Fazheng Xu`.
 - `US4_T4` Validate the direction workflow, including visible handling of incomplete, invalid, or unsupported inputs. Owner: `@Conghao Lin`.
 
-This breakdown is intentionally conservative because US-04 carries the highest uncertainty in Sprint 1. `US4_T1 🟣` exists to lock scope before technical work expands; `US4_T2 🟣` and `US4_T3 🟣` carry most of the feasibility risk; and `US4_T4` ensures the story is not treated as complete unless unsupported or incomplete paths are handled honestly.
+This breakdown is intentionally conservative because US-04 carries the highest uncertainty in Sprint 1. `US4_T1 🟣` exists to lock scope before technical work expands; `US4_T2 🟣` and `US4_T3 🟣` carry most of the feasibility risk within the approved WordPress environment; and `US4_T4` ensures the story is not treated as complete unless unsupported or incomplete paths are handled honestly.
+
+This sequencing method ensures that direction-related configuration work remains aligned with the approved Sprint 1 outcome expectations. 
 
 ## Sprint Commitment
 
-The team commits to **US-01**, **US-02**, **US-03**, and **US-04** for Sprint 1, with a total planned effort of **10 story points**. This commitment reflects the fixed Sprint 1 outcome released by the teaching team, the lack of project-specific historical velocity, and the need for a conservative commitment level for a new student Scrum team working within a two-week sprint. The detailed task ownership and execution tracking are carried directly into the Sprint 1 Backlog using the same story IDs, scope, and estimates.
+The team commits to **US-01**, **US-02**, **US-03**, and **US-04** for Sprint 1, with a total planned effort of **10 story points**. This commitment reflects the fixed Sprint 1 outcome released by the teaching team, the lack of project-specific historical velocity, and the need for a conservative commitment level for a new student Scrum team working within a two-week sprint. The detailed task ownership and execution tracking are carried directly into the Sprint 1 Backlog using the same story IDs, scope, and estimates.Ensure traceability between Sprint planning commitments and execution records.
