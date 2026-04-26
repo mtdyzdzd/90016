@@ -38,12 +38,14 @@ This checklist records the Sprint 1 close-out check against the published Sprint
 | Library dataset traceability. | Checked with evidence boundary | QA and Showcase now state the latest-year/library-only data rule and avoid using optional university library markers as required US-02 evidence. |
 | User story language and table structure. | Checked | Product Backlog and Sprint Planning use `As a..., I want..., so that...` user stories, Given/When/Then acceptance criteria, story-point estimates, dependencies, owners, and tracking tables. |
 | Plan-stage scoring risks. | Checked | The artefacts now avoid the earlier Plan-stage pitfalls by recording controlled Scrum assumptions, requirement changes, risks, decisions, burn-down fluctuations, QA evidence, and unresolved constraints instead of over-claiming implementation completeness. |
+| Plan-stage assessment feedback alignment. | Checked | Communication Strategy and Project Decisions record the Plan-stage assessment result as formal asynchronous feedback used for artefact alignment, without inventing a live tutor communication record. |
 
 ## Plan-stage Pitfall Check
 
 | Check Area | Status | Evidence / Comment |
 | ---------- | ------ | ------------------ |
 | Controlled Scrum context is explained. | Checked | Sprint Planning and Product Backlog explain that sprint outcomes are predefined by teaching staff, so the team focuses on estimation, task breakdown, execution, and traceability. |
+| Previous assessment feedback is connected to Sprint 1 close-out. | Checked | Plan-stage feedback is treated as an alignment input and mapped into concrete Sprint 1 checks rather than left as informal chat context. |
 | User stories follow the guide pattern. | Checked | Product Backlog and Sprint Planning use `As a..., I want..., so that...` story text for `US-01` to `US-10`, with detailed Sprint 1 sections for `US-01` to `US-04`. |
 | Acceptance criteria use BDD-style wording. | Checked | Product Backlog, Sprint Planning, and QA use Given/When/Then acceptance criteria or test scenarios. |
 | Estimates and task breakdown are visible. | Checked | Sprint Planning records relative estimation rationale and Sprint Backlog records task ownership/tracking. |
