@@ -35,7 +35,9 @@ One implementation detail was accepted as a known environment constraint rather 
 
 ## Demo Summary
 
-The Sprint 1 demonstration follows the path below on the live WordPress page (**Interactive Campus Map**), exercising all four user stories in sequence.
+The Sprint 1 demonstration is framed as a realistic planning scenario: an outreach planner starts from Melbourne Connect, checks selected university buildings and a City of Melbourne library on the interactive map, opens marker details to confirm the destination, and then requests basic directions to the selected location.
+
+The demonstration follows the path below on the live WordPress page (**Interactive Campus Map**), exercising all four user stories in sequence.
 
 ### Step 1 - Open the Interactive Campus Map page
 
