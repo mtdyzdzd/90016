@@ -6,7 +6,7 @@
 
 ## Stand-up Log
 
-### Stand-up 1 — Thursday, 16 April 2026
+### Stand-up 1 — Wednesday, 16 April 2026
 
 | Team Member                | Yesterday's Work                                                                                                                                                    | Today's Plan                                                                                                                    | Blockers                                                                                                                                                                        | Next Steps / Action Items                                              |
 | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
@@ -18,7 +18,7 @@
 
 ---
 
-### Stand-up 2 — Saturday, 18 April 2026
+### Stand-up 2 — Friday, 18 April 2026
 
 | Team Member                | Yesterday's Work                                                                                                                        | Today's Plan                                                                                                 | Blockers                                                                                    | Next Steps / Action Items                                                  |
 | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
@@ -30,7 +30,7 @@
 
 ---
 
-### Stand-up 3 — Thursday, 23 April 2026
+### Stand-up 3 — Wednesday, 23 April 2026
 
 | Team Member | Yesterday's Work | Today's Plan | Blockers | Next Steps / Action Items |
 |---|---|---|---|---|
@@ -42,19 +42,19 @@
 
 ---
 
-### Stand-up 4 — Saturday, 25 April 2026
+### Stand-up 4 — Friday, 25 April 2026
 
 | Team Member | Yesterday's Work | Today's Plan | Blockers | Next Steps / Action Items |
 |---|---|---|---|---|
 | @Manting Yu (Scrum Master) | Followed up on ORS API key resolution; confirmed fix is in progress after API key reconfiguration. | Facilitate stand-up; confirm US-04 is on track for completion before submission; check Code Snippets limitation resolution. | None. | AI-005: Code Snippets 403 limitation to be documented and soft protection approach confirmed by Apr 26. |
-| @Zihan Shi (Product Owner) | Verified that the soft protection approach for US-04 (marker-triggered Get Directions with destination auto-populated from the selected marker and user-entered start point) is consistent with "basic direction finding" in the published Sprint 1 outcome. | Confirm soft protection approach is acceptable within Sprint 1 scope; confirm no scope change is required. | None. | None. |
+| @Zihan Shi (Product Owner) | Verified that the soft protection approach for US-04 (marker-triggered Get Directions with default starting point) is consistent with "basic direction finding" in the published Sprint 1 outcome. | Confirm soft protection approach is acceptable within Sprint 1 scope; confirm no scope change is required. | None. | None. |
 | @Fazheng Xu | Reconfigured the OpenRouteService API key; direction workflow now generating routes in-page. Attempted to add custom From/To validation via Code Snippets — blocked by 403 Forbidden error. | Adjust route display settings (color #e11d48, weight 8, opacity 1) for demo visibility; finalise Sprint 1 artefact updates. | Code Snippets plugin returning 403 Forbidden — custom From/To input validation cannot be implemented in the current environment. | AI-005: Document the Code Snippets limitation; confirm soft protection is applied and noted in Sprint Backlog. |
 | @Jiajun Jiang | Tested direction workflow end-to-end after API fix; route was generating but visually unclear due to color overlap with the basemap. | Change route color to #e11d48, weight to 8, opacity to 1; retest full direction flow; confirm demo path is reproducible. | None. | None. |
 | @Conghao Lin | Began QA review of US-04 direction workflow following API fix. | Complete US-04 validation against acceptance criteria after route display fix; confirm DoD coverage across all Sprint 1 stories. | None. | None. |
 
 ---
 
-### Stand-up 5 — Sunday, 26 April 2026
+### Stand-up 5 — Sunday, 27 April 2026
 
 | Team Member | Yesterday's Work | Today's Plan | Blockers | Next Steps / Action Items |
 |---|---|---|---|---|

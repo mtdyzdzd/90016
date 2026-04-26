@@ -6,27 +6,27 @@
 ## Sprint 1 Burn Down Chart
 
 **Sprint Duration:** 13 April 2026 – 27 April 2026  
-**Active Tracking Period:** 13 April 2026 – 26 April 2026; submission due 27 April 2026, 00:00 AEST
 **Total Story Points Committed:** 10 SP  
 **Stories:** US-01 (3 SP), US-02 (2 SP), US-03 (2 SP), US-04 (3 SP)
 ## Burn Down Data Table
 
 | Day | Date         | Ideal Remaining (SP) | Actual Remaining (SP) | Notes                                                                                                                                 |
 | --- | ------------ | -------------------- | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | Apr 13 (Mon) | 10.0                 | 10                    | Sprint start; task assignments confirmed; team began exploring WP Go Maps plugin capability within the provided WordPress environment |
-| 2   | Apr 14 (Tue) | 9.2                  | 10                    | All team members confirmed access to the provided WordPress environment via university VPN; plugin evaluation begun                   |
-| 3   | Apr 15 (Wed) | 8.5                  | 10                    | Plugin selection in progress; location list being confirmed                                                                           |
-| 4   | Apr 16 (Thu) | 7.7                  | 10                    | Stand-up 1; WP Go Maps + Leaflet confirmed as map solution                                                                            |
-| 5   | Apr 17 (Fri) | 6.9                  | 10                    | Location data preparation started; direction approach scoping begun                                                                   |
-| 6   | Apr 18 (Sat) | 6.2                  | 10                    | Stand-up 2; marker configuration started                                                                                              |
-| 7   | Apr 19 (Sun) | 5.4                  | 10                    | Weekend                                                                                                                               |
-| 8   | Apr 20 (Mon) | 4.6                  | 10                    | Weekend                                                                                                                               |
-| 9   | Apr 21 (Tue) | 3.8                  | 7                     | **US-03 Done (2 SP burned):** marker popup details implemented and validated                                                          |
-| 10  | Apr 22 (Wed) | 3.1                  | 5                     | **US-02 Done (2 SP burned):** library markers configured and validated                                                                |
-| 11  | Apr 23 (Thu) | 2.3                  | 2                     | **US-01 Done (3 SP burned):** building markers validated; Stand-up 3; US-04 ORS API blocker raised                                    |
-| 12  | Apr 24 (Fri) | 1.5                  | 2                     | US-04 blocked: ORS API key reconfiguration in progress; Code Snippets 403 identified                                                  |
-| 13  | Apr 25 (Sat) | 0.8                  | 2                     | Stand-up 4; API fixed; route color/weight/opacity fix in progress                                                                     |
-| 14  | Apr 26 (Sun) | 0.0                  | 0                     | **US-04 Done (3 SP burned):** direction workflow validated end-to-end; Stand-up 5; final submission preparation                      |
+| 1   | Apr 13 (Sun) | 10.0                 | 10                    | Sprint start; task assignments confirmed; team began exploring WP Go Maps plugin capability within the provided WordPress environment |
+| 2   | Apr 14 (Mon) | 9.3                  | 10                    | All team members confirmed access to the provided WordPress environment via university VPN; plugin evaluation begun                   |
+| 3   | Apr 15 (Tue) | 8.6                  | 10                    | Plugin selection in progress; location list being confirmed                                                                           |
+| 4   | Apr 16 (Wed) | 7.9                  | 10                    | Stand-up 1; WP Go Maps + Leaflet confirmed as map solution                                                                            |
+| 5   | Apr 17 (Thu) | 7.1                  | 10                    | Location data preparation started; direction approach scoping begun                                                                   |
+| 6   | Apr 18 (Fri) | 6.4                  | 10                    | Stand-up 2; marker configuration started                                                                                              |
+| 7   | Apr 19 (Sat) | 5.7                  | 10                    | Weekend                                                                                                                               |
+| 8   | Apr 20 (Sun) | 5.0                  | 10                    | Weekend                                                                                                                               |
+| 9   | Apr 21 (Mon) | 4.3                  | 7                     | **US-03 Done (2 SP burned):** marker popup details implemented and validated                                                          |
+| 10  | Apr 22 (Tue) | 3.6                  | 5                     | **US-02 Done (2 SP burned):** library markers configured and validated                                                                |
+| 11  | Apr 23 (Wed) | 2.9                  | 2                     | **US-01 Done (3 SP burned):** building markers validated; Stand-up 3; US-04 ORS API blocker raised                                    |
+| 12  | Apr 24 (Thu) | 2.1                  | 2                     | US-04 blocked: ORS API key reconfiguration in progress; Code Snippets 403 identified                                                  |
+| 13  | Apr 25 (Fri) | 1.4                  | 2                     | Stand-up 4; API fixed; route color/weight/opacity fix in progress                                                                     |
+| 14  | Apr 26 (Sat) | 0.7                  | 0                     | **US-04 Done (3 SP burned):** direction workflow validated end-to-end                                                                 |
+| 15  | Apr 27 (Sun) | 0.0                  | 0                     | Stand-up 5; Sprint end and submission                                                                                                 |
 
 ---
 
@@ -37,19 +37,19 @@
 *The chart above plots two lines against Sprint days on the X-axis and 
 story points remaining on the Y-axis:*
 - *The Ideal Burn Down Line runs straight from 10 SP on Day 1 to 0 SP 
-  on Day 14.*
+  on Day 15.*
 - *The Actual Burn Down Line reflects the data table above.*
 
 ## Chart Interpretation
 
-**X-Axis:** Sprint days (Day 1 = 13 April 2026 to Day 14 = 26 April 2026)
+**X-Axis:** Sprint days (Day 1 = 13 April 2026 to Day 15 = 27 April 2026)
 
 **Y-Axis:** Story points remaining (0–10)
 
 **Ideal Burn Down Line:** A straight line from 10 SP on Day 1 to 0 SP 
-on Day 14, representing a linear completion rate of approximately
-0.77 SP per active tracking day. This line was fixed at Sprint Planning and
-was not adjusted at any point during the sprint.
+on Day 15, representing a linear completion rate of approximately 
+0.67 SP per calendar day. This line was fixed at Sprint Planning and 
+was not adjusted at any pont during the sprint.
 
 **Actual Burn Down Line:** The actual line remained flat at 10 SP from 
 Day 1 through Day 8, reflecting the first-week effort spent on plugin selection and 
