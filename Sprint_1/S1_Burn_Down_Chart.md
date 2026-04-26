@@ -19,8 +19,9 @@ The ideal burn-down line was fixed during Sprint Planning. The team made progres
 
 To keep the chart honest rather than artificially smooth:
 
-- Work that had not reached DoD was not counted as burned down.
-- Completed stories reduced the actual remaining effort only when acceptance/validation evidence was available.
+- Story-point burn-down records the best reconstructed story-completion checkpoint from the Sprint Backlog, stand-up/checkpoint notes, and final close-out evidence.
+- The 2026-04-26 QA table records final regression and evidence reconciliation, not necessarily the first date when each story became implementation-ready or had an initial validation check.
+- If final QA found rework, the defect was recorded and resolved before close-out rather than moving all earlier progress to the final day.
 - Requirement clarifications that reduced required validation scope were recorded as a downward reforecast on the actual/reforecast line, without changing the original committed story points.
 - When US-04 exposed additional rework on Day 12, the actual/reforecast line moved upward from 3 SP to 4 SP.
 - The original committed story points did not change; the temporary downward and upward movements represent reforecast effort caused by requirement clarification and discovered implementation work.
@@ -28,7 +29,7 @@ To keep the chart honest rather than artificially smooth:
 
 ## Risk Response Use of the Actual / Reforecast Line
 
-The **Actual / Reforecast Remaining** line is also used as a Sprint 1 risk-response and monitoring strategy. It does not replace the accepted-story burn-down line and does not change the original Sprint 1 commitment. Instead, it gives the Scrum Team a visible way to record when a risk or clarification changes the amount of remaining work inside the committed stories.
+The **Actual / Reforecast Remaining** line is also used as a Sprint 1 risk-response and monitoring strategy. It does not replace the story burn-down line and does not change the original Sprint 1 commitment. Instead, it gives the Scrum Team a visible way to record when a risk or clarification changes the amount of remaining work inside the committed stories.
 
 This was useful in two Sprint 1 cases:
 
@@ -43,7 +44,7 @@ The current Sprint 1 requirement text removes two earlier library-related assump
 
 The chart therefore records the clarification as a small downward reforecast on Day 5:
 
-- The **Accepted-Story Remaining Line** stays unchanged at 10 SP until `US-03` reaches DoD, because no whole user story was accepted or removed on Day 5.
+- The **Story Remaining Line** stays unchanged at 10 SP on Day 5 because no whole user story was removed or accepted on that day.
 - The **Actual / Reforecast Remaining Line** drops from 10 SP to 9.5 SP on Day 5 to show reduced validation/configuration effort after the deleted university-library and library-colour requirements.
 - Later, the same actual/reforecast line rises from 3 SP to 4 SP on Day 12 when `US-04` routing and WordPress permission work created additional rework.
 
@@ -51,22 +52,22 @@ This approach follows the burn-down guide: the ideal line remains fixed, while t
 
 ## Burn Down Data Table
 
-| Day | Date | Ideal Remaining (SP) | Accepted-Story Remaining (SP) | Actual / Reforecast Remaining (SP) | Daily Update / Change Note |
+| Day | Date | Ideal Remaining (SP) | Story Remaining (SP) | Actual / Reforecast Remaining (SP) | Daily Update / Change Note |
 | --- | ---- | -------------------- | ----------------------------- | ---------------------------------- | -------------------------- |
 | 1 | Apr 13 (Mon) | 10.0 | 10 | 10 | Sprint start; task assignments confirmed and Sprint 1 WordPress/map work began. |
 | 2 | Apr 14 (Tue) | 9.3 | 10 | 10 | WordPress access, plugin options, and map setup assumptions reviewed; progress made but no story reached DoD. |
 | 3 | Apr 15 (Wed) | 8.6 | 10 | 10 | Location list, marker fields, and dataset scope checked; no story reached DoD. |
 | 4 | Apr 16 (Thu) | 7.9 | 10 | 10 | Stand-up/checkpoint: WP Go Maps + Leaflet confirmed as the map solution; data work continued. |
-| 5 | Apr 17 (Fri) | 7.1 | 10 | 9.5 | Requirement clarification reduced US-02 validation scope: university-library coverage and library colour distinction were no longer required. No whole story reached DoD, so accepted-story remaining stayed at 10 SP. |
+| 5 | Apr 17 (Fri) | 7.1 | 10 | 9.5 | Requirement clarification reduced US-02 validation scope: university-library coverage and library colour distinction were no longer required. No whole story reached a completion checkpoint, so story remaining stayed at 10 SP. |
 | 6 | Apr 18 (Sat) | 6.4 | 10 | 9.5 | Marker configuration progressed under the clarified US-02 scope; US-04 approach still under review. |
 | 7 | Apr 19 (Sun) | 5.7 | 10 | 9.5 | Direction feasibility risk escalated for focused follow-up; no story burned yet. Reduced US-02 validation scope remained reflected in the reforecast line. |
 | 8 | Apr 20 (Mon) | 5.0 | 10 | 9.5 | Configuration and validation work continued; story-level DoD evidence still incomplete. |
-| 9 | Apr 21 (Tue) | 4.3 | 8 | 8 | **US-03 Done (2 SP burned):** marker popup details implemented and validated. |
-| 10 | Apr 22 (Wed) | 3.6 | 6 | 6 | **US-02 Done (2 SP burned):** required City of Melbourne area library marker configured and validated. Optional university library markers remained as contextual map content. |
-| 11 | Apr 23 (Thu) | 2.9 | 3 | 3 | **US-01 Done (3 SP burned):** building markers validated; US-04 ORS API blocker raised. |
-| 12 | Apr 24 (Fri) | 2.1 | 3 | 4 | US-04 remained functionally unburned. Reforecast increased by 1 SP because ORS/API configuration, Code Snippets 403, and route visibility fixes added rework before acceptance. |
-| 13 | Apr 25 (Sat) | 1.4 | 3 | 3 | API key issue resolved and route display settings improved; rework reduced, but US-04 still not accepted until final validation. |
-| 14 | Apr 26 (Sun) | 0.7 | 0 | 0 | **US-04 Done (3 SP burned):** direction workflow validated end-to-end. Final QA also found and fixed the US-01 building-marker colour distinction before Sprint 1 evidence was reconciled. |
+| 9 | Apr 21 (Tue) | 4.3 | 8 | 8 | **US-03 completed checkpoint:** marker popup details were configured and checked against the story expectation. Final screenshot/evidence reconciliation was completed during close-out. |
+| 10 | Apr 22 (Wed) | 3.6 | 6 | 6 | **US-02 completed checkpoint:** the required City of Melbourne area library marker was configured under the clarified scope. Dataset-source evidence was reconciled before submission. |
+| 11 | Apr 23 (Thu) | 2.9 | 3 | 3 | **US-01 completed checkpoint:** building markers were configured and checked; US-04 ORS/API blocker was raised. A colour-distinction defect was later found in final QA and fixed before close-out. |
+| 12 | Apr 24 (Fri) | 2.1 | 3 | 4 | US-04 remained open. Reforecast increased by 1 SP because ORS/API configuration, Code Snippets 403, and route visibility fixes added rework before acceptance. |
+| 13 | Apr 25 (Sat) | 1.4 | 3 | 3 | API key issue was resolved and route display settings improved; rework reduced, but US-04 still required final route validation. |
+| 14 | Apr 26 (Sun) | 0.7 | 0 | 0 | **US-04 completed and final QA reconciliation finished:** direction workflow was validated end-to-end, US-01 colour distinction was fixed and retested, and Sprint 1 evidence was reconciled. |
 | 15 | Apr 27 (Mon) | 0.0 | 0 | 0 | Submission deadline checkpoint at 00:00 AEST; no additional story points remained. |
 
 ## Burn Down Chart Visual
@@ -76,7 +77,7 @@ This approach follows the burn-down guide: the ideal line remains fixed, while t
 The chart above plots three signals:
 
 - The **Ideal Burn Down Line** runs straight from 10 SP on Day 1 to 0 SP on Day 15.
-- The **Accepted-Story Remaining Line** shows the strict story-level burn-down after each story met DoD.
+- The **Story Remaining Line** shows the reconstructed story-level burn-down after each story reached its completion checkpoint.
 - The **Actual / Reforecast Remaining Line** shows daily remaining effort after accounting for requirement clarification, discovered rework, and implementation uncertainty.
 
 ## Chart Interpretation
@@ -87,16 +88,16 @@ The chart above plots three signals:
 
 **Ideal Burn Down Line:** A straight line from 10 SP on Day 1 to 0 SP on Day 15, representing a linear completion rate of approximately 0.71 SP per calendar checkpoint. This line was fixed at Sprint Planning and was not adjusted at any point during the sprint.
 
-**Accepted-Story Remaining Line:** This line remained flat at 10 SP from Day 1 through Day 8 because task progress had not yet converted into accepted user stories. It then dropped when stories met DoD:
+**Story Remaining Line:** This line remained flat at 10 SP from Day 1 through Day 8 because task progress had not yet converted into story-level completion checkpoints. It then dropped when stories reached their reconstructed completion checkpoints:
 
-- Day 9 (Apr 21): US-03 completed - 8 SP remaining.
-- Day 10 (Apr 22): US-02 completed - 6 SP remaining.
-- Day 11 (Apr 23): US-01 completed - 3 SP remaining.
+- Day 9 (Apr 21): US-03 marker popup detail work completed - 8 SP remaining.
+- Day 10 (Apr 22): US-02 required City of Melbourne area library marker work completed under the clarified scope - 6 SP remaining.
+- Day 11 (Apr 23): US-01 building marker work completed at the story checkpoint - 3 SP remaining.
 - Days 11-13: US-04 remained open because routing/API and environment-permission constraints were not fully resolved.
-- Day 14 (Apr 26): US-04 completed - 0 SP remaining.
+- Day 14 (Apr 26): US-04 completed and final QA/evidence reconciliation closed the sprint - 0 SP remaining.
 
-**Actual / Reforecast Remaining Line:** This line is the more realistic process signal. It separates accepted story completion from changes in remaining effort. It dips from 10 SP to 9.5 SP on Day 5 when the `US-02` library requirement is clarified and validation work is reduced. It then follows delivery progress until Day 12, when `US-04` creates additional implementation work. The increase from 3 SP to 4 SP records a genuine change in remaining effort caused by ORS/API configuration work, Code Snippets 403, and route-display validation. The line then drops back to 3 SP on Day 13 after the API and route display work improved, and reaches 0 SP on Day 14 after final validation.
+**Actual / Reforecast Remaining Line:** This line is the more realistic process signal. It separates story-completion checkpoints from changes in remaining effort. It dips from 10 SP to 9.5 SP on Day 5 when the `US-02` library requirement is clarified and validation work is reduced. It then follows delivery progress until Day 12, when `US-04` creates additional implementation work. The increase from 3 SP to 4 SP records a genuine change in remaining effort caused by ORS/API configuration work, Code Snippets 403, and route-display validation. The line then drops back to 3 SP on Day 13 after the API and route display work improved, and reaches 0 SP on Day 14 after final validation.
 
 The Day 5 downward movement records a requirement clarification: the library story no longer needed university-library coverage or library colour distinction. The Day 12 upward movement records implementation rework for `US-04`. No committed user story was removed from Sprint 1 and no new user story was added; the actual/reforecast line shows changing remaining effort inside the committed stories.
 
-**Key Observation:** The flat first-half accepted-story line, the Day 5 downward reforecast, the Day 12 upward reforecast, and the final sharp drop show the value of maintaining a burn-down chart as a living Scrum artefact. The chart highlights that Sprint 2 should validate high-uncertainty WordPress/plugin capabilities earlier and record requirement clarifications as they occur instead of discovering or reconciling them near close-out.
+**Key Observation:** The chart shows both gradual delivery progress and realistic variation. The Day 5 downward reforecast records a requirement clarification, the Day 12 upward reforecast records routing rework, and the Day 14 close-out records final validation and evidence reconciliation. This is more useful than a perfectly smooth line because it shows how Sprint 1 work actually changed over time and highlights that Sprint 2 should validate high-uncertainty WordPress/plugin capabilities earlier.

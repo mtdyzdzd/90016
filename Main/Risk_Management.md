@@ -85,7 +85,7 @@ The risk register below documents the most important risks identified at the Wee
 
 ## Sprint 1 Risk Response Tracking Strategy
 
-Sprint 1 used the **Actual / Reforecast Remaining** line in the burn-down chart as a practical risk-response tracking mechanism. The team kept the original story-point commitment and the accepted-story burn-down unchanged, but used the reforecast line to make risk impact visible when remaining effort changed inside committed stories.
+Sprint 1 used the **Actual / Reforecast Remaining** line in the burn-down chart as a practical risk-response tracking mechanism. The team kept the original story-point commitment and story-level burn-down unchanged, but used the reforecast line to make risk impact visible when remaining effort changed inside committed stories.
 
 This strategy was applied to:
 
@@ -101,7 +101,7 @@ These items were identified during Sprint 1 close-out. They do not change the co
 | Risk Area | Risk Statement | Current Treatment |
 | --------- | -------------- | ----------------- |
 | Live evidence accessibility | _"The WordPress page or map plugin assets are unavailable during review -> the reviewer cannot reproduce the live demonstration -> Sprint 1 implementation evidence appears weaker than the completed artefacts."_ | Screenshots are retained in `Sprint_1/etc/` and linked from Showcase and QA. The live WordPress page was re-checked during close-out, and the Sprint 1 release tag identifies the final baseline. |
-| Dataset traceability | _"The required library dataset reduction is not explicit enough -> the reviewer may question whether US-02 used latest-year library records only -> acceptance evidence may appear under-supported."_ | QA and Showcase now state the latest-year/library-only rule and limit required US-02 evidence to the City of Melbourne library marker. Optional university library markers are contextual only. |
+| Dataset traceability | _"The required library dataset reduction is not explicit enough -> the reviewer may question whether US-02 used latest-year library records only -> acceptance evidence may appear under-supported."_ | QA and Showcase now state the latest-year/library-only rule, using City Library as the required City of Melbourne evidence marker and treating optional university library markers as contextual only. |
 | Submission mechanics | _"The final Git commit, release tag, or conditional video evidence is not aligned with the submitted artefacts -> the repository baseline becomes unclear -> assessment traceability is reduced."_ | The final Sprint 1 artefacts are committed on `main`, and the Sprint 1 release tag identifies that baseline. Record video only if Sprint 1 submission instructions explicitly request it. |
 
 ## Risk Review Approach

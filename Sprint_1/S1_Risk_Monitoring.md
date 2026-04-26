@@ -13,7 +13,7 @@ Sprint 1 risk monitoring was performed through the same working pattern used by 
 
 The team did not create a separate risk user story for Sprint 1. The main mitigation work was folded into the existing backlog tasks for US-01 to US-04 because the risks were closely tied to story execution rather than standalone deliverables.
 
-The team also used the **Actual / Reforecast Remaining** line in `S1_Burn_Down_Chart.md` as a risk-response signal. The accepted-story line still records only stories that reached DoD, while the reforecast line records changes in remaining effort caused by risk events or requirement clarification. This made `R004` and `R006` visible in the burn-down instead of leaving them only in narrative notes.
+The team also used the **Actual / Reforecast Remaining** line in `S1_Burn_Down_Chart.md` as a risk-response signal. The story line records reconstructed story-level completion checkpoints, while the reforecast line records changes in remaining effort caused by risk events or requirement clarification. This made `R004` and `R006` visible in the burn-down instead of leaving them only in narrative notes.
 
 ## Sprint 1 Risk Status Log at Close-out
 

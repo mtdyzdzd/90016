@@ -148,17 +148,17 @@ US-04 is estimated above the baseline because it introduces the most uncertain S
 | US-03 | Define the minimum location detail set; configure the marker detail interaction; validate content mapping. |
 | US-04 | Confirm the approved basic direction workflow; configure starting-point input; connect the selected destination to the direction response; validate the end-to-end flow. |
 
-## Sprint 1 Technical Work Already Underway by 2026-04-22
+## Sprint 1 Technical Work Completed by Close-out
 
-Although Sprint 1 is still in progress, the team has already moved beyond planning-only work. The following concrete technical and research-oriented activities have been undertaken during the period from **2026-04-13** to **2026-04-22**:
+Sprint 1 moved beyond planning into WordPress configuration, data preparation, validation, and close-out evidence work. The following technical and research-oriented activities were completed or reconciled during the period from **2026-04-13** to **2026-04-26**:
 
 - Review of the approved WordPress environment to identify what map and marker behaviour can be configured without leaving the allowed platform.
 - Preparation of map-ready building and City of Melbourne area library location fields, including the minimum data needed for marker placement and basic details.
 - Investigation of how a shared WordPress map page can support both university-building and library markers without treating them as separate implementations.
-- Early configuration work for marker-detail behaviour so that `US-03` remains tied to real interaction work rather than only to descriptive planning.
-- Focused feasibility investigation for the minimum acceptable `US-04` direction workflow, including what kind of starting-point input and destination response might realistically be supported.
+- Configuration and close-out checking for marker-detail behaviour so that `US-03` remains tied to real interaction work rather than only to descriptive planning.
+- Focused feasibility investigation and final validation for the minimum acceptable `US-04` direction workflow, including the supported starting-point input and selected-marker destination response.
 
-These activities are tracked in more detail in the Sprint Backlog, the Daily Stand-Up / checkpoint log, and `S1_Technical_Investigation_and_WordPress_Work.md`.
+These activities are tracked in more detail in the Sprint Backlog, the Daily Stand-Up / checkpoint log, the Quality Assurance artefact, and the Defect Log.
 
 ## Detailed Task Breakdown
 
