@@ -32,7 +32,7 @@
 
 ## Burn Down Chart Visual
 
-![Sprint 1 Burn Down Chart](../etc/S1_Burn_Down_Chart.png)
+![Sprint 1 Burn Down Chart](/etc/S1_Burn_Down_Chart.png)
 *The chart above plots two lines against Sprint days on the X-axis and 
 story points remaining on the Y-axis:*
 - *The Ideal Burn Down Line runs straight from 10 SP on Day 1 to 0 SP 
