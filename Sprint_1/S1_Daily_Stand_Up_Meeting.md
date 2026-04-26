@@ -70,8 +70,8 @@
 
 | ID | Task | Assigned To | Status | Due Date |
 |---|---|---|---|---|
-| AI-001 | Research and confirm WordPress map plugin selection (WP Go Maps + Leaflet approved over Google Maps due to billing and environment constraints) | @Fazheng Xu | ✅ Completed | 17 April 2026 |
-| AI-002 | Complete university building and library location data preparation for all 5 markers (2 buildings, 3 libraries) | @Fazheng Xu | ✅ Completed | 21 April 2026 |
-| AI-003 | Confirm Sprint 1 direction-finding approach: OpenRouteService via WP Go Maps, in-page display, no external redirect | @Jiajun Jiang, @Zihan Shi | ✅ Completed | 21 April 2026 |
-| AI-004 | Resolve OpenRouteService API 401 Unauthorized and CORS error blocking US-04 direction workflow | @Fazheng Xu, @Jiajun Jiang | ✅ Completed | 24 April 2026 |
-| AI-005 | Document Code Snippets 403 permission limitation; confirm soft protection approach applied for US-04 in Sprint Backlog notes | @Fazheng Xu | ✅ Completed | 26 April 2026 |
+| AI-001 | Research and confirm WordPress map plugin selection (WP Go Maps + Leaflet approved over Google Maps due to billing and environment constraints) | @Fazheng Xu |  Completed | 17 April 2026 |
+| AI-002 | Complete university building and library location data preparation for all 5 markers (2 buildings, 3 libraries) | @Fazheng Xu |  Completed | 21 April 2026 |
+| AI-003 | Confirm Sprint 1 direction-finding approach: OpenRouteService via WP Go Maps, in-page display, no external redirect | @Jiajun Jiang, @Zihan Shi |  Completed | 21 April 2026 |
+| AI-004 | Resolve OpenRouteService API 401 Unauthorized and CORS error blocking US-04 direction workflow | @Fazheng Xu, @Jiajun Jiang |  Completed | 24 April 2026 |
+| AI-005 | Document Code Snippets 403 permission limitation; confirm soft protection approach applied for US-04 in Sprint Backlog notes | @Fazheng Xu |  Completed | 26 April 2026 |
