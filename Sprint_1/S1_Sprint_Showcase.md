@@ -69,7 +69,7 @@ The map supports zoom and drag. All three required location categories
 (University of Melbourne, RMIT University, City of Melbourne) are 
 represented. Markers remain visible and selectable when the user 
 pans or zooms within the map view.
-![Map Overview](../etc/S1_Map_Overview.png)
+![Map Overview](etc/S1_Map_Overview.png)
 ### Step 3 — Click a marker to view basic location details (US-03)
 
 Click any marker. The popup displays:
@@ -82,9 +82,9 @@ Click any marker. The popup displays:
 Clicking a different marker closes the current popup and displays 
 the details for the newly selected location.
 
-![Marker Popup Building](../etc/S1_Marker_Popup_Building.png)
+![Marker Popup Building](etc/S1_Marker_Popup_Building.png)
 
-![Marker Popup Library](../etc/S1_Marker_Popup_Library.png)
+![Marker Popup Library](etc/S1_Marker_Popup_Library.png)
 
 ### Step 4 — Use Get Directions from a marker popup (US-04)
 
@@ -93,8 +93,6 @@ field is automatically populated from the selected marker. The
 default starting point (Melbourne Central Station) is pre-filled 
 in the From field. Click **Go**. OpenRouteService calculates the 
 route and draws it on the map in red (#e11d48, weight 8, opacity 1).
-
-![Directions Route](../etc/S1_Directions_Route.png)
 
 ### Step 5 — Confirm controlled failure behaviour (US-04)
 
