@@ -105,7 +105,7 @@ here to ensure it remains visible and actionable in Sprint 2.
 
 | Action ID | Action Item | Assigned To | Due Date | Status |
 |---|---|---|---|---|
-| RETRO-S1-01 | Schedule a technical spike for US-07 (authentication) within the first three days of Sprint 2 to identify environment constraints before committing to implementation. | Manting Yu | Sprint 2 Day 3 | 🚧 Pending |
-| RETRO-S1-02 | Test WordPress environment permissions for any plugin capability or custom code required by Sprint 2 stories before Sprint 2 planning is finalised. | Jiajun Jiang | Sprint 2 Planning | 🚧 Pending |
-| RETRO-S1-03 | Update Sprint 2 Backlog task ownership to reference team member names rather than functional role labels. | Fazheng Xu | Sprint 2 Day 1 | 🚧 Pending |
-| RETRO-S1-04 | Carry R010 into Sprint 2 Risk Monitoring; assess its impact on US-07 authentication implementation at Sprint 2 Planning. | Conghao Lin | Sprint 2 Planning | 🚧 Pending |
+| RETRO-S1-01 | Schedule a technical spike for US-07 (authentication) within the first three days of Sprint 2 to identify environment constraints before committing to implementation. | Manting Yu | Sprint 2 Day 3 |  Pending |
+| RETRO-S1-02 | Test WordPress environment permissions for any plugin capability or custom code required by Sprint 2 stories before Sprint 2 planning is finalised. | Jiajun Jiang | Sprint 2 Planning |  Pending |
+| RETRO-S1-03 | Update Sprint 2 Backlog task ownership to reference team member names rather than functional role labels. | Fazheng Xu | Sprint 2 Day 1 |  Pending |
+| RETRO-S1-04 | Carry R010 into Sprint 2 Risk Monitoring; assess its impact on US-07 authentication implementation at Sprint 2 Planning. | Conghao Lin | Sprint 2 Planning |  Pending |
