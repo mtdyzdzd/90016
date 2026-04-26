@@ -22,7 +22,7 @@ validated against the Definition of Done.
 | US-01 | Interactive map of selected university building locations (University of Melbourne and RMIT University) |  Done | Old Arts Building (UoM) and RMIT Building 80 (Swanston Academic Building) are displayed as interactive markers on the live WordPress page. The map supports zoom, drag, and marker selection. |
 | US-02 | Interactive map of selected library locations (City of Melbourne and both universities) |  Done | Baillieu Library (UoM), RMIT Swanston Library, and City Library (City of Melbourne) are displayed on the same map, covering all three required location sources. |
 | US-03 | Basic location details visible from a marker popup |  Done | Clicking any marker displays the location name, coordinates, type, organisation, and description. Selecting a different marker closes the current popup and updates the display to match the new location. |
-| US-04 | Basic direction finding from a nominated starting point |  Done | Users can click Get Directions from any marker popup. The destination is auto-populated from the selected marker. A default starting point (Melbourne Central Station) is pre-filled. Clicking Go draws the ORS route on the map in red (#e11d48, weight 8). |
+| US-04 | Basic direction finding from a nominated starting point |  Done | Users can click Get Directions from any marker popup. The destination is auto-populated from the selected marker. The user enters or confirms the starting point, such as Melbourne Central Station. Clicking Go draws the ORS route on the map in red (#e11d48, weight 8). |
 
 ---
 
@@ -36,7 +36,7 @@ than a postponed feature:
 
 | Item | Reason | Resolution |
 |---|---|---|
-| Custom From/To input validation for US-04 | WordPress Code Snippets plugin returned 403 Forbidden; custom JavaScript validation could not be created under the current environment permissions. | Soft protection applied: Get Directions is only accessible after marker selection; Default From field pre-set to Melbourne Central Station. Documented as R010 for Sprint 2 review. |
+| Custom From/To input validation for US-04 | WordPress Code Snippets plugin returned 403 Forbidden; custom JavaScript validation could not be created under the current environment permissions. | Soft protection applied: Get Directions is only accessible after marker selection, and the destination field is auto-populated from the selected marker. Documented as R010 for Sprint 2 review. |
 
 ---
 
@@ -90,9 +90,11 @@ the details for the newly selected location.
 
 From any marker popup, click **Get Directions**. The destination 
 field is automatically populated from the selected marker. The 
-default starting point (Melbourne Central Station) is pre-filled 
+starting point (for example, Melbourne Central Station) is entered
 in the From field. Click **Go**. OpenRouteService calculates the 
 route and draws it on the map in red (#e11d48, weight 8, opacity 1).
+
+![Directions Route](etc/S1_Directions_Route.png)
 
 ### Step 5 — Confirm controlled failure behaviour (US-04)
 

@@ -40,9 +40,9 @@
 **US-04 Constraint — Code Snippets 403:** Custom From/To input 
 validation could not be implemented because the Code Snippets plugin 
 returned 403 Forbidden under the current environment permissions. 
-Soft protection was applied instead: Get Directions is only accessible 
-after a marker has been selected, and the Default From field is 
-pre-set to Melbourne Central Station. This constraint is documented 
+Soft protection was applied instead: Get Directions is only accessible
+after a marker has been selected, and the destination field is
+auto-populated from the selected marker. This constraint is documented
 as R010 in the Risk Register and Risk Monitoring artefacts.
 
 ---
