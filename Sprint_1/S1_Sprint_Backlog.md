@@ -9,6 +9,7 @@
 ## Sprint Backlog for Sprint 1
 
 | User Story ID | User Story | Task ID | Task Description | Owner | Status | Est. Effort (SP) | Day 1 | Day 2 | Day 3 | Day 4 | Day 5 | Day 6 | Day 7 | Day 8 | Day 9 | Day 10 | Day 11 | Day 12 | Day 13 | Day 14 |
+
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | US-01 | As a student or outreach planner, I want to view selected University of Melbourne and RMIT University building locations on an interactive map, so that I can identify relevant university sites for outreach coordination. | US1_T1 | Confirm the approved list of selected university building locations and required marker fields. | Manting Yu | Done | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 0 | 0 | 0 | 0 |
 | | | US1_T2 | Prepare the building location data in the format required by the map solution. | Fazheng Xu | Done | 3 | | | | | | | | | | | | | | |
