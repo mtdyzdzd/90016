@@ -57,6 +57,8 @@ The following five markers are visible on the map:
 
 The map supports zoom and drag. The required building institutions (University of Melbourne and RMIT University) and the required City of Melbourne library area are represented. Markers remain visible and selectable when the user pans or zooms within the map view. The University of Melbourne and RMIT University building markers are distinguishable by colour: Old Arts uses a blue marker and RMIT Building 80 uses a green marker. Library marker colour distinction is not treated as a required Sprint 1 condition because the updated requirement states that it is no longer required.
 
+The refreshed overview screenshot is therefore used to evidence the required UoM/RMIT building colour distinction only. Any red/default library markers visible in the screenshot do not contradict the Sprint 1 acceptance criteria, because library colour distinction was removed from the required `US-02` scope.
+
 For US-02 evidence, the required library scope is deliberately bounded to City of Melbourne area library records. The data rule for the required library evidence is that the uploaded dataset should be reduced to the latest available year and to records that represent libraries only. Baillieu Library and RMIT Swanston Library may remain as contextual markers, but they are not used to satisfy the updated US-02 acceptance criterion.
 
 ![Map Overview](etc/S1_Map_Overview.png)
@@ -83,7 +85,7 @@ From any marker popup, click **Get Directions**. The destination field is automa
 
 ![Directions Route](etc/S1_Directions_Route.png)
 
-The evidence image is stored as `Sprint_1/etc/S1_Directions_Route.png`. The route start/end waypoint markers use the plugin's default direction styling, while the original building/library category markers remain the source of truth for location type. Sprint 1 therefore treats category validation as marker-selected destination behaviour only, not as classification of arbitrary free-text route input.
+The evidence image is stored as `Sprint_1/etc/S1_Directions_Route.png`. The route start/end waypoint markers use the plugin's default direction styling. These route-generated waypoints are separate from the stored location markers, so their default colour does not remove or weaken the separate `US-01` requirement that the UoM and RMIT building markers are colour-distinguishable. Sprint 1 therefore treats category validation as marker-selected destination behaviour only, not as classification of arbitrary free-text route input.
 
 ### Step 5 - Confirm controlled failure behaviour (US-04)
 

@@ -65,7 +65,7 @@ This checklist records the Sprint 1 close-out check against the published Sprint
 | Burn-down Chart | `Sprint_1/S1_Burn_Down_Chart.md` and `Sprint_1/etc/S1_Burn_Down_Chart.png` | Complete | Ideal, accepted-story, and actual/reforecast lines are documented, including down/up fluctuation. |
 | Risk Management | `Main/Risk_Management.md` | Complete | Sprint 1 close-out risk tracking includes WordPress, data, delivery pressure, and requirement clarification risk. |
 | Sprint Risk Monitoring | `Sprint_1/S1_Risk_Monitoring.md` | Complete | Monitors risks through Sprint 1 checkpoints and records R006 as a controlled clarification. |
-| Defect Log | `Main/Defect_Log_Tracker.md` | Complete | `DEF-001` to `DEF-004` are recorded, including closed marker-colour issue and accepted Code Snippets constraint. |
+| Defect Log | `Main/Defect_Log_Tracker.md` | Complete | `DEF-001` to `DEF-006` are recorded, including the closed marker-colour issue and accepted Code Snippets, zoom, and route category constraints. |
 | Quality Assurance | `Sprint_1/S1_Quality_Assurance.md` | Complete | User stories are traced to acceptance criteria, BDD test cases, QA results, and DoD evidence. |
 | Sprint Showcase | `Sprint_1/S1_Sprint_Showcase.md` | Complete | Completed features, constraint, demo summary, screenshots, feedback/action items, and conclusion are present. |
 | Sprint Retrospective | `Sprint_1/S1_Sprint_Retrospective.md` | Complete | Includes overview, what went well, improvements, actions, and requirement-change learning. |
