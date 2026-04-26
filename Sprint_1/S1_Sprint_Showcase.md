@@ -91,7 +91,7 @@ The Get Directions workflow is accessible only after a marker has been selected,
 
 ## Asynchronous Demo Evidence
 
-The repository evidence for the asynchronous showcase consists of the demo sequence above, the linked screenshots, and the QA table in `S1_Quality_Assurance.md`. Sprint 1 notes refer to screenshots/descriptions/videos as appropriate for the asynchronous demo; no separate mandatory Sprint 1 video requirement has been identified in the local requirement notes. If the assessment channel or tutor explicitly requests a video demonstration for Sprint 1, the team should record a short run-through of the same five-step path after the final team commit and release tag are agreed, so the video matches the submitted Git baseline.
+The repository evidence for the asynchronous showcase consists of the demo sequence above, the linked screenshots, and the QA table in `S1_Quality_Assurance.md`. Sprint 1 notes refer to screenshots/descriptions/videos as appropriate for the asynchronous demo; no separate mandatory Sprint 1 video requirement has been identified in the local requirement notes. If the assessment channel or tutor explicitly requests a video demonstration for Sprint 1, the team should record a short run-through of the same five-step path against the submitted Git baseline identified by the Sprint 1 release tag.
 
 ## Learning Summary
 
@@ -109,7 +109,7 @@ The Sprint 1 showcase has been prepared for the designated assessment channel. F
 | Direction route screenshot was required to evidence US-04 completion. | Store route screenshot in `Sprint_1/etc/S1_Directions_Route.png` and link it from this showcase. |
 | Updated Sprint 1 requirement narrowed the required library scope to City of Melbourne area and removed university/public library colour distinction. | Update backlog, planning, QA, showcase, burn-down, and risk records so university library markers are treated as optional context rather than required acceptance evidence. |
 | Final evidence review found limited close-detail zoom and default route waypoint colours. | Record `DEF-005` and `DEF-006`; carry both into Sprint 2 usability/category-validation planning. |
-| Pre-submission review identified scoring risks around dataset traceability, live page accessibility, release tag timing, and conditional video expectations. | Keep dataset-scope wording explicit, retain screenshots as repository evidence, re-check the live WordPress page before tagging, and create the release tag only after team approval. Record a video only if Sprint 1 submission instructions explicitly request it. |
+| Pre-submission review identified scoring risks around dataset traceability, live page accessibility, release tag timing, and conditional video expectations. | Keep dataset-scope wording explicit, retain screenshots as repository evidence, use the Sprint 1 release tag as the submitted baseline, and record a video only if Sprint 1 submission instructions explicitly request it. |
 
 ## Showcase Conclusion
 
