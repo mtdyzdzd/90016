@@ -19,10 +19,10 @@ validated against the Definition of Done.
 
 | User Story ID | Feature | Status | Summary |
 |---|---|---|---|
-| US-01 | Interactive map of selected university building locations (University of Melbourne and RMIT University) | ✅ Done | Old Arts Building (UoM) and RMIT Building 80 (Swanston Academic Building) are displayed as interactive markers on the live WordPress page. The map supports zoom, drag, and marker selection. |
-| US-02 | Interactive map of selected library locations (City of Melbourne and both universities) | ✅ Done | Baillieu Library (UoM), RMIT Swanston Library, and City Library (City of Melbourne) are displayed on the same map, covering all three required location sources. |
-| US-03 | Basic location details visible from a marker popup | ✅ Done | Clicking any marker displays the location name, coordinates, type, organisation, and description. Selecting a different marker closes the current popup and updates the display to match the new location. |
-| US-04 | Basic direction finding from a nominated starting point | ✅ Done | Users can click Get Directions from any marker popup. The destination is auto-populated from the selected marker. A default starting point (Melbourne Central Station) is pre-filled. Clicking Go draws the ORS route on the map in red (#e11d48, weight 8). |
+| US-01 | Interactive map of selected university building locations (University of Melbourne and RMIT University) |  Done | Old Arts Building (UoM) and RMIT Building 80 (Swanston Academic Building) are displayed as interactive markers on the live WordPress page. The map supports zoom, drag, and marker selection. |
+| US-02 | Interactive map of selected library locations (City of Melbourne and both universities) |  Done | Baillieu Library (UoM), RMIT Swanston Library, and City Library (City of Melbourne) are displayed on the same map, covering all three required location sources. |
+| US-03 | Basic location details visible from a marker popup |  Done | Clicking any marker displays the location name, coordinates, type, organisation, and description. Selecting a different marker closes the current popup and updates the display to match the new location. |
+| US-04 | Basic direction finding from a nominated starting point |  Done | Users can click Get Directions from any marker popup. The destination is auto-populated from the selected marker. A default starting point (Melbourne Central Station) is pre-filled. Clicking Go draws the ORS route on the map in red (#e11d48, weight 8). |
 
 ---
 
@@ -118,4 +118,4 @@ for incorporation into Sprint 2 planning.
 
 | Feedback Item | Source | Action Item | Assigned To | Status |
 |---|---|---|---|---|
-| *(To be updated after teaching staff Sprint 1 review feedback is received)* | Teaching staff | — | — | 🚧 Pending |
+| *(To be updated after teaching staff Sprint 1 review feedback is received)* | Teaching staff | — | — |  Pending |
