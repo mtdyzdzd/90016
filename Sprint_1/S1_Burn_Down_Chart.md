@@ -1,77 +1,91 @@
 # Burn Down Chart - Assignment 2
 
-- Document your Burn Down Chart to track the progress of Sprint 1 for Assignment 2.  
+- Document your Burn Down Chart to track the progress of Sprint 1 for Assignment 2.
 - Refer to Burn_Down_Chart_Example_and_Guide.md under the Guides folder for guidance on how to document this section. An example is shown.
 - You can reuse formatting and sections from the guidance for documenting this section
+
+------
+
 ## Sprint 1 Burn Down Chart
 
-**Sprint Duration:** 13 April 2026 – 27 April 2026  
-**Total Story Points Committed:** 10 SP  
+**Sprint Duration:** 13 April 2026 12:00 - 27 April 2026 00:00 AEST
+**Tracking Basis:** Daily calendar checkpoints. Day 15 is the submission deadline checkpoint, not a normal working day.
+**Total Story Points Committed:** 10 SP
 **Stories:** US-01 (3 SP), US-02 (2 SP), US-03 (2 SP), US-04 (3 SP)
+
+## Reconstruction and Update Rule
+
+The ideal burn-down line was fixed during Sprint Planning. The team made progress each day, but not every daily change was recorded at the time. This chart therefore uses a **close-out reconciliation method**: daily points were reconstructed from stand-up/checkpoint notes, Sprint Backlog changes, defect records, WordPress evidence, and Definition of Done checks.
+
+To keep the chart honest rather than artificially smooth:
+
+- Work that had not reached DoD was not counted as burned down.
+- Completed stories reduced the actual remaining effort only when acceptance/validation evidence was available.
+- Requirement clarifications that reduced required validation scope were recorded as a downward reforecast on the actual/reforecast line, without changing the original committed story points.
+- When US-04 exposed additional rework on Day 12, the actual/reforecast line moved upward from 3 SP to 4 SP.
+- The original committed story points did not change; the temporary downward and upward movements represent reforecast effort caused by requirement clarification and discovered implementation work.
+- If future sprint work introduces new scope or failed validation, the actual line should be updated upward rather than retrospectively smoothed.
+
+## Requirement Deletions and Burn-down Treatment
+
+The current Sprint 1 requirement text removes two earlier library-related assumptions: university library locations are no longer required for `US-02`, and university/public library colour distinction is no longer required. This is not shown by deleting `US-02` from the sprint, because the story still requires City of Melbourne library marker configuration, popup details, QA, and evidence.
+
+The chart therefore records the clarification as a small downward reforecast on Day 5:
+
+- The **Accepted-Story Remaining Line** stays unchanged at 10 SP until `US-03` reaches DoD, because no whole user story was accepted or removed on Day 5.
+- The **Actual / Reforecast Remaining Line** drops from 10 SP to 9.5 SP on Day 5 to show reduced validation/configuration effort after the deleted university-library and library-colour requirements.
+- Later, the same actual/reforecast line rises from 3 SP to 4 SP on Day 12 when `US-04` routing and WordPress permission work created additional rework.
+
+This approach follows the burn-down guide: the ideal line remains fixed, while the actual line can move down or up when real sprint conditions change.
+
 ## Burn Down Data Table
 
-| Day | Date         | Ideal Remaining (SP) | Actual Remaining (SP) | Notes                                                                                                                                 |
-| --- | ------------ | -------------------- | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | Apr 13 (Sun) | 10.0                 | 10                    | Sprint start; task assignments confirmed; team began exploring WP Go Maps plugin capability within the provided WordPress environment |
-| 2   | Apr 14 (Mon) | 9.3                  | 10                    | All team members confirmed access to the provided WordPress environment via university VPN; plugin evaluation begun                   |
-| 3   | Apr 15 (Tue) | 8.6                  | 10                    | Plugin selection in progress; location list being confirmed                                                                           |
-| 4   | Apr 16 (Wed) | 7.9                  | 10                    | Stand-up 1; WP Go Maps + Leaflet confirmed as map solution                                                                            |
-| 5   | Apr 17 (Thu) | 7.1                  | 10                    | Location data preparation started; direction approach scoping begun                                                                   |
-| 6   | Apr 18 (Fri) | 6.4                  | 10                    | Stand-up 2; marker configuration started                                                                                              |
-| 7   | Apr 19 (Sat) | 5.7                  | 10                    | Weekend                                                                                                                               |
-| 8   | Apr 20 (Sun) | 5.0                  | 10                    | Weekend                                                                                                                               |
-| 9   | Apr 21 (Mon) | 4.3                  | 7                     | **US-03 Done (2 SP burned):** marker popup details implemented and validated                                                          |
-| 10  | Apr 22 (Tue) | 3.6                  | 5                     | **US-02 Done (2 SP burned):** library markers configured and validated                                                                |
-| 11  | Apr 23 (Wed) | 2.9                  | 2                     | **US-01 Done (3 SP burned):** building markers validated; Stand-up 3; US-04 ORS API blocker raised                                    |
-| 12  | Apr 24 (Thu) | 2.1                  | 2                     | US-04 blocked: ORS API key reconfiguration in progress; Code Snippets 403 identified                                                  |
-| 13  | Apr 25 (Fri) | 1.4                  | 2                     | Stand-up 4; API fixed; route color/weight/opacity fix in progress                                                                     |
-| 14  | Apr 26 (Sat) | 0.7                  | 0                     | **US-04 Done (3 SP burned):** direction workflow validated end-to-end                                                                 |
-| 15  | Apr 27 (Sun) | 0.0                  | 0                     | Stand-up 5; Sprint end and submission                                                                                                 |
-
----
+| Day | Date | Ideal Remaining (SP) | Accepted-Story Remaining (SP) | Actual / Reforecast Remaining (SP) | Daily Update / Change Note |
+| --- | ---- | -------------------- | ----------------------------- | ---------------------------------- | -------------------------- |
+| 1 | Apr 13 (Mon) | 10.0 | 10 | 10 | Sprint start; task assignments confirmed and Sprint 1 WordPress/map work began. |
+| 2 | Apr 14 (Tue) | 9.3 | 10 | 10 | WordPress access, plugin options, and map setup assumptions reviewed; progress made but no story reached DoD. |
+| 3 | Apr 15 (Wed) | 8.6 | 10 | 10 | Location list, marker fields, and dataset scope checked; no story reached DoD. |
+| 4 | Apr 16 (Thu) | 7.9 | 10 | 10 | Stand-up/checkpoint: WP Go Maps + Leaflet confirmed as the map solution; data work continued. |
+| 5 | Apr 17 (Fri) | 7.1 | 10 | 9.5 | Requirement clarification reduced US-02 validation scope: university-library coverage and library colour distinction were no longer required. No whole story reached DoD, so accepted-story remaining stayed at 10 SP. |
+| 6 | Apr 18 (Sat) | 6.4 | 10 | 9.5 | Marker configuration progressed under the clarified US-02 scope; US-04 approach still under review. |
+| 7 | Apr 19 (Sun) | 5.7 | 10 | 9.5 | Direction feasibility risk escalated for focused follow-up; no story burned yet. Reduced US-02 validation scope remained reflected in the reforecast line. |
+| 8 | Apr 20 (Mon) | 5.0 | 10 | 9.5 | Configuration and validation work continued; story-level DoD evidence still incomplete. |
+| 9 | Apr 21 (Tue) | 4.3 | 8 | 8 | **US-03 Done (2 SP burned):** marker popup details implemented and validated. |
+| 10 | Apr 22 (Wed) | 3.6 | 6 | 6 | **US-02 Done (2 SP burned):** required City of Melbourne area library marker configured and validated. Optional university library markers remained as contextual map content. |
+| 11 | Apr 23 (Thu) | 2.9 | 3 | 3 | **US-01 Done (3 SP burned):** building markers validated; US-04 ORS API blocker raised. |
+| 12 | Apr 24 (Fri) | 2.1 | 3 | 4 | US-04 remained functionally unburned. Reforecast increased by 1 SP because ORS/API configuration, Code Snippets 403, and route visibility fixes added rework before acceptance. |
+| 13 | Apr 25 (Sat) | 1.4 | 3 | 3 | API key issue resolved and route display settings improved; rework reduced, but US-04 still not accepted until final validation. |
+| 14 | Apr 26 (Sun) | 0.7 | 0 | 0 | **US-04 Done (3 SP burned):** direction workflow validated end-to-end. Final QA also found and fixed the US-01 building-marker colour distinction before Sprint 1 evidence was reconciled. |
+| 15 | Apr 27 (Mon) | 0.0 | 0 | 0 | Submission deadline checkpoint at 00:00 AEST; no additional story points remained. |
 
 ## Burn Down Chart Visual
 
-![Sprint 1 Burn Down Chart](https://github.com/SWEN90016-2026-SM1/T07_G02-SWEN90016_A2_Scrum_Artefacts/blob/main/etc/S1_Burn_Down_Chart.png?raw=true)
+![Sprint 1 Burn Down Chart](etc/S1_Burn_Down_Chart.png)
 
-*The chart above plots two lines against Sprint days on the X-axis and 
-story points remaining on the Y-axis:*
-- *The Ideal Burn Down Line runs straight from 10 SP on Day 1 to 0 SP 
-  on Day 15.*
-- *The Actual Burn Down Line reflects the data table above.*
+The chart above plots three signals:
+
+- The **Ideal Burn Down Line** runs straight from 10 SP on Day 1 to 0 SP on Day 15.
+- The **Accepted-Story Remaining Line** shows the strict story-level burn-down after each story met DoD.
+- The **Actual / Reforecast Remaining Line** shows daily remaining effort after accounting for requirement clarification, discovered rework, and implementation uncertainty.
 
 ## Chart Interpretation
 
-**X-Axis:** Sprint days (Day 1 = 13 April 2026 to Day 15 = 27 April 2026)
+**X-Axis:** Sprint checkpoints (Day 1 = 13 April 2026 to Day 15 = 27 April 2026 deadline checkpoint)
 
-**Y-Axis:** Story points remaining (0–10)
+**Y-Axis:** Remaining story points / reforecast effort (0-10)
 
-**Ideal Burn Down Line:** A straight line from 10 SP on Day 1 to 0 SP 
-on Day 15, representing a linear completion rate of approximately 
-0.67 SP per calendar day. This line was fixed at Sprint Planning and 
-was not adjusted at any pont during the sprint.
+**Ideal Burn Down Line:** A straight line from 10 SP on Day 1 to 0 SP on Day 15, representing a linear completion rate of approximately 0.71 SP per calendar checkpoint. This line was fixed at Sprint Planning and was not adjusted at any point during the sprint.
 
-**Actual Burn Down Line:** The actual line remained flat at 10 SP from 
-Day 1 through Day 8, reflecting the first-week effort spent on plugin selection and 
-evaluation, location data preparation, and learning the WP Go Maps 
-configuration within the provided WordPress environment. Story 
-points began burning from Day 9 as user stories met the Definition of Done:
+**Accepted-Story Remaining Line:** This line remained flat at 10 SP from Day 1 through Day 8 because task progress had not yet converted into accepted user stories. It then dropped when stories met DoD:
 
-- Day 9 (Apr 21): US-03 completed — 7 SP remaining
-- Day 10 (Apr 22): US-02 completed — 5 SP remaining
-- Day 11 (Apr 23): US-01 completed — 2 SP remaining
-- Days 11–13: Actual line flat at 2 SP — US-04 blocked by 
-  OpenRouteService API 401 error (documented in Risk Monitoring as R004 
-  materialising)
-- Day 14 (Apr 26): US-04 completed after API key reconfiguration and 
-  route display fix — 0 SP remaining
+- Day 9 (Apr 21): US-03 completed - 8 SP remaining.
+- Day 10 (Apr 22): US-02 completed - 6 SP remaining.
+- Day 11 (Apr 23): US-01 completed - 3 SP remaining.
+- Days 11-13: US-04 remained open because routing/API and environment-permission constraints were not fully resolved.
+- Day 14 (Apr 26): US-04 completed - 0 SP remaining.
 
-**No stories were de-prioritised or added during Sprint 1.** The sprint 
-closed at 0 SP remaining with all four committed user stories delivered.
+**Actual / Reforecast Remaining Line:** This line is the more realistic process signal. It separates accepted story completion from changes in remaining effort. It dips from 10 SP to 9.5 SP on Day 5 when the `US-02` library requirement is clarified and validation work is reduced. It then follows delivery progress until Day 12, when `US-04` creates additional implementation work. The increase from 3 SP to 4 SP records a genuine change in remaining effort caused by ORS/API configuration work, Code Snippets 403, and route-display validation. The line then drops back to 3 SP on Day 13 after the API and route display work improved, and reaches 0 SP on Day 14 after final validation.
 
-**Key Observation:** The flat section in Week 1 (Days 1–8) and the 
-mid-sprint plateau (Days 11–13) indicate that early setup work and a 
-mid-sprint technical blocker pushed delivery toward the final days of 
-the sprint. This pattern will be addressed in Sprint 2 by scheduling 
-a technical spike for the highest-uncertainty story in the first three 
-days, as documented in the Sprint Retrospective.
+The Day 5 downward movement records a requirement clarification: the library story no longer needed university-library coverage or library colour distinction. The Day 12 upward movement records implementation rework for `US-04`. No committed user story was removed from Sprint 1 and no new user story was added; the actual/reforecast line shows changing remaining effort inside the committed stories.
+
+**Key Observation:** The flat first-half accepted-story line, the Day 5 downward reforecast, the Day 12 upward reforecast, and the final sharp drop show the value of maintaining a burn-down chart as a living Scrum artefact. The chart highlights that Sprint 2 should validate high-uncertainty WordPress/plugin capabilities earlier and record requirement clarifications as they occur instead of discovering or reconciling them near close-out.

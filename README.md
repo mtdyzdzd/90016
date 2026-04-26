@@ -1,4 +1,4 @@
-![Department Banner](UNIMELB_Banner.png)
+![Department Banner](./etc/UNIMELB_Banner.png)
 
 ---
 
@@ -56,21 +56,21 @@ Maintaining these artefacts gives you **hands-on experience** with Scrum SDLC, p
 
 Here are the key artefact guides in the **`Guides/`** folder:
 
-- [🏁 Project Initiation](Project_Initiation_Guide_and_Example.md)
-- [🛠️ Project Decisions and Actions](Project_Decisions_and_Actions_Guide_and_Example.md)
-- [🧩 Sprint Planning](Sprint_Planning_Guide_and_Example.md)
-- [📝 Product Backlog](Groomed_PB_Guide_and_Example.md)  
-- [🗂️ Sprint Backlog](Sprint_Backlog_Guide_and_Example.md)  
-- [📊 Burn Down Charts](Burn_Down_Chart_Guide_and_Example.md)
-- [💬 Communications Strategy](Communication_Strategy_Guide_and_Example.md)
-- [🐞 Defect Logs  ](Defect_Log_Guide_and_Example.md)
-- [⚠️ Risk Register](Risk_Managment_Guide_and_Example.md)
-- [🎛️ Risk Response Monitoring](Risk_Monitoring_Guide_and_Example.md)
-- [🛡️ Quality Assurance](QA_Strategy_Guide_and_Example.md)
-- [🧑‍🤝‍🧑 Roles and Responsibilities](Scrum_Roles_Responsibilities_Guide_and_Example.md)
-- [⏱️ Standup Meetings](Stand_Up_Meeting_Guide_And_Example.md)
-- [🎯 Sprint Showcase Outcomes  ](Showcase_Guide_and_Example.md)
-- [🔄 Sprint Retrospectives](Retrospective_Guide_and_Example.md)
+- [🏁 Project Initiation](./Guides/Project_Initiation_Guide_and_Example.md)
+- [🛠️ Project Decisions and Actions](./Guides/Project_Decisions_and_Actions_Guide_and_Example.md)
+- [🧩 Sprint Planning](./Guides/Sprint_Planning_Guide_and_Example.md)
+- [📝 Product Backlog](./Guides/Groomed_PB_Guide_and_Example.md)
+- [🗂️ Sprint Backlog](./Guides/Sprint_Backlog_Guide_and_Example.md)
+- [📊 Burn Down Charts](./Guides/Burn_Down_Chart_Guide_and_Example.md)
+- [💬 Communications Strategy](./Guides/Communication_Strategy_Guide_and_Example.md)
+- [🐞 Defect Logs  ](./Guides/Defect_Log_Guide_and_Example.md)
+- [⚠️ Risk Register](./Guides/Risk_Managment_Guide_and_Example.md)
+- [🎛️ Risk Response Monitoring](./Guides/Risk_Monitoring_Guide_and_Example.md)
+- [🛡️ Quality Assurance](./Guides/QA_Strategy_Guide_and_Example.md)
+- [🧑‍🤝‍🧑 Roles and Responsibilities](./Guides/Scrum_Roles_Responsibilities_Guide_and_Example.md)
+- [⏱️ Standup Meetings](./Guides/Stand_Up_Meeting_Guide_And_Example.md)
+- [🎯 Sprint Showcase Outcomes  ](./Guides/Showcase_Guide_and_Example.md)
+- [🔄 Sprint Retrospectives](./Guides/Retrospective_Guide_and_Example.md)
 
 ---
 
@@ -124,6 +124,8 @@ This repository helps you document and execute Scrum SDLC processes for **Assign
 - Sprint Backlog  
 - Daily Stand-up Meeting  
 - Sprint Burndown Chart
+- Sprint Quality Assurance
+- Sprint Scrum Artefact Checklist
 - Sprint Showcase Outcomes  
 - Sprint Retrospective
 - Sprint Risk Monitoring

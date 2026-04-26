@@ -3,109 +3,69 @@
 - Document your Sprint Retrospective Outcomes for Assignment 2.  
 - Refer to Retrospective_Example_and_Guide.md under the Guides folder for guidance on how to document this section. An example is shown.
 - You can reuse formatting and sections from the guidance for documenting this section
-## Overview
+
+------
+
+## Sprint 1 Retrospective Overview
 
 | Category | Details |
-|---|---|
-| **Meeting Facilitator** | Manting Yu (Scrum Master) |
-| **Goal of the Meeting** | Reflect on Sprint 1 execution, identify what worked well, surface areas for improvement, and agree on actionable changes for Sprint 2. |
-| **Attendees** | Manting Yu (Scrum Master), Zihan Shi (Product Owner), Fazheng Xu, Jiajun Jiang, Conghao Lin |
-| **Sprint Duration** | 13 April 2026 – 27 April 2026 |
-| **Sprint Outcome Summary** | All four committed user stories (US-01, US-02, US-03, US-04) were completed within Sprint 1. The Interactive Campus Map page was delivered with five location markers covering the University of Melbourne, RMIT University, and the City of Melbourne, a marker popup detail view, and a basic direction-finding workflow using WP Go Maps, Leaflet, and OpenRouteService. No stories were de-prioritised or added during the sprint. One implementation constraint (custom input validation blocked by Code Snippets 403) was accepted and documented as R010. |
-
----
+| -------- | ------- |
+| **Sprint Reviewed** | Sprint 1: Interactive map, marker details, and basic directions. |
+| **Facilitator** | @Manting Yu (Scrum Master) |
+| **Attendees** | Development Team, Scrum Master, Product Owner |
+| **Purpose** | Reflect on delivery, Scrum artefact quality, risk handling, QA, and actions to apply in Sprint 2. |
+| **Status** | Completed as a close-out retrospective using Sprint Backlog, Stand-up, Risk Monitoring, Defect Log, QA, and Showcase evidence. |
 
 ## What Went Well
 
--  **All committed sprint outcomes were delivered.** US-01, US-02, 
-  US-03, and US-04 were all validated as Done by Day 14, meeting the 
-  published Sprint 1 outcome in full.
+- The team kept Sprint 1 bounded to the published WordPress outcome instead of expanding into a custom application or advanced navigation.
+- Named task ownership in the Sprint Backlog made responsibility clearer than role-only ownership.
+- The team recorded actual blockers in the Defect Log and Risk Monitoring artefacts, especially the OpenRouteService issue and Code Snippets 403 permission limit.
+- The team treated the updated `US-02` library wording as a traceable requirement clarification instead of silently rewriting Sprint 1 scope.
+- Final QA caught a real acceptance gap in US-01: UoM and RMIT building markers were not initially colour-distinguishable. The issue was fixed and retested before artefact close-out.
+- Showcase evidence now demonstrates the user-facing workflow: map markers, popup details, and directions from Melbourne Connect or another entered starting point.
 
--  **Toolchain decision was made early and communicated clearly.** 
-  Confirming WP Go Maps + Leaflet + OpenRouteService as the Sprint 1 
-  stack by Day 4 reduced technical uncertainty for the rest of the 
-  sprint. This aligned with the R001 mitigation plan.
+## What Could Have Been Better
 
--  **Stand-up communication kept blockers visible.** Running five 
-  stand-ups over the sprint meant the OpenRouteService API blocker 
-  was identified at Stand-up 3 and resolved within two days rather 
-  than being discovered late in the sprint.
-
--  **Acceptance criteria and DoD were used consistently.** US-01, 
-  US-02, and US-03 were validated against acceptance criteria and the 
-  Definition of Done before the final sprint week, preventing late-stage 
-  rework on those stories.
-
--  **Scope discipline was maintained throughout.** The team did not 
-  introduce routing features beyond the published Sprint 1 outcome. 
-  Accepting the ORS turn-by-turn output without extension was consistent 
-  with R007 (Avoid) and kept the sprint on track.
-
----
-
-## What Could Have Been Done Better
-
--  **Slow initial burn rate in the first week.** The actual burndown 
-  remained at 10 SP through Day 8 with no story points completed, as 
-  effort was concentrated on setup, plugin confirmation, and data 
-  preparation. Earlier implementation would have reduced end-of-sprint 
-  pressure.
-
--  **No early technical spike for the highest-risk story.** R004 
-  (direction workflow environment uncertainty) was identified at Sprint 
-  Planning, but no early spike was scheduled for US-04. The blocker 
-  emerged mid-sprint (Day 11) rather than being identified in Week 1.
-
--  **WordPress plugin permissions were not confirmed before planning.** The Code Snippets 403 error was not identified until the team attempted to implement custom validation during the sprint. Since the WordPress environment is provided by the university, the team should have verified plugin-level permissions within that environment before committing to validation tasks.
-
--  **Task owners in the Sprint Backlog were recorded by role, not by 
-  name.** Using labels such as "Map and Data Owner" rather than team 
-  member names reduced traceability when tracking task progress 
-  during stand-ups.
-
----
+- Daily progress was not recorded every calendar day during the sprint, so the burn-down chart required close-out reconciliation from checkpoint notes and evidence.
+- The team did not identify the `US-02` library-scope deletion early enough, so several artefacts initially over-claimed university library coverage as required scope.
+- WordPress/plugin feasibility for US-04 was tested too late, which compressed QA and documentation work near the deadline.
+- Some documentation originally described expected behaviour rather than observed live-site behaviour, such as implying that the From field was pre-filled.
+- Marker-category visual checks were not explicit enough at first; this allowed the US-01 colour distinction issue to remain until final QA.
+- The map met the Sprint 1 demonstration need, but close-detail zoom remains limited for dense city/campus inspection.
+- Direction route waypoint markers use plugin default styling, and free-text route inputs cannot be safely treated as a known building/library category without a stored marker/category lookup.
+- The team relied heavily on asynchronous updates, so blocker escalation needed stronger discipline to avoid invisible delays.
 
 ## What We Will Do Differently
 
--  **Schedule a technical spike for the highest-uncertainty Sprint 2 
-  story in the first three days.** For Sprint 2, the authentication and 
-  login feature (US-07) will be explored technically at the start of 
-  the sprint, not deferred to mid-sprint.
-
--  **Test WordPress environment permissions before sprint planning 
-  is finalised.** Before committing to stories that rely on plugin 
-  features or custom code, the team will verify relevant permissions 
-  and capabilities in the WordPress environment during Sprint 2 planning.
-
--  **Use team member names as task owners in the Sprint Backlog.** 
-  Sprint 2 task ownership will reference individual team members by 
-  name rather than functional role labels.
-
--  **Target first story completion by Day 5.** The team will aim to 
-  complete at least one user story within the first five days of 
-  Sprint 2 to establish an earlier burn rate and reduce late-sprint 
-  compression.
-
----
+- Add a short QA checklist at Sprint Planning for each committed story, including visual/category requirements as well as functional behaviour.
+- Run a technical feasibility spike earlier for any story that depends on WordPress permissions, plugin settings, third-party APIs, or custom code.
+- Keep the burn-down chart updated at each stand-up/checkpoint rather than reconstructing most entries at close-out.
+- Add an explicit requirement-change check during each checkpoint so deleted or clarified requirements are recorded in the Decision Log, Sprint Backlog, and Burn-down while the sprint is still running.
+- Treat live-site observation as the source of truth for Showcase wording; do not describe intended behaviour unless it has been verified.
+- Record defects as soon as they become reproducible, then link them back to the Sprint Backlog and QA tracking.
 
 ## Unresolved Risks Carried Forward
 
-During Sprint 1, R010 could not be fully resolved. It is documented 
-here to ensure it remains visible and actionable in Sprint 2.
+| Risk / Constraint | Sprint 1 Outcome | Carried Forward Action |
+| ----------------- | ---------------- | ---------------------- |
+| WordPress custom-code permissions are limited (`DEF-003`). | Accepted as an environment constraint for Sprint 1 because the plugin-supported marker-selected destination workflow satisfies the basic direction outcome. | Validate WordPress permissions early in Sprint 2 before committing to features that require custom snippets or custom validation. |
+| QA and documentation pressure can build late in the sprint. | Controlled in Sprint 1, but only after a final reconciliation effort. | Reserve explicit QA/documentation time in Sprint 2 checkpoints and keep artefact updates closer to real progress. |
+| Visual category requirements can be missed if not written as QA checks. | US-01 marker colour distinction was found late and fixed before close-out. | Add visual/category checks to Sprint 2 QA before implementation is marked Done. |
+| Requirement clarifications can make earlier artefact wording outdated. | `US-02` was narrowed to City of Melbourne area library locations, so earlier university-library wording needed controlled correction. | Monitor requirement updates at each checkpoint and record changes as formal clarification records. |
+| Map zoom and category-aware route behaviour remain limited by current plugin configuration. | Accepted for Sprint 1 because marker visibility, popups, and basic routing are demonstrable. | Add early Sprint 2 checks for zoom/detail usability, marker overlap, route waypoint styling, and category lookup for user-entered or selected locations. |
 
-| Risk ID | Risk Statement | Probability | Impact | Exposure |
-|---|---|---|---|---|
-| R010 | *"WordPress environment permission restrictions prevent implementation of custom validation logic via Code Snippets → teams cannot add custom JavaScript input protection without elevated access → acceptance criteria relying on user-facing input validation may need to be implemented differently in later sprints."* | 60% | 5 | 3.0 |
-| **Mitigation Strategy:** | Mitigate | | | |
-| **Mitigation Plan:** | Assess alternative validation approaches (plugin-native or theme-level) before Sprint 2 planning. Confirm whether the constraint affects US-07 authentication story. Apply the simplest supported validation approach and document the decision. Track resolution in Sprint 2 Risk Monitoring. | | | |
+## Actionable Items for Sprint 2
 
----
+| Action Item | Owner | Due Date | Status |
+| ----------- | ----- | -------- | ------ |
+| Add story-level QA checks during Sprint 2 Planning, including acceptance criteria and visual/category checks. | @Conghao Lin and @Zihan Shi | Sprint 2 Planning | Planned |
+| Run early feasibility checks for WordPress permissions, plugin configuration, and API dependencies before deep implementation work. | @Fazheng Xu and @Jiajun Jiang | First Sprint 2 checkpoint | Planned |
+| Update burn-down and Sprint Backlog tracking during each checkpoint rather than only at close-out. | @Manting Yu | Throughout Sprint 2 | Planned |
+| Keep Product Backlog, Sprint Backlog, Defect Log, QA, and Showcase wording aligned with observed live-site behaviour. | Scrum Team | Throughout Sprint 2 | Planned |
+| Add a requirement-change review item to Sprint 2 checkpoints and update burn-down when scope is added, deleted, or clarified. | Product Owner and Scrum Master | Throughout Sprint 2 | Planned |
+| Validate whether Sprint 2 map/filter stories need category-aware marker lookup and whether route waypoint styling can be customised or clearly explained. | @Fazheng Xu, @Jiajun Jiang, and @Zihan Shi | Sprint 2 Planning / first checkpoint | Planned |
 
-## Actionable Items
+## Retrospective Conclusion
 
-| Action ID | Action Item | Assigned To | Due Date | Status |
-|---|---|---|---|---|
-| RETRO-S1-01 | Schedule a technical spike for US-07 (authentication) within the first three days of Sprint 2 to identify environment constraints before committing to implementation. | Manting Yu | Sprint 2 Day 3 |  Pending |
-| RETRO-S1-02 | Test WordPress environment permissions for any plugin capability or custom code required by Sprint 2 stories before Sprint 2 planning is finalised. | Jiajun Jiang | Sprint 2 Planning |  Pending |
-| RETRO-S1-03 | Update Sprint 2 Backlog task ownership to reference team member names rather than functional role labels. | Fazheng Xu | Sprint 2 Day 1 |  Pending |
-| RETRO-S1-04 | Carry R010 into Sprint 2 Risk Monitoring; assess its impact on US-07 authentication implementation at Sprint 2 Planning. | Conghao Lin | Sprint 2 Planning |  Pending |
+Sprint 1 achieved the required assessment increment after final QA corrections and requirement clarification: selected UoM/RMIT building markers and the required City of Melbourne area library marker are visible, marker details are available, UoM/RMIT building markers are colour-distinguishable, and basic directions can be generated from Melbourne Connect or another entered starting point to a selected marker. The main improvement for Sprint 2 is process discipline: verify platform constraints earlier, check requirement changes during checkpoints, update artefacts continuously, and make QA checks explicit before declaring stories Done.
