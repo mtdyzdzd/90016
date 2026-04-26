@@ -31,7 +31,7 @@
 | | | US4_T4 | Validate the direction workflow, including visible handling of incomplete, invalid, or unsupported inputs. | Conghao Lin | Done | 3 | | | | | | | | | | | | | | |
 | | | US4_T5 | Monitor US-04 blocker status across stand-ups, coordinate escalation of the ORS API issue, and document constraint resolution in sprint artefacts. | Manting Yu | Done | 3 | | | | | | | | | | | | | | |
 
-> 🟣 = Risk mitigation task folded into the user story (R004 — direction workflow environment uncertainty)
+🟣 = Risk mitigation task folded into the user story (R004 — direction workflow environment uncertainty)
 
 ---
 
