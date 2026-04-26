@@ -23,9 +23,7 @@ All four user stories committed in Sprint 1 were completed and validated against
 
 ## Postponed Features
 
-No user stories were de-prioritised or postponed during Sprint 1. All four committed stories were completed.
-
-One implementation detail was accepted as a known environment constraint rather than a postponed feature:
+All four committed stories were completed. One implementation detail was accepted as a known environment constraint rather than a postponed feature:
 
 | Item | Reason | Resolution |
 | ---- | ------ | ---------- |
