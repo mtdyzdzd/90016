@@ -32,8 +32,8 @@ This checklist records the Sprint 1 close-out check against the published Sprint
 | Issue | Status | Artefact Treatment |
 | ----- | ------ | ------------------ |
 | Map zoom is usable but close-detail zoom is limited. | Accepted constraint | Recorded as `DEF-005`, covered by `S1-QA-008`, and carried into Sprint 2 map usability review. |
-| Direction start/end waypoint markers use default plugin colours. | Accepted constraint | Recorded as `DEF-006`; Sprint 1 relies on the selected destination marker as the category source of truth. |
-| Free-text route input cannot be reliably classified as a building/library category. | Accepted constraint | Recorded as `DEF-006`; future category-specific behaviour needs a stored marker/category lookup or validation rule. |
+| Direction start/end waypoint markers use default plugin colours. | Accepted constraint with Sprint 2 repair path | Recorded as `DEF-006`; Sprint 1 relies on the selected destination marker as the category source of truth. Product-level repair should first check plugin waypoint-icon settings, then use a custom client-side hook only if permission and plugin behaviour allow it. |
+| Free-text route input cannot be reliably classified as a building/library category. | Accepted constraint with Sprint 2 repair path | Recorded as `DEF-006`; future category-specific behaviour needs stored marker/category records, explicit coordinate/address matching, and a rule that leaves unmatched free-text locations in default styling. |
 | Sprint 1 evidence path for route screenshot. | Resolved | Formal evidence path is `Sprint_1/etc/S1_Directions_Route.png`. |
 | Library dataset traceability. | Checked with evidence boundary | QA and Showcase now state the latest-year/library-only data rule and avoid using optional university library markers as required US-02 evidence. |
 | User story language and table structure. | Checked | Product Backlog and Sprint Planning use `As a..., I want..., so that...` user stories, Given/When/Then acceptance criteria, story-point estimates, dependencies, owners, and tracking tables. |

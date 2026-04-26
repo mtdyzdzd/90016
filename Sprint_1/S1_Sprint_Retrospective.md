@@ -53,7 +53,7 @@
 | QA and documentation pressure can build late in the sprint. | Controlled in Sprint 1, but only after a final reconciliation effort. | Reserve explicit QA/documentation time in Sprint 2 checkpoints and keep artefact updates closer to real progress. |
 | Visual category requirements can be missed if not written as QA checks. | US-01 marker colour distinction was found late and fixed before close-out. | Add visual/category checks to Sprint 2 QA before implementation is marked Done. |
 | Requirement clarifications can make earlier artefact wording outdated. | `US-02` was narrowed to City of Melbourne area library locations, so earlier university-library wording needed controlled correction. | Monitor requirement updates at each checkpoint and record changes as formal clarification records. |
-| Map zoom and category-aware route behaviour remain limited by current plugin configuration. | Accepted for Sprint 1 because marker visibility, popups, and basic routing are demonstrable. | Add early Sprint 2 checks for zoom/detail usability, marker overlap, route waypoint styling, and category lookup for user-entered or selected locations. |
+| Map zoom and category-aware route behaviour remain limited by current plugin configuration. | Accepted for Sprint 1 because marker visibility, popups, and basic routing are demonstrable. | Add early Sprint 2 checks for zoom/detail usability, marker overlap, route waypoint styling, and category lookup for user-entered or selected locations. For route waypoint styling, first check plugin-supported waypoint icon settings; if unavailable and permissions allow, use a custom client-side hook with stored marker/category matching. |
 
 ## Actionable Items for Sprint 2
 
@@ -64,7 +64,7 @@
 | Update burn-down and Sprint Backlog tracking during each checkpoint rather than only at close-out, including explicit use of the Actual / Reforecast Remaining line when risks or clarification change remaining effort. | @Manting Yu and @Fazheng Xu | Throughout Sprint 2 | Planned |
 | Keep Product Backlog, Sprint Backlog, Defect Log, QA, and Showcase wording aligned with observed live-site behaviour. | Scrum Team | Throughout Sprint 2 | Planned |
 | Add a requirement-change review item to Sprint 2 checkpoints and update burn-down when scope is added, deleted, or clarified. | Product Owner and Scrum Master | Throughout Sprint 2 | Planned |
-| Validate whether Sprint 2 map/filter stories need category-aware marker lookup and whether route waypoint styling can be customised or clearly explained. | @Fazheng Xu, @Jiajun Jiang, and @Zihan Shi | Sprint 2 Planning / first checkpoint | Planned |
+| Validate whether Sprint 2 map/filter stories need category-aware marker lookup and whether route waypoint styling can be customised or clearly explained. If customisation is needed, check plugin waypoint-icon settings first, then consider a custom client-side hook that matches route waypoints to stored marker/category records before applying category-specific icons. | @Fazheng Xu, @Jiajun Jiang, and @Zihan Shi | Sprint 2 Planning / first checkpoint | Planned |
 
 ## Retrospective Conclusion
 
