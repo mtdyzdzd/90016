@@ -95,13 +95,13 @@ US-02 was selected as the Sprint 1 baseline story because it represents the clea
 
 **Estimation Rationale**
 
-| Factor                 | Consideration                                                |
-| ---------------------- | ------------------------------------------------------------ |
-| Complexity             | Low. The interaction is limited to a basic detail view linked to existing markers. |
+| Factor                 | Consideration                                                                               |
+| ---------------------- | ------------------------------------------------------------------------------------------- |
+| Complexity             | Low. The interaction is limited to a basic detail view linked to existing markers.          |
 | Uncertainty            | Moderate. The team must align on the minimum detail set that remains within Sprint 1 scope. |
-| Dependencies           | Depends on building and library marker data being prepared correctly. |
-| Risk                   | Mainly consistency risk between map content and displayed detail text. |
-| Estimated Story Points | **2**                                                        |
+| Dependencies           | Depends on building and library marker data being prepared correctly.                       |
+| Risk                   | Mainly consistency risk between map content and displayed detail text.                      |
+| Estimated Story Points | **2**                                                                                       |
 
 US-03 is estimated at the same level as US-02 because it adds a small interaction layer, but remains limited in scope and does not introduce a separate workflow.
 
@@ -116,25 +116,62 @@ US-03 is estimated at the same level as US-02 because it adds a small interactio
 
 **Estimation Rationale**
 
-| Factor                 | Consideration                                                |
-| ---------------------- | ------------------------------------------------------------ |
-| Complexity             | Moderate. The story introduces a new workflow beyond marker display. |
-| Uncertainty            | Moderate to high. Direction support depends on what the approved WordPress environment can provide cleanly. |
-| Dependencies           | Requires a viable starting-point input approach, selected destinations, and available direction support. |
-| Risk                   | Higher than the other Sprint 1 stories because routing behaviour is the least certain technical area. |
-| Estimated Story Points | **3**                                                        |
+| Factor                 | Consideration                                                                                                                                      |
+| ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Complexity             | Moderate. The story introduces a new workflow beyond marker display.                                                                               |
+| Uncertainty            | Moderate to high. Direction support depends on what the provided WordPress environment and approved plugins can support cleanly.                   |
+| Dependencies           | Requires a viable starting-point input approach, selected destinations, and confirmed direction support within the provided WordPress environment. |
+| Risk                   | Higher than the other Sprint 1 stories because routing behaviour is the least certain technical area.                                              |
+| Estimated Story Points | **3**                                                                                                                                              |
 
 US-04 is estimated above the baseline because it introduces the most uncertain Sprint 1 workflow, with additional configuration and validation needs around basic direction support.
 
-## Planned Task Breakdown Themes
+## Sprint Backlog Tasks
 
-| User Story ID | Planned Task Breakdown                                       |
-| ------------- | ------------------------------------------------------------ |
-| US-01         | Confirm selected university buildings; prepare marker data; configure map display; verify marker visibility. |
-| US-02         | Confirm selected libraries; prepare library data; add markers to the shared map; validate behaviour. |
-| US-03         | Define the minimum location detail set; configure the marker detail interaction; validate content mapping. |
-| US-04         | Confirm the approved basic direction workflow; configure starting-point input; connect the selected destination to the direction response; validate the end-to-end flow. |
+The following task breakdown translates each selected user story into 
+executable subtasks. Full task tracking (owner, status, daily progress) 
+is maintained in the Sprint 1 Backlog artefact (S1_Sprint_Backlog.md). 
+Story IDs, estimates, and scope are consistent across both artefacts.
 
+### US-01 — Display selected university building locations on the map (3 SP)
+
+| Task ID | Task Description                                                                                                                        | Owner       |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| US1_T1  | Confirm the approved list of selected university building locations and required marker fields.                                         | Zihan Shi   |
+| US1_T2  | Prepare the building location data in the format required by the map solution.                                                          | Fazheng Xu  |
+| US1_T3  | Configure the WordPress map component to display the selected university building markers.                                              | Fazheng Xu  |
+| US1_T4  | Validate building marker visibility and selection behaviour against the acceptance criteria.                                            | Conghao Lin |
+| US1_T5  | Monitor US-01 delivery progress across stand-ups, coordinate blocker escalation, and update sprint artefacts to reflect current status. | Manting Yu  |
+
+### US-02 — Display selected library locations on the map (2 SP)
+
+| Task ID | Task Description                                                                                                                                                 | Owner        |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
+| US2_T1  | Confirm the approved list of selected library locations and required marker details.                                                                             | Zihan Shi    |
+| US2_T2  | Prepare the library location data for inclusion in the shared map view.                                                                                          | Fazheng Xu   |
+| US2_T3  | Add the selected library markers to the shared map and configure their interaction pattern consistently with the Sprint 1 design.                                | Jiajun Jiang |
+| US2_T4  | Validate library marker behaviour and consistency against the acceptance criteria.                                                                               | Conghao Lin  |
+| US2_T5  | Monitor US-02 delivery progress across stand-ups, support library location data review, and ensure artefact consistency between Sprint Backlog and stand-up log. | Manting Yu   |
+
+### US-03 — Show basic location details from a marker (2 SP)
+
+| Task ID | Task Description                                                                                                                                        | Owner        |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
+| US3_T1  | Define the minimum detail set to display for university building and library markers.                                                                   | Zihan Shi    |
+| US3_T2  | Configure the marker detail interaction and popup layout for the selected Sprint 1 locations.                                                           | Jiajun Jiang |
+| US3_T3  | Link prepared marker data to the basic detail display for each selected location.                                                                       | Fazheng Xu   |
+| US3_T4  | Validate the detail display for correctness, completeness, and acceptance-criteria coverage.                                                            | Conghao Lin  |
+| US3_T5  | Monitor US-03 delivery progress, coordinate alignment between popup detail definition and acceptance criteria, and update sprint artefacts accordingly. | Manting Yu   |
+
+### US-04 — Provide basic directions from a nominated starting point (3 SP)
+
+| Task ID   | Task Description                                                                                                                                            | Owner        |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
+| US4_T1 🟣 | Confirm the approved Sprint 1 interpretation of "basic direction finding" and the nominated starting-point input method. *(Risk mitigation task for R004.)* | Zihan Shi    |
+| US4_T2    | Configure the user interaction for selecting a destination and entering or choosing a starting point.                                                       | Jiajun Jiang |
+| US4_T3    | Connect the selected destination to the available basic direction response within the approved environment.                                                 | Fazheng Xu   |
+| US4_T4    | Validate the direction workflow, including visible handling of incomplete, invalid, or unsupported inputs.                                                  | Conghao Lin  |
+| US4_T5    | Monitor US-04 blocker status across stand-ups, coordinate escalation of the ORS API issue, and document constraint resolution in sprint artefacts.          | Manting Yu   |
 ## Sprint Commitment
 
 The team commits to **US-01**, **US-02**, **US-03**, and **US-04** for Sprint 1, with a total planned effort of **10 story points**. This commitment reflects the fixed Sprint 1 outcome released by the teaching team, the lack of project-specific historical velocity, and the need for a conservative commitment level for a new student Scrum team working within a two-week sprint. The detailed task ownership and execution tracking are carried directly into the Sprint 1 Backlog using the same story IDs, scope, and estimates.

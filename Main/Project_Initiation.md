@@ -99,3 +99,13 @@ The teaching staff (Andrew Valentine and Rajesh Chittor Sundaram) are the client
 ### Constraint Interrelationships
 
 These constraints are interrelated rather than independent. The fixed sprint sequence limits what can be deferred, the student availability constraint limits how much can be committed inside each sprint, and the WordPress-only platform constraint limits the implementation options available for map and routing features. Together, these constraints justify the Sprint 1 commitment of 10 story points, the use of tightly scoped stories in the Product Backlog, and the emphasis on early risk control for map configuration, data readiness, and clarification delays.
+
+---
+## Sprint 1 Review Note
+
+Reviewed at Sprint 1 close (27 April 2026) by the Scrum Master 
+and Product Owner. No changes to this document were required 
+during Sprint 1. Content remains consistent with the Week 5 
+PEP submission. Any changes arising from teaching staff feedback 
+will be recorded in Main/Project_Decisions_and_Actions.md and 
+applied before Sprint 2 Planning.

@@ -64,7 +64,7 @@ A **Burn Down Chart** is a visual tool used in Scrum to track sprint progress. I
 ---
 
 ## **Example Representation of a Burn Down Chart**
-![Example Burn Down Chart](../etc/burn_down_chart_example.jpg)
+![Example Burn Down Chart](burn_down_chart_example.jpg)
 
 ---
 

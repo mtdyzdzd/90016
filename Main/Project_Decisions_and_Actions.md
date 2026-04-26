@@ -12,15 +12,17 @@ At the initial Project Execution Plan stage, no external stakeholder decisions o
 
 ### Stakeholder Decision Log
 
-| Date                       | Stakeholder    | Action or Decision                                           | Impact on Project                                            | Follow-up Actions                                            |
-| -------------------------- | -------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Initial PEP stage (Week 5) | Teaching staff | No additional stakeholder decision has been formally recorded beyond the released project materials. | The team is planning against the published case study, sprint outcomes, and assessment guidance only. | The team is planning against the published case study, sprint outcomes, and assessment guidance only. |
+| Date                       | Stakeholder               | Action or Decision                                                                                                                                                                                                                                                               | Impact on Project                                                                                                                                              | Follow-up Actions                                                                                                     |
+| -------------------------- | ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| Initial PEP stage (Week 5) | Teaching staff            | No additional stakeholder decision has been formally recorded beyond the released project materials.                                                                                                                                                                             | The team is planning against the published case study, sprint outcomes, and assessment guidance only.                                                          | None at this stage.                                                                                                   |
+| 25 April 2026              | Zihan Shi (Product Owner) | Confirmed that the soft protection approach for US-04 (marker-triggered Get Directions with Melbourne Central Station as default starting point) is acceptable within the published Sprint 1 "basic direction finding" scope. No scope change to the sprint backlog is required. | Custom From/To input validation removed from Sprint 1 scope. Soft protection applied via plugin configuration. Constraint documented as R010 in Risk Register. | Record R010 in Risk Management artefact; review impact on Sprint 2 authentication story (US-07) at Sprint 2 Planning. |
 
 ### Follow-up Action Register
 
-| Action ID     | Action Item                                                  | Assigned To    | Status         | Due Date       |
-| ------------- | ------------------------------------------------------------ | -------------- | -------------- | -------------- |
-| None recorded | No formal follow-up action has been raised from an external stakeholder decision at this stage. | Not applicable | Not applicable | Not applicable |
+| Action ID | Action Item                                                                                 | Assigned To | Status    | Due Date          |
+| --------- | ------------------------------------------------------------------------------------------- | ----------- | --------- | ----------------- |
+| FDA-001   | Record Code Snippets 403 constraint as R010 in Risk Register and Risk Monitoring artefacts. | Fazheng Xu  | Completed | 26 April 2026     |
+| FDA-002   | Review R010 impact on US-07 authentication story at Sprint 2 Planning.                      | Manting Yu  | Pending   | Sprint 2 Planning |
 
 ## Integrating Action Items and Stakeholder Decisions
 
@@ -32,3 +34,11 @@ At the initial Project Execution Plan stage, no external stakeholder decisions o
 # GenAI Use Statement
 
 GenAI is used for language checking.
+
+## Sprint 1 Review Note
+
+Reviewed at Sprint 1 close (27 April 2026) by the Scrum Master
+and Product Owner. One stakeholder decision recorded during Sprint 1
+(soft protection approach for US-04 confirmed by Product Owner on
+25 April 2026). All resulting actions have been logged above and
+carried into Sprint 2 planning artefacts.

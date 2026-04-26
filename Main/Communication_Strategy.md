@@ -31,3 +31,13 @@
 | Stakeholder Clarification Checkpoint      | Virtual or official subject communication channel | A clarification request is required for committed work and no response is available within the agreed time window. | Proceed with the safest interpretation supported by the published artefacts, document the assumption in the relevant artefact, and update the backlog or risk register if the eventual clarification changes scope. |
 | Sprint Review                             | Virtual or face-to-face                           | Teaching staff are unavailable, or a technical issue prevents a live demonstration. | Provide a concise written summary and supporting evidence through the agreed channel, request asynchronous feedback if necessary, and record any resulting decision in the Project Decisions and Actions log. |
 | Sprint Retrospective                      | Virtual                                           | Improvement actions are repeated across sprints without closure. | Convert unresolved improvement items into explicit follow-up actions with an owner and due date, and review them at the next planning session. |
+
+---
+## Sprint 1 Review Note
+
+Reviewed at Sprint 1 close (27 April 2026) by the Scrum Master 
+and Product Owner. No changes to this document were required 
+during Sprint 1. Content remains consistent with the Week 5 
+PEP submission. Any changes arising from teaching staff feedback 
+will be recorded in Main/Project_Decisions_and_Actions.md and 
+applied before Sprint 2 Planning.
