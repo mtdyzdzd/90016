@@ -48,7 +48,7 @@ This checklist records the Sprint 1 close-out check against the published Sprint
 | Acceptance criteria use BDD-style wording. | Checked | Product Backlog, Sprint Planning, and QA use Given/When/Then acceptance criteria or test scenarios. |
 | Estimates and task breakdown are visible. | Checked | Sprint Planning records relative estimation rationale and Sprint Backlog records task ownership/tracking. |
 | Requirement changes are not hidden. | Checked | `US-02` library-scope deletion is recorded in backlog, planning, burn-down, risk, decisions, QA, showcase, and retrospective. |
-| Burn-down is not artificially smoothed. | Checked | Ideal line stays fixed; actual/reforecast line shows Day 5 downward change and Day 12 upward rework. |
+| Burn-down is not artificially smoothed. | Checked | Ideal line stays fixed; actual/reforecast line shows Day 5 downward change and Day 12 upward rework. The actual/reforecast line is also described as a risk-response tracking signal for `R004` and `R006`. |
 | Defects and unresolved constraints are recorded. | Checked | `DEF-001` to `DEF-006` record API, route visibility, Code Snippets, marker colour, zoom, and direction category constraints. |
 | Evidence is stored and linked. | Checked | Screenshots are stored under `Sprint_1/etc/`, including `S1_Directions_Route.png`. |
 | Release tag and final commit comments. | Pending operational step | `as2.md` mentions release tag and commit comments. These should be done only after team review identifies the final submission commit. |
@@ -79,7 +79,7 @@ This checklist records the Sprint 1 close-out check against the published Sprint
 | ------------------- | ------ | --------------------------------------- |
 | Live WordPress page accessibility and map loading. | Needs final operational check | Re-open the public/submission page before creating the release tag and confirm the map, marker popups, and route evidence still load. Screenshots remain in Git as repository evidence if the page requires login or plugin assets fail during review. |
 | Dataset traceability for US-02. | Documented | Keep the required evidence limited to City of Melbourne area library records and ensure any final raw-data note or upload, if requested, matches the latest-year/library-only rule. |
-| Asynchronous demo video expectation. | Conditional | The Git showcase contains screenshots and a demo sequence. If the assessment channel requests video, record the same five-step run-through after the final commit/tag is agreed. |
+| Asynchronous demo video expectation. | Conditional / not identified as mandatory for Sprint 1 | Sprint 1 notes ask for a Demo Summary with screenshots/descriptions/videos as appropriate. The Git showcase contains screenshots and a demo sequence; record video only if the assessment channel or tutor explicitly requests it for Sprint 1. |
 | Release tag and commit comments. | Pending team approval | Create the final commit and release tag only after confirming no teammate is editing the same artefacts. Use a descriptive message such as `Update Sprint 1 artefacts and evidence`. |
 | Unresolved constraints. | Documented | `DEF-003`, `DEF-005`, and `DEF-006` are intentionally carried forward and should not be described as hidden or fully solved implementation work. |
 
@@ -87,11 +87,11 @@ This checklist records the Sprint 1 close-out check against the published Sprint
 
 | Item | Status | Note |
 | ---- | ------ | ---- |
-| Sprint 1 artefacts updated in Git working tree. | Complete locally | Files are updated in the local working repo and prepared in the team repo working tree, but not committed or pushed yet. |
-| Commit comments are descriptive. | Pending final team commit | Recommended commit message: `Update Sprint 1 artefacts and evidence`. |
+| Sprint 1 artefacts updated in Git working tree. | Baseline committed; follow-up edits pending if adopted | A Sprint 1 baseline commit now exists on the team repository main branch. The current post-commit refinements should be committed separately if the team accepts them. |
+| Commit comments are descriptive. | Baseline commit completed; follow-up message needed if adopted | Use a short descriptive message for the follow-up commit, for example `Refine Sprint 1 risk tracking and ownership`. |
 | Release tag created. | Pending team approval | `as2.md` mentions release tag. Do not create a tag until the team agrees which final commit represents the Sprint 1 submission baseline. |
-| Team review before main branch commit. | Pending team approval | Because teammates have been updating `main` directly, final commit/tag should happen only after confirming no one is editing the same artefacts. |
+| Team review before release tag. | Pending team approval | Because teammates have been updating `main` directly, the final release tag should happen only after confirming no one needs further edits to the Sprint 1 artefacts. |
 
 ## Close-out Summary
 
-Sprint 1 documentation is ready for team review. The main remaining action is operational rather than content-related: agree on the final team repository commit and release tag after confirming no teammate has conflicting uncommitted work.
+Sprint 1 documentation is ready for team review. A baseline team-repository commit has been created. The main remaining operational action is to decide whether the post-commit refinements should be committed and then agree on the final release tag baseline.

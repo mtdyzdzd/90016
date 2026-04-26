@@ -61,7 +61,7 @@
 | ----------- | ----- | -------- | ------ |
 | Add story-level QA checks during Sprint 2 Planning, including acceptance criteria and visual/category checks. | @Conghao Lin and @Zihan Shi | Sprint 2 Planning | Planned |
 | Run early feasibility checks for WordPress permissions, plugin configuration, and API dependencies before deep implementation work. | @Fazheng Xu and @Jiajun Jiang | First Sprint 2 checkpoint | Planned |
-| Update burn-down and Sprint Backlog tracking during each checkpoint rather than only at close-out. | @Manting Yu | Throughout Sprint 2 | Planned |
+| Update burn-down and Sprint Backlog tracking during each checkpoint rather than only at close-out, including explicit use of the Actual / Reforecast Remaining line when risks or clarification change remaining effort. | @Manting Yu and @Fazheng Xu | Throughout Sprint 2 | Planned |
 | Keep Product Backlog, Sprint Backlog, Defect Log, QA, and Showcase wording aligned with observed live-site behaviour. | Scrum Team | Throughout Sprint 2 | Planned |
 | Add a requirement-change review item to Sprint 2 checkpoints and update burn-down when scope is added, deleted, or clarified. | Product Owner and Scrum Master | Throughout Sprint 2 | Planned |
 | Validate whether Sprint 2 map/filter stories need category-aware marker lookup and whether route waypoint styling can be customised or clearly explained. | @Fazheng Xu, @Jiajun Jiang, and @Zihan Shi | Sprint 2 Planning / first checkpoint | Planned |

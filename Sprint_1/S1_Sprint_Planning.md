@@ -162,6 +162,8 @@ These activities are tracked in more detail in the Sprint Backlog, the Daily Sta
 
 ## Detailed Task Breakdown
 
+`🟣` marks a risk-mitigation task folded into the relevant user story rather than separated as a standalone risk story. In Sprint 1 this is used for `R004` because the direction workflow carried environment uncertainty around WP Go Maps, OpenRouteService, and WordPress permissions.
+
 ### US-01 Detailed Tasks
 
 - `US1_T1` Confirm the approved list of selected university building locations and required marker fields. Owner: `@Zihan Shi`.
@@ -191,12 +193,12 @@ This story is broken down so that scope, interaction, data wiring, and QA can be
 
 ### US-04 Detailed Tasks
 
-- `US4_T1` Confirm the approved Sprint 1 interpretation of "basic direction finding" and identify which WordPress-compatible direction approach is realistic enough to investigate further. Owner: `@Zihan Shi`.
-- `US4_T2` Configure the user interaction for selecting a destination and entering or choosing a starting point, but only at the minimum level supported by the approved environment. Owner: `@Jiajun Jiang`.
-- `US4_T3` Connect the selected destination to the available basic direction response within the approved environment, or document why the current WordPress-compatible options are not yet sufficient. Owner: `@Fazheng Xu`.
+- `US4_T1 🟣` Confirm the approved Sprint 1 interpretation of "basic direction finding" and identify which WordPress-compatible direction approach is realistic enough to investigate further. Owner: `@Zihan Shi`.
+- `US4_T2 🟣` Configure the user interaction for selecting a destination and entering or choosing a starting point, but only at the minimum level supported by the approved environment. Owner: `@Jiajun Jiang`.
+- `US4_T3 🟣` Connect the selected destination to the available basic direction response within the approved environment, or document why the current WordPress-compatible options are not yet sufficient. Owner: `@Fazheng Xu`.
 - `US4_T4` Validate the direction workflow, including visible handling of incomplete, invalid, or unsupported inputs. Owner: `@Conghao Lin`.
 
-This breakdown is intentionally conservative because US-04 carries the highest uncertainty in Sprint 1. `US4_T1` exists to lock scope before technical work expands; `US4_T2` and `US4_T3` carry most of the feasibility risk; and `US4_T4` ensures the story is not treated as complete unless unsupported or incomplete paths are handled honestly.
+This breakdown is intentionally conservative because US-04 carries the highest uncertainty in Sprint 1. `US4_T1 🟣` exists to lock scope before technical work expands; `US4_T2 🟣` and `US4_T3 🟣` carry most of the feasibility risk; and `US4_T4` ensures the story is not treated as complete unless unsupported or incomplete paths are handled honestly.
 
 ## Sprint Commitment
 

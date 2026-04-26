@@ -83,6 +83,17 @@ The risk register below documents the most important risks identified at the Wee
 | R005 | Controlled | QA and documentation time was compressed late in the sprint, but final validation and evidence were completed before the submission checkpoint. | Sprint Backlog close-out, route screenshot evidence, and Sprint Showcase update. |
 | R006 | Materialised as controlled clarification | Updated Sprint 1 requirement text narrowed `US-02` to City of Melbourne area library locations and removed university/public library colour distinction. This reduced required validation scope without removing the `US-02` story from the sprint. | Product Backlog, Sprint Planning, Sprint Backlog, QA, Showcase, Decisions and Actions, Risk Monitoring, and Burn-down updates. |
 
+## Sprint 1 Risk Response Tracking Strategy
+
+Sprint 1 used the **Actual / Reforecast Remaining** line in the burn-down chart as a practical risk-response tracking mechanism. The team kept the original story-point commitment and the accepted-story burn-down unchanged, but used the reforecast line to make risk impact visible when remaining effort changed inside committed stories.
+
+This strategy was applied to:
+
+- `R004`, where direction workflow uncertainty became concrete rework through ORS/API configuration and WordPress permission constraints.
+- `R006`, where a Sprint 1 requirement clarification reduced the amount of validation work needed for `US-02`.
+
+This approach supports the risk register because it links risk treatment to observable sprint data rather than leaving risk responses only as narrative notes.
+
 ## Sprint 1 Pre-submission Risk Addendum
 
 These items were identified during Sprint 1 close-out. They do not change the completed story status, but they should be checked before the final team commit, release tag, or assessment upload.
@@ -91,7 +102,7 @@ These items were identified during Sprint 1 close-out. They do not change the co
 | --------- | -------------- | ----------------- |
 | Live evidence accessibility | _"The WordPress page or map plugin assets are unavailable during review -> the reviewer cannot reproduce the live demonstration -> Sprint 1 implementation evidence appears weaker than the completed artefacts."_ | Retain screenshots in `Sprint_1/etc/`, link them from Showcase and QA, and re-check the live WordPress page immediately before the final release tag. |
 | Dataset traceability | _"The required library dataset reduction is not explicit enough -> the reviewer may question whether US-02 used latest-year library records only -> acceptance evidence may appear under-supported."_ | QA and Showcase now state the latest-year/library-only rule and limit required US-02 evidence to the City of Melbourne library marker. Optional university library markers are contextual only. |
-| Submission mechanics | _"The final Git commit, release tag, or optional video evidence is not aligned with the submitted artefacts -> the repository baseline becomes unclear -> assessment traceability is reduced."_ | Keep release tag pending until team approval, use a descriptive commit message, and record any required video after the final commit/tag baseline is agreed. |
+| Submission mechanics | _"The final Git commit, release tag, or conditional video evidence is not aligned with the submitted artefacts -> the repository baseline becomes unclear -> assessment traceability is reduced."_ | Keep release tag pending until team approval, use a descriptive commit message, and record video only if Sprint 1 submission instructions explicitly request it after the final commit/tag baseline is agreed. |
 
 ## Risk Review Approach
 

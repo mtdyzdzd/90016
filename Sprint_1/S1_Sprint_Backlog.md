@@ -19,6 +19,8 @@
 
 Daily tracking records the remaining story points for the user story. To keep the table readable, the story-level remaining SP is shown on the first task row for each user story; the supporting task rows record ownership and final task status.
 
+`🟣` = Risk mitigation task folded into the user story (`R004` - direction workflow environment uncertainty).
+
 | User Story ID | User Story | Task ID | Task Description | Owner | Status | Est. Effort (SP) | Day 1 | Day 2 | Day 3 | Day 4 | Day 5 | Day 6 | Day 7 | Day 8 | Day 9 | Day 10 | Day 11 | Day 12 | Day 13 | Day 14 |
 | ------------- | ---------- | ------- | ---------------- | ----- | ------ | ---------------- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ------ | ------ | ------ | ------ | ------ |
 | US-01 | As a student or outreach planner, I want to view selected University of Melbourne and RMIT University building locations on an interactive map, so that I can identify relevant university sites for outreach coordination. | US1_T1 | Confirm the approved list of selected university building locations and the marker fields required for WordPress map entry. | @Zihan Shi | Done | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 0 | 0 | 0 | 0 |
@@ -36,11 +38,11 @@ Daily tracking records the remaining story points for the user story. To keep th
 |  |  | US3_T3 | Link the prepared marker data to the basic detail display for each selected location. | @Fazheng Xu | Done | 2 |  |  |  |  |  |  |  |  | Completed |  |  |  |  |  |
 |  |  | US3_T4 | Validate the detail display for correctness, completeness, and acceptance-criteria coverage across the selected Sprint 1 locations. | @Conghao Lin | Done | 2 |  |  |  |  |  |  |  |  | Completed |  |  |  |  |  |
 |  |  | US3_T5 | Monitor US-03 delivery progress and update sprint artefacts accordingly. | @Manting Yu | Done | 2 | Started |  |  |  |  |  |  |  | Completed |  |  |  |  |  |
-| US-04 | As a user, I want to obtain basic directions from a nominated starting point to a selected location, so that I can understand how to reach that site. | US4_T1 | Confirm the approved Sprint 1 interpretation of "basic direction finding" and identify a WordPress-compatible starting-point approach worth testing. | @Zihan Shi | Done | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 0 |
-|  |  | US4_T2 | Configure the user interaction for selecting a destination and entering or choosing a starting point. | @Jiajun Jiang | Done | 3 |  |  |  | Started |  |  | In Progress |  | In Progress |  | Blocked | Blocked | Completed |  |
-|  |  | US4_T3 | Connect the selected destination to the available basic direction response within the approved environment. | @Fazheng Xu | Done | 3 |  |  |  |  |  |  |  |  | In Progress |  | Blocked | Blocked | Completed |  |
+| US-04 | As a user, I want to obtain basic directions from a nominated starting point to a selected location, so that I can understand how to reach that site. | US4_T1 🟣 | Confirm the approved Sprint 1 interpretation of "basic direction finding" and identify a WordPress-compatible starting-point approach worth testing. | @Zihan Shi | Done | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 0 |
+|  |  | US4_T2 🟣 | Configure the user interaction for selecting a destination and entering or choosing a starting point. | @Jiajun Jiang | Done | 3 |  |  |  | Started |  |  | In Progress |  | In Progress |  | Blocked | Blocked | Completed |  |
+|  |  | US4_T3 🟣 | Connect the selected destination to the available basic direction response within the approved environment. | @Fazheng Xu | Done | 3 |  |  |  |  |  |  |  |  | In Progress |  | Blocked | Blocked | Completed |  |
 |  |  | US4_T4 | Validate the direction workflow, including visible handling of incomplete, invalid, or unsupported inputs. | @Conghao Lin | Done | 3 |  |  |  |  |  |  |  |  | Queued |  |  | Queued | Completed |  |
-|  |  | US4_T5 | Monitor US-04 blocker status, coordinate ORS/API escalation, and document constraint resolution in sprint artefacts. | @Manting Yu | Done | 3 | Started |  |  |  |  |  | Escalated |  |  |  | Escalated | In Progress | Completed |  |
+|  |  | US4_T5 🟣 | Monitor US-04 blocker status, coordinate ORS/API escalation, and document constraint resolution in sprint artefacts. | @Manting Yu | Done | 3 | Started |  |  |  |  |  | Escalated |  |  |  | Escalated | In Progress | Completed |  |
 
 ## Sprint 1 Implementation Notes
 
@@ -67,3 +69,4 @@ Task ownership is assigned to named team members rather than generic workstream 
 - Checkpoint columns are updated when there is meaningful movement, blocker escalation, or completion evidence.
 - Completed stories are only shown as 0 remaining after implementation, QA/validation, peer review, and evidence are sufficient for the Definition of Done.
 - US-04 remains visible as a late-sprint plateau because the route workflow was blocked by API/configuration and WordPress permission constraints before final validation.
+- The `🟣` task marker makes the R004 risk response visible inside the Sprint Backlog rather than creating a separate risk story that would duplicate the committed US-04 work.

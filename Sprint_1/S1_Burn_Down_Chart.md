@@ -26,6 +26,17 @@ To keep the chart honest rather than artificially smooth:
 - The original committed story points did not change; the temporary downward and upward movements represent reforecast effort caused by requirement clarification and discovered implementation work.
 - If future sprint work introduces new scope or failed validation, the actual line should be updated upward rather than retrospectively smoothed.
 
+## Risk Response Use of the Actual / Reforecast Line
+
+The **Actual / Reforecast Remaining** line is also used as a Sprint 1 risk-response and monitoring strategy. It does not replace the accepted-story burn-down line and does not change the original Sprint 1 commitment. Instead, it gives the Scrum Team a visible way to record when a risk or clarification changes the amount of remaining work inside the committed stories.
+
+This was useful in two Sprint 1 cases:
+
+- `R006` materialised when the `US-02` library requirement was clarified. The line moved downward on Day 5 because the required validation scope was reduced.
+- `R004` materialised when the direction workflow exposed ORS/API and WordPress permission constraints. The line moved upward on Day 12 because additional rework was needed before `US-04` could be accepted.
+
+Using this line as a risk-response signal helps the team avoid two weak Scrum behaviours: silently rewriting the sprint history, or smoothing the burn-down after the fact so that risks and rework disappear from the artefact.
+
 ## Requirement Deletions and Burn-down Treatment
 
 The current Sprint 1 requirement text removes two earlier library-related assumptions: university library locations are no longer required for `US-02`, and university/public library colour distinction is no longer required. This is not shown by deleting `US-02` from the sprint, because the story still requires City of Melbourne library marker configuration, popup details, QA, and evidence.

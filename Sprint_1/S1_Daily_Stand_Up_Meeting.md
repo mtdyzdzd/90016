@@ -97,5 +97,6 @@ The SWEN90016 stand-up guide allows teams to run stand-ups at least twice per we
 | AI-007 | Replace invalid route evidence screenshot and verify Sprint Showcase image paths. | @Jiajun Jiang | Completed | 2026-04-26 |
 | AI-008 | Reconcile burn-down, Sprint Backlog, and close-out status against final DoD evidence. | @Manting Yu and @Conghao Lin | Completed | 2026-04-26 |
 | AI-009 | Fix and retest US-01 building marker colour distinction. | @Fazheng Xu and @Conghao Lin | Completed | 2026-04-26 |
-| AI-010 | Record the updated `US-02` library requirement as a clarification and align Product Backlog, Sprint Planning, Sprint Backlog, QA, Showcase, Risk Monitoring, and Burn-down. | @Zihan Shi and @Manting Yu | Completed | 2026-04-26 |
+| AI-010 | Record the updated `US-02` library requirement as a clarification and align Product Backlog, Sprint Planning, Sprint Backlog, QA, Showcase, Risk Monitoring, and Burn-down. | @Zihan Shi, @Manting Yu, and @Fazheng Xu | Completed | 2026-04-26 |
 | AI-011 | Record limited close-detail zoom and default route waypoint/category limitations as accepted Sprint 1 constraints. | @Conghao Lin and @Fazheng Xu | Completed | 2026-04-26 |
+| AI-012 | Restore explicit `R004` risk-mitigation task tags and document Actual / Reforecast Remaining as a risk-response tracking signal. | @Fazheng Xu | Completed | 2026-04-26 |

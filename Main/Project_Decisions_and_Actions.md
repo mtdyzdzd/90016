@@ -22,6 +22,7 @@ At the initial Project Execution Plan stage, no external stakeholder decisions w
 | 2026-04-26 | Product Owner / Scrum Team | The accepted US-04 soft-protection behaviour is: Get Directions is triggered from a selected marker, the destination field is auto-populated from that marker, and the user enters or confirms the starting point. | Sprint 1 documentation must not claim that the From field is pre-filled by default. The Showcase should describe the observed live-site behaviour. | Update Product Backlog, Sprint Backlog, Defect Log, Stand-up, Burn-down, and Showcase artefacts before submission. |
 | 2026-04-26 | QA Lead / Scrum Team | The US-01 colour distinction requirement will be satisfied through marker icon colour: Old Arts Building uses blue and RMIT Building 80 uses green. | Sprint 1 can honestly mark US-01 as Done because the final QA gap was fixed and retested before artefact close-out. | Record `DEF-004` as closed and refresh map overview evidence. |
 | 2026-04-26 | QA Lead / Scrum Team | Limited close-detail zoom and default direction waypoint marker colours are accepted as Sprint 1 constraints, not blockers, because Sprint 1 only requires an interactive map, marker details, and basic directions. | Sprint 1 remains complete, but Sprint 2 planning should review map usability, marker/category data modelling, and route-input validation before category-specific behaviour is promised. | Record `DEF-005` and `DEF-006`; add QA/checklist/showcase notes and carry forward follow-up actions. |
+| 2026-04-26 | Scrum Team | The Actual / Reforecast Remaining line in the burn-down chart will be used as a risk-response signal for requirement clarifications and discovered rework. | The burn-down can show Day 5 downward reforecast for `R006` and Day 12 upward reforecast for `R004` without changing the original Sprint 1 commitment or hiding rework. | Update Burn-down, Risk Management, Risk Monitoring, Sprint Planning, Sprint Backlog, and Checklist wording so this strategy is explicit. |
 
 ### Follow-up Action Register
 
@@ -33,9 +34,10 @@ At the initial Project Execution Plan stage, no external stakeholder decisions w
 | ACT-04 | Correct artefacts that described the From field as pre-filled after live-site review showed that the destination field is auto-populated instead. | @Fazheng Xu | Completed | 2026-04-26 |
 | ACT-05 | Replace invalid route screenshot evidence and verify Sprint Showcase image links. | @Jiajun Jiang | Completed | 2026-04-26 |
 | ACT-06 | Fix and retest US-01 building marker colour distinction, then refresh Sprint Showcase evidence. | @Fazheng Xu and @Conghao Lin | Completed | 2026-04-26 |
-| ACT-07 | Align `US-02` artefacts with the updated City of Melbourne library requirement and record the deleted university-library/library-colour requirements as a traceable clarification. | @Zihan Shi and @Manting Yu | Completed | 2026-04-26 |
+| ACT-07 | Align `US-02` artefacts with the updated City of Melbourne library requirement and record the deleted university-library/library-colour requirements as a traceable clarification. | @Zihan Shi, @Manting Yu, and @Fazheng Xu | Completed | 2026-04-26 |
 | ACT-08 | Record the limited close-detail zoom observation and carry it into Sprint 2 map usability review. | @Jiajun Jiang and @Conghao Lin | Completed | 2026-04-26 |
 | ACT-09 | Record the default route waypoint colour and free-text category-classification limitation for Sprint 2 validation planning. | @Fazheng Xu and @Zihan Shi | Completed | 2026-04-26 |
+| ACT-10 | Restore explicit `R004` risk-mitigation task tags and describe the Actual / Reforecast Remaining line as a risk-response tracking strategy. | @Fazheng Xu | Completed | 2026-04-26 |
 
 ## Integrating Action Items and Stakeholder Decisions
 
