@@ -18,7 +18,7 @@ This record is the 11 May rollback/restoration checkpoint. The 11 May follow-up 
 
 ## Rollback Point Before Sprint 2 Component Import
 
-The current WP Go Maps map state was backed up locally before further Sprint 2 component work. The raw JSON backup is kept as a local rollback asset, but it is excluded from the formal evidence set. This record keeps the reviewer-facing summary: map ID 1 contained five marker records and directions remained enabled.
+The current WP Go Maps map state was reviewed before further Sprint 2 component work. This record keeps the reviewer-facing summary: map ID 1 contained five marker records and directions remained enabled.
 
 ## Sprint 2 Component Preparation
 
@@ -30,11 +30,11 @@ Sprint 2 school data has been prepared for repeatable component-based implementa
 - `Sprint_2/etc/S2_WPGoMaps_Filter_Model.csv`
 - `Sprint_2/etc/generate_sprint2_school_outputs.py`
 
-At the 11 May restore checkpoint, the import path was still being evaluated against the Sprint 1 rollback point. After the 11 May follow-up, the current user-facing page uses a controlled school-map widget; the marker import file is retained as historical evidence and includes marker title, coordinates, popup description, website/logo fields for the six nearest secondary schools, and custom-field columns for education sector, school type, area, suburb, nearest-six flag, and distance from Melbourne Connect.
+After the 11 May follow-up, the current user-facing page uses a controlled school-map widget; the marker import file is retained as evidence and includes marker title, coordinates, popup description, website/logo fields for the six nearest secondary schools, and custom-field columns for education sector, school type, area, suburb, nearest-six flag, and distance from Melbourne Connect.
 
-## Open Implementation Point
+## Historical Constraint Resolved by Final Widget
 
-The WP Go Maps admin UI currently provides only one editable map. Attempting to duplicate the Sprint 1 map did not create a second map, and the plugin UI reported a JavaScript table error during the duplicate attempt. Because of that, importing the Sprint 2 school dataset would modify the only current map. The import should be done only after confirming that the local rollback asset is acceptable.
+The WP Go Maps admin UI currently provides only one editable map. Attempting to duplicate the Sprint 1 map did not create a second map, and the plugin UI reported a JavaScript table error during the duplicate attempt. Because importing the Sprint 2 school dataset into that map would affect the Sprint 1 baseline, the final page uses a separate controlled Sprint 2 school-map widget while retaining the generated import files as traceable data evidence.
 
 ## Current Acceptance Position
 

@@ -11,7 +11,7 @@ The live page is no longer the rejected single full-page Custom HTML prototype. 
 - Gutenberg blocks for the editable page shell, hero text, side evidence card, and page structure.
 - One controlled map-widget block for the Sprint 2 school search/filter/results behaviour.
 - The generated widget reads the reduced 913-record school dataset and filters visible markers by radius and category controls.
-- The earlier WP Go Maps `map ID 2` import path remains as local evidence and rollback comparison, but the current user-facing Sprint 2 map does not render all imported markers by default.
+- The earlier WP Go Maps `map ID 2` import path remains as data-preparation evidence, but the current user-facing Sprint 2 map does not render all imported markers by default.
 - Sprint 1 `map ID 1` remains the campus/library baseline and rollback reference.
 - A targeted CSS rule centres the Sprint 2 shell on wide screens so the page does not leave excessive blank space on the right side while preserving the Gutenberg shell and controlled widget.
 
@@ -25,12 +25,12 @@ The map area is implemented as a controlled HTML widget as a bounded response to
 | -------- | ---- |
 | Reduced school data | `Sprint_2/etc/S2_Reduced_School_Locations_2025.csv` |
 | Nearest-six evidence | `Sprint_2/etc/S2_Nearest_Secondary_Schools.csv` |
-| Historical WP Go Maps marker import for `map ID 2` | `Sprint_2/etc/S2_WPGoMaps_Marker_Import.csv` |
+| WP Go Maps marker import evidence for `map ID 2` | `Sprint_2/etc/S2_WPGoMaps_Marker_Import.csv` |
 | Historical WP Go Maps filter model | `Sprint_2/etc/S2_WPGoMaps_Filter_Model.csv` |
 | CSV-generation helper script | `Sprint_2/etc/generate_sprint2_school_outputs.py` |
 | Component restore record | `Sprint_2/etc/S2_Component_Restore_Verification_2026-05-11.md` |
 
-Raw page-generation scripts, temporary HTML backups, local browser previews, and raw WP backup JSON are excluded from the formal evidence set. The live page remains the source of truth for the current component-based school-map behaviour.
+The live page remains the source of truth for the current component-based school-map behaviour.
 
 ## Live Verification Results
 
@@ -68,4 +68,4 @@ Raw page-generation scripts, temporary HTML backups, local browser previews, and
 
 ## Maintenance Note
 
-The live-site update followed the WordPress admin UI using Gutenberg block markup and a controlled map widget. No direct database edits, hidden browser-side content patching, or manual 913-marker clicking were used for this checkpoint.
+The live-site update followed the WordPress admin UI using Gutenberg block markup and a controlled map widget. The Sprint 2 dataset was prepared through repeatable CSV generation rather than manual marker entry.

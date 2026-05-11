@@ -58,7 +58,7 @@ The source file is the official Victorian School Locations 2025 CSV linked from 
 - `Sprint_2/etc/generate_sprint2_school_outputs.py`
 - `Sprint_2/etc/S2_Component_Restore_Verification_2026-05-11.md`
 
-The reduction rule produced **913 open school records**, which is close to the expected "about 900 records" requirement. The local evidence file keeps the fields needed for Sprint 2 map rendering, filtering, and QA: school name, sector, type, suburb, area, LGA, coordinates, distance from Melbourne Connect, and nearest-six enrichment fields. The first full-page prototype and raw WP backup files are not included in the formal evidence set; the current implementation path is an editable Gutenberg page shell plus one controlled school-map widget, with component restore notes and import/filter CSV artefacts retained as baseline-protection evidence.
+The reduction rule produced **913 open school records**, which is close to the expected "about 900 records" requirement. The repository evidence file keeps the fields needed for Sprint 2 map rendering, filtering, and QA: school name, sector, type, suburb, area, LGA, coordinates, distance from Melbourne Connect, and nearest-six enrichment fields. The current implementation path is an editable Gutenberg page shell plus one controlled school-map widget, with component restore notes and import/filter CSV artefacts retained as baseline-protection evidence.
 
 ## Sprint 2 Execution Timeline
 
