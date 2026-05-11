@@ -4,7 +4,7 @@
 
 The first Sprint 2 site update replaced the WordPress page structure with a single large Custom HTML implementation. That approach produced the school-map behaviour locally, but it removed the Gutenberg editing trail from the editable page. The page has therefore been restored to the component-style Sprint 1 baseline before any further Sprint 2 school-map work.
 
-This record is the 11 May rollback/restoration checkpoint. The 12 May follow-up uses the restored page shell with a controlled Sprint 2 school-map widget; see `Sprint_2/etc/S2_Live_Site_Verification_2026-05-12.md`.
+This record is the 11 May rollback/restoration checkpoint. The 11 May follow-up uses the restored page shell with a controlled Sprint 2 school-map widget; see `Sprint_2/etc/S2_Live_Site_Verification_2026-05-11_Final.md`.
 
 ## Restored Live Page State
 
@@ -30,7 +30,7 @@ Sprint 2 school data has been prepared for repeatable component-based implementa
 - `Sprint_2/etc/S2_WPGoMaps_Filter_Model.csv`
 - `Sprint_2/etc/generate_sprint2_school_outputs.py`
 
-At the 11 May restore checkpoint, the import path was still being evaluated against the Sprint 1 rollback point. After the 12 May follow-up, the current user-facing page uses a controlled school-map widget; the marker import file is retained as historical evidence and includes marker title, coordinates, popup description, website/logo fields for the six nearest secondary schools, and custom-field columns for education sector, school type, area, suburb, nearest-six flag, and distance from Melbourne Connect.
+At the 11 May restore checkpoint, the import path was still being evaluated against the Sprint 1 rollback point. After the 11 May follow-up, the current user-facing page uses a controlled school-map widget; the marker import file is retained as historical evidence and includes marker title, coordinates, popup description, website/logo fields for the six nearest secondary schools, and custom-field columns for education sector, school type, area, suburb, nearest-six flag, and distance from Melbourne Connect.
 
 ## Open Implementation Point
 
@@ -38,4 +38,4 @@ The WP Go Maps admin UI currently provides only one editable map. Attempting to 
 
 ## Current Acceptance Position
 
-This restore corrects the page architecture and preserves Sprint 1 evidence. It does not by itself complete US-05, US-06, or US-07 on the live site. The 12 May follow-up accepts US-05 and US-06 after the controlled widget verifies default Melbourne Connect state, 1 km distance, kilometre units, controlled marker visibility, location/coordinate search, nearby results, and no-match handling. US-07 remains open for fuller filter-combination evidence and all six popup checks.
+This restore corrects the page architecture and preserves Sprint 1 evidence. It does not by itself complete US-05, US-06, or US-07 on the live site. The 11 May follow-up accepts US-05, US-06, and US-07 after the controlled widget verifies default Melbourne Connect state, 1 km distance, kilometre units, controlled marker visibility, location/coordinate search, nearby results, no-match handling, category-filter combinations, nearest-six filtering, and all six popup checks.

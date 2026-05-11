@@ -140,6 +140,7 @@ This repository helps you document and execute Scrum SDLC processes for **Assign
 - Daily Stand-up Meeting  
 - Sprint Burndown Chart  
 - Sprint Quality Assurance 
+- Sprint Scrum Artefact Checklist
 - Sprint Showcase Outcomes  
 - Sprint Retrospective
 - Sprint Risk Monitoring

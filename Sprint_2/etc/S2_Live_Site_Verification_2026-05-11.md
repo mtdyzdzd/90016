@@ -4,7 +4,7 @@
 
 This record verifies the live WordPress page after the Sprint 2 component correction. The current home page is `https://swen90016-wp2.its.unimelb.edu.au/t07-g02/`.
 
-This is a historical 11 May checkpoint. It is followed by `Sprint_2/etc/S2_Live_Site_Verification_2026-05-12.md`, where the controlled Sprint 2 school-map widget is recorded as live and verified for US-05 and US-06.
+This is a historical 11 May checkpoint. It is followed by `Sprint_2/etc/S2_Live_Site_Verification_2026-05-11_Final.md`, where the controlled Sprint 2 school-map widget is recorded as live and verified for US-05, US-06, and US-07.
 
 ## Correction Background
 
@@ -34,7 +34,7 @@ Raw page backups and WP backup JSON were retained locally during restoration, bu
 | Reduced dataset count | Pass | `S2_Reduced_School_Locations_2025.csv` contains 913 open school records. |
 | Marker import file generated | Pass | `S2_WPGoMaps_Marker_Import.csv` contains 913 marker rows and is retained as historical import evidence. |
 | Filter model generated | Pass | `S2_WPGoMaps_Filter_Model.csv` lists sector, type, area, suburb, and nearest-six values. |
-| Live Sprint 2 school markers | Open at 11 May | The 913 school records were prepared but not yet verified on 11 May. They are live-verified through the controlled widget in the 12 May follow-up record. |
+| Live Sprint 2 school markers | Open at 11 May | The 913 school records were prepared but not yet verified on 11 May. They are live-verified through the controlled widget in the 11 May follow-up record. |
 | Live default location and distance | Open | Melbourne Connect and 1 km default radius must be verified after import/settings update. |
 | Live search and nearby list | Open | WP Go Maps store locator and marker listing must be configured and verified after import. |
 | Live category filters | Open | Custom-field filtering must be configured and verified after import. |
@@ -47,8 +47,8 @@ Raw page backups and WP backup JSON were retained locally during restoration, bu
 
 | Story | Result |
 | ----- | ------ |
-| US-05 | Not accepted at this 11 May checkpoint; accepted in the 12 May follow-up after default Melbourne Connect, 1 km distance, kilometre units, and controlled marker visibility were verified. |
-| US-06 | Not accepted at this 11 May checkpoint; accepted in the 12 May follow-up after location-name search, coordinate search, nearby results, and no-match handling were verified. |
-| US-07 | Not accepted yet; sampled filters and one popup are verified in the 12 May follow-up, while fuller filter-combination evidence and all six popup checks remain pending. |
+| US-05 | Not accepted at this 11 May checkpoint; accepted in the 11 May follow-up after default Melbourne Connect, 1 km distance, kilometre units, and controlled marker visibility were verified. |
+| US-06 | Not accepted at this 11 May checkpoint; accepted in the 11 May follow-up after location-name search, coordinate search, nearby results, and no-match handling were verified. |
+| US-07 | Not accepted at this 11 May checkpoint; accepted in the 11 May follow-up after category-filter combinations, nearest-six filtering, sector marker colours, and all six popup checks were verified. |
 | US-08 | Accepted on 2026-05-11. |
 | US-09 | Not accepted; keep open. |

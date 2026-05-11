@@ -1,6 +1,6 @@
 # Sprint 2 Live Site Checkpoint - 2026-05-11
 
-This is the 11 May correction checkpoint. It is followed by `Sprint_2/etc/S2_Live_Site_Verification_2026-05-12.md`, where the Sprint 2 controlled school-map widget is recorded as live and verified for US-05 and US-06.
+This is the 11 May correction checkpoint. It is followed by `Sprint_2/etc/S2_Live_Site_Verification_2026-05-11_Final.md`, where the Sprint 2 controlled school-map widget is recorded as live and verified for US-05, US-06, and US-07.
 
 ## Initial Access-Control Check
 
@@ -29,7 +29,7 @@ This gap was recorded as `DEF-007`.
 
 A Sprint 2 school-map prototype was generated and briefly used for review. It showed the school data, search controls, filters, nearest results, and popup enrichment, but it did so by replacing the editable WordPress component page with one large Custom HTML block. This was rejected as the final implementation path because it removed the Gutenberg editing trail from the page editor.
 
-The prototype was useful for comparison, but the raw page backup files are not included in the formal evidence folder. The formal repository keeps this checkpoint note and the later 12 May live verification record instead.
+The prototype was useful for comparison, but the raw page backup files are not included in the formal evidence folder. The formal repository keeps this checkpoint note and the later 11 May live verification record instead.
 
 ## Component Restore Check
 
@@ -61,6 +61,6 @@ US-05, US-06, and US-07 remain open at this 11 May checkpoint until the followin
 - configure and verify custom-field filters,
 - verify nearest-six popup logo and website links.
 
-WP Go Maps map duplication did not create a second map during admin testing, so importing the 913 school markers into `map ID 1` would have affected the Sprint 1 baseline. The 12 May follow-up keeps the Sprint 1 baseline protected by using a controlled school-map widget and separate evidence files; `DEF-009` is closed as a baseline-protection issue.
+WP Go Maps map duplication did not create a second map during admin testing, so importing the 913 school markers into `map ID 1` would have affected the Sprint 1 baseline. The 11 May follow-up keeps the Sprint 1 baseline protected by using a controlled school-map widget and separate evidence files; `DEF-009` is closed as a baseline-protection issue.
 
 Role-specific registration remains open. Public registration redirects to the local signup page, but registration is disabled and no outreach officer/student role choices are present. This remains tracked as `DEF-008` and blocks US-09 acceptance.

@@ -48,7 +48,7 @@ The teaching staff (Andrew Valentine and Rajesh Chittor Sundaram) are the client
 
    **Influence on the PEP:** This assumption affects backlog dependencies for mapping stories, supports effort estimation, and is linked to the data accuracy and completeness risk in the Risk Register.
 
-   **Sprint 2 update:** The official Victorian School Locations 2025 CSV has been reduced locally to 913 open school records across the five required Melbourne areas. This supports Sprint 2 planning and QA, but the assumption is not fully closed until those records are imported/configured and verified on the live WordPress map.
+   **Sprint 2 update:** The official Victorian School Locations 2025 CSV has been reduced locally to 913 open school records across the five required Melbourne areas. As of the 11 May checkpoint, the live WordPress page verifies the reduced school map, Melbourne Connect default state, location/coordinate search, nearby results, category-filter combinations, nearest-six filtering, sector marker colours, and all six nearest-school logo/website popups.
 
 5. **The teaching staff are the only formal stakeholder channel for requirements clarification and acceptance.**
 
@@ -72,7 +72,7 @@ The teaching staff (Andrew Valentine and Rajesh Chittor Sundaram) are the client
 
 1. **Time constraint: the project must be planned and delivered within fixed assessment deadlines.**  
 
-   The PEP submission was due on 12 April 2026, Sprint 1 ran from 13 April 2026 to 27 April 2026, and the current Sprint 2 planning baseline uses 4 May 2026 to 17 May 2026. This leaves limited time for live WordPress configuration and QA after data preparation.
+   The PEP submission was due on 12 April 2026, Sprint 1 ran from 13 April 2026 to 27 April 2026, and the Sprint 1 release/submission on 27 April 2026 is treated as the prior baseline only. It is not counted as a Sprint 2 burn-down day. The Sprint 2 burn-down starts on 28 April 2026, with detailed Sprint 2 work recorded for 1 May to 7 May and 11 May. The 12 May row is intentionally left with no Sprint 2 work content unless new work is completed later.
 
    **Rationale:** The schedule is fixed by the subject and cannot be extended by the team.
 
@@ -131,5 +131,5 @@ Sprint 2 increases the scale of the map from selected campus/library markers to 
 2. **Authentication requirement + default WordPress login -> redirect may be solved before role registration is solved.**
    The team must keep login redirect and role-specific registration separate so the completed part does not hide the open part.
 
-3. **Sprint 1 page still visible + Sprint 2 showcase expectations -> live-site evidence must be updated before claiming Sprint 2 map completion.**
-   The current 11 May live-site check shows Sprint 1 map content, so Sprint 2 map/search/filter stories remain open until the school map is visible and tested.
+3. **Sprint 1 page initially still visible + Sprint 2 showcase expectations -> live-site evidence must be updated before claiming Sprint 2 map completion.**
+   The initial 11 May live-site check still showed Sprint 1 map content. The final 11 May follow-up corrected the page path to an editable Gutenberg shell plus a controlled Sprint 2 school-map widget, verified the map/search/filter/popup requirements for US-05 to US-07, and centred the wide page shell. US-09 remains open because role-specific registration is unavailable.

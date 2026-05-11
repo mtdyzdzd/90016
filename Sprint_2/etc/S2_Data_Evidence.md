@@ -24,8 +24,10 @@ Six closest secondary schools to Melbourne Connect:
 
 Generation script: `Sprint_2/etc/generate_sprint2_school_outputs.py`
 WP Go Maps marker import file: `Sprint_2/etc/S2_WPGoMaps_Marker_Import.csv`
-WP Go Maps target map ID: 2
+WP Go Maps import target used for historical import evidence: map ID 2
 WP Go Maps filter model file: `Sprint_2/etc/S2_WPGoMaps_Filter_Model.csv`
 
 WP Go Maps import reference: https://www.wpgmaps.com/help/docs/importing-files/
 The import file sets `approved` to `1` and uses `Custom Field:<name>` headers for Sprint 2 filter fields.
+
+The current accepted live page does not bulk-render all 913 WP Go Maps markers by default. As recorded in the final 11 May live-verification note, the user-facing Sprint 2 page uses an editable Gutenberg shell plus a controlled school-map widget that reads the reduced data, controls marker density from Melbourne Connect at 1 km, supports search/filter behaviour, and keeps the Sprint 1 map baseline protected.

@@ -10,7 +10,7 @@
 
 The team continues the SWEN90016-compatible pattern of checkpoint updates. Sprint 1 feedback is applied by explicitly following up previous action items instead of only listing new work.
 
-Sprint 2 work is recorded from **1 May to 7 May 2026**, **11 May 2026**, and the follow-up component verification on **12 May 2026**. The burn-down window starts from the Sprint 1 deadline baseline at **27 April 2026 00:00 AEST**, but the detailed Sprint 2 checkpoint log begins on 1 May. The dates **8 May to 10 May 2026** are recorded as non-working dates with no Sprint 2 work content.
+Sprint 2 work is recorded from **1 May to 7 May 2026**, then again on **11 May 2026** for correction, live verification, and wide-layout centring. The Sprint 1 release/submission on **27 April 2026** is treated as the prior baseline only and is not counted as a Sprint 2 burn-down day. The Sprint 2 burn-down window starts on **28 April 2026**, while the detailed Sprint 2 checkpoint log begins on 1 May. The dates **8 May to 10 May 2026** and **12 May 2026** are recorded as dates with no Sprint 2 work content.
 
 ## Stand-up / Checkpoint Log
 
@@ -102,7 +102,7 @@ Sprint 2 work is recorded from **1 May to 7 May 2026**, **11 May 2026**, and the
 
 No Sprint 2 work content recorded.
 
-### Date: 2026-05-11
+### Date: 2026-05-11 (Correction checkpoint)
 
 **Checkpoint Purpose:** Live-site component correction and acceptance verification.
 
@@ -114,26 +114,31 @@ No Sprint 2 work content recorded.
 | @Jiajun Jiang | Restored component-based page structure. | Verify the header, restored page shell, and current marker baseline before Sprint 2 school-map update. | Only one map is currently available for bulk import. | Keep `DEF-007` and `DEF-009` open at the 11 May checkpoint until follow-up QA passes. |
 | @Conghao Lin | Ran QA checklist. | Verify component baseline, import readiness, login redirect, invalid login, and registration status. | Registration disabled; live school import pending. | Accept US-08 only; keep US-05 to US-07 and US-09 open. |
 
-### Date: 2026-05-12
+### Date: 2026-05-11 (Final verification checkpoint)
 
 **Checkpoint Purpose:** Component-based Sprint 2 school-map update and verification.
 
 | Team Member | Previous Work / Follow-up | Today's Plan | Blockers | Next Steps / Action Items |
 | ----------- | ------------------------- | ------------ | -------- | ------------------------- |
-| @Manting Yu | Followed up the 11 May decision that only accepted whole stories should burn down. | Update the burn-down after live QA confirms complete story acceptance. | US-07 and US-09 remain open. | Reduce accepted-story remaining SP to 8 after US-05 and US-06 pass. |
+| @Manting Yu | Followed up the 11 May decision that only accepted whole stories should burn down. | Update the burn-down after live QA confirms complete story acceptance. | US-09 remains open. | Reduce accepted-story remaining SP to 3 after US-05, US-06, and US-07 pass. |
 | @Zihan Shi | Followed up Sprint 2 scope continuity from Sprint 1 map foundation. | Confirm that Sprint 2 uses the restored page shell and preserves Sprint 1 evidence rather than overwriting it. | None. | Update planning, backlog, and decisions to describe the Gutenberg shell plus controlled school-map widget. |
 | @Fazheng Xu | Followed up generated import files and rollback evidence. | Re-run the CSV-generation helper and align the linked Scrum artefacts so evidence matches the current page. | None. | Include the CSV helper and live-verification evidence in the repository. |
-| @Jiajun Jiang | Followed up the component-page restore. | Publish the Sprint 2 Gutenberg shell plus controlled school-map widget and maintain the rounded-card visual style. | Full filter-combination evidence still needs follow-up. | Keep the page editable and avoid returning to a single full-page prototype. |
-| @Conghao Lin | Followed up QA cases from 11 May. | Verify live marker density, default Melbourne Connect state, coordinate search, nearby list, sampled filters, nearest-six filter, sector colours, and one nearby secondary school popup. | Full six-popup evidence and role registration remain open. | Add 12 May QA rows; accept US-05 and US-06, keep US-07 and US-09 open. |
+| @Jiajun Jiang | Followed up the component-page restore. | Publish the Sprint 2 Gutenberg shell plus controlled school-map widget and maintain the rounded-card visual style. | None for US-07 after live verification; role registration remains outside the map widget. | Keep the page editable, centre the wide page shell, and avoid returning to a single full-page prototype. |
+| @Conghao Lin | Followed up QA cases from 11 May. | Verify live marker density, default Melbourne Connect state, coordinate search, nearby list, category-filter combinations, nearest-six filter, sector colours, and all six nearby secondary school popups. | Role registration remains open. | Add 11 May QA rows; accept US-05, US-06, and US-07, keep US-09 open. |
+
+### Date: 2026-05-12
+
+No Sprint 2 work content recorded yet. This section should be updated only if new work is completed on 12 May.
 
 ## Action Items Log
 
 | ID | Task | Assigned To | Status | Due Date | Follow-up Status |
 | -- | ---- | ----------- | ------ | -------- | ---------------- |
-| AI2-001 | Maintain Sprint 2 checkpoint action follow-up and update burn-down only when whole stories are accepted. | @Manting Yu | Completed | 2026-05-12 | Followed from 1 May through 12 May; burn-down accepts US-08 on 11 May and US-05/US-06 on 12 May, leaving US-07 and US-09 visible. |
+| AI2-001 | Maintain Sprint 2 checkpoint action follow-up and update burn-down only when whole stories are accepted. | @Manting Yu | Completed | 2026-05-11 | Followed from 1 May through 11 May; burn-down accepts US-08 on 11 May and US-05/US-06/US-07 on 11 May, leaving US-09 visible. |
 | AI2-002 | Record Sprint 2 story split, acceptance criteria, and scope decisions in planning/backlog artefacts. | @Zihan Shi | Completed | 2026-05-11 | Completed in Sprint Planning and Product Backlog updates. |
-| AI2-003 | Prepare reduced School Locations 2025 dataset and nearest-six secondary school evidence. | @Fazheng Xu | Completed | 2026-05-12 | Completed with 913-record reduced CSV, six-school CSV, import/filter evidence, and the CSV-generation helper script. |
-| AI2-004 | Configure or verify the live school map, search, category filters, and popup enrichment. | @Fazheng Xu and @Jiajun Jiang | In Progress | 2026-05-14 | The live page verifies reduced school-map load, Melbourne Connect default state, location/coordinate search, nearby results, sampled filters, nearest-six filtering, sector marker colours, and one logo/website popup; fuller filter combinations and all six popup checks remain open. |
+| AI2-003 | Prepare reduced School Locations 2025 dataset and nearest-six secondary school evidence. | @Fazheng Xu | Completed | 2026-05-11 | Completed with 913-record reduced CSV, six-school CSV, import/filter evidence, and the CSV-generation helper script. |
+| AI2-004 | Configure or verify the live school map, search, category filters, and popup enrichment. | @Fazheng Xu and @Jiajun Jiang | Completed | 2026-05-11 | The live page verifies reduced school-map load, Melbourne Connect default state, location/coordinate search, nearby results, one-/two-/three-category filters, nearest-six filtering, sector marker colours, and all six logo/website popups. |
 | AI2-005 | Add Sprint 2 QA tests for dataset, map, search, filters, login, and registration. | @Conghao Lin | Completed | 2026-05-11 | QA table records pass/fail/open status. |
 | AI2-006 | Verify invalid-login error without using real credentials. | @Conghao Lin | Completed | 2026-05-11 | Invalid username test returned a WordPress login error. |
 | AI2-007 | Confirm role-registration path for outreach officer and university student. | @Fazheng Xu and @Zihan Shi | Open | 2026-05-14 | Public registration is disabled; keep US-09 open. |
+| AI2-008 | Centre the Sprint 2 page shell on wide screens without replacing the component structure. | @Fazheng Xu and @Jiajun Jiang | Completed | 2026-05-11 | The live page shell is centred through a targeted CSS rule while preserving Gutenberg structure and the controlled school-map widget. |
