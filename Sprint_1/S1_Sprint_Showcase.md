@@ -57,7 +57,7 @@ The map supports zoom and drag. The required building institutions (University o
 
 The refreshed overview screenshot is therefore used to evidence the required UoM/RMIT building colour distinction only. Any red/default library markers visible in the screenshot do not contradict the Sprint 1 acceptance criteria, because library colour distinction was removed from the required `US-02` scope.
 
-For US-02 evidence, the required library scope is deliberately bounded to City of Melbourne area library records. The data rule for the required library evidence is that the uploaded dataset should be reduced to the latest available year and to records that represent libraries only. The selected required marker is City Library, checked against the Data Vic / City of Melbourne business-establishments dataset using the latest available year identified in the source file (`2024`) and the library classification `industry_anzsic4_code = 6010` / `Libraries and Archives`. Baillieu Library and RMIT Swanston Library may remain as contextual markers, but they are not used to satisfy the updated US-02 acceptance criterion.
+For US-02 evidence, the required library scope is deliberately bounded to City of Melbourne area library records. The data rule for the required library evidence is that the uploaded dataset should be reduced to the latest available year and to records that represent libraries only. Baillieu Library and RMIT Swanston Library may remain as contextual markers, but they are not used to satisfy the updated US-02 acceptance criterion.
 
 ![Map Overview](etc/S1_Map_Overview.png)
 

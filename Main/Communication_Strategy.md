@@ -26,6 +26,17 @@ Between **2026-04-13** and **2026-04-22**, the team has relied mainly on asynchr
 
 The Plan-stage assessment result is treated as formal asynchronous feedback rather than as a live tutor meeting. Sprint 1 therefore uses it as an alignment input: the team checks whether the Sprint 1 artefacts address earlier scoring risks around controlled Scrum context, guide-format user stories, acceptance criteria, estimates, risks, decisions, communication escalation, and evidence traceability.
 
+## Sprint 2 Working Note
+
+Sprint 2 continues the checkpoint-based communication model, but with a stronger follow-up rule after Sprint 1 feedback. Each stand-up/checkpoint must state what previous action item is being followed up, not only what new work is planned.
+
+For Sprint 2, communication is especially focused on:
+
+- whether the live WordPress site has moved from Sprint 1 campus/library content to Sprint 2 school-location content;
+- whether dataset preparation has been converted into verified live map/search/filter behaviour;
+- whether authentication work covers both login redirect and role-specific registration;
+- whether QA evidence distinguishes local preparation from live-site verification.
+
 ## Communication Escalation Strategy
 
 | Meeting Title | Location | Escalation Trigger | Contingency Plan |
@@ -33,7 +44,7 @@ The Plan-stage assessment result is treated as formal asynchronous feedback rath
 | PEP Launch | Virtual | Required attendees do not join on time, or document ownership is still unclear at the end of the meeting. | The Scrum Master circulates a written allocation within 12 hours, assigns missing owners directly, and schedules a short follow-up meeting if responsibilities remain unclear. |
 | Backlog Refinement and Estimation Session | Virtual | The team cannot agree on story scope, acceptance criteria, or estimation because the requirement is ambiguous. | Record the working assumption, reduce scope to the minimum interpretation supported by the released case study, and escalate a clarification request through the Product Owner if the ambiguity affects committed work. |
 | Sprint Planning | Virtual or face-to-face | The selected scope exceeds team capacity, or tasks remain unowned at the end of planning. | Remove the highest-uncertainty work until the commitment aligns with the planned capacity, and do not close planning until every selected task has an owner. |
-| Stand-Up Meeting | Virtual | A team member misses the meeting without notice, key updates are repeatedly unavailable, or a blocker remains unresolved for 48 hours. | The Scrum Master contacts the relevant owner the same day, records the blocker, and converts it into an issue-resolution meeting if it cannot be closed asynchronously. Any material outcome is then reflected in `S1_Risk_Monitoring.md` and `Project_Decisions_and_Actions.md`. |
+| Stand-Up Meeting | Virtual | A team member misses the meeting without notice, key updates are repeatedly unavailable, a previous action item has no follow-up, or a blocker remains unresolved for 48 hours. | The Scrum Master contacts the relevant owner the same day, records the blocker, and converts it into an issue-resolution meeting if it cannot be closed asynchronously. Any material outcome is then reflected in the relevant sprint Risk Monitoring artefact and `Project_Decisions_and_Actions.md`. |
 | Issue-Resolution Meeting | Virtual | No decision is reached within the time-box, or a required owner is unavailable. | Time-box the discussion, document the open options, assign one owner to progress the next action, and escalate to the Product Owner or Scrum Master for a deadline-based decision. |
 | Stakeholder Clarification Checkpoint | Virtual or official subject communication channel | A clarification request is required for committed work and no response is available within the agreed time window. | Proceed with the safest interpretation supported by the published artefacts, document the assumption in the relevant artefact, and update the backlog or risk register if the eventual clarification changes scope. |
 | Sprint Review | Virtual or face-to-face | Teaching staff are unavailable, or a technical issue prevents a live demonstration. | Provide a concise written summary and supporting evidence through the agreed channel, request asynchronous feedback if necessary, and record any resulting decision in the Project Decisions and Actions log. |

@@ -40,6 +40,16 @@ The Sprint 1 role assignments reflect a continuation of the PEP phase responsibi
 | **Development Team / UI and Interaction Lead** | @Jiajun Jiang | Implement or configure the marker detail interaction, support the direction input and selection workflow, and ensure the visible user flow matches the Sprint 1 acceptance criteria. | UI/UX - responsible for user interaction design, front-end implementation, self-testing, and updating work after peer-review feedback. |
 | **Development Team / QA and Test Lead** | @Conghao Lin | Validate Sprint 1 work against the Definition of Done, maintain the Sprint Backlog and supporting evidence, review acceptance criteria coverage, and check that documented progress matches the actual sprint scope. | QA/Test - responsible for acceptance testing, peer review coordination, defect confirmation, and documenting whether stories are truly ready to be treated as Done. |
 
+### Sprint 2 Phase (4 May 2026 to 17 May 2026)
+
+| Role / Workstream | Team Member | Responsibilities | Additional Responsibilities |
+| ----------------- | ----------- | ---------------- | --------------------------- |
+| **Scrum Master** | @Manting Yu | Maintain checkpoint rhythm, require follow-up on previous action items, keep burn-down based on accepted whole stories, and escalate live-site blockers that prevent Sprint 2 showcase evidence. | Developer - support data import coordination and make sure open defects are reflected in Sprint 2 artefacts. |
+| **Product Owner** | @Zihan Shi | Maintain Sprint 2 requirement interpretation for school map, search, category filters, default location/distance, and authentication; keep login redirect and role registration acceptance criteria separate. | Developer - review category/filter wording and confirm whether registration role behaviour satisfies the published requirement. |
+| **Development Team / Map, Data, and Evidence Lead** | @Fazheng Xu | Prepare and validate the reduced Victorian School Locations 2025 dataset, identify the six nearest secondary schools, prepare website-link/logo evidence, generate import/filter artefacts, maintain the current school-map widget evidence, and maintain the live-verification evidence trail. | Documentation Lead - keep Sprint 2 data evidence, Product Backlog, Sprint Backlog, QA, Showcase, risk records, and the CSV-generation helper script aligned. |
+| **Development Team / UI and Interaction Lead** | @Jiajun Jiang | Configure and review the school map interaction, search-by-location behaviour, nearest-result list, category filter controls, and marker popup enrichment on the WordPress site. | UI/UX - ensure the live page moves beyond Sprint 1 content and supports the expected Sprint 2 user flow, while coordinating implementation evidence with @Fazheng Xu. |
+| **Development Team / QA and Test Lead** | @Conghao Lin | Validate Sprint 2 against acceptance criteria, keep local data preparation separate from live-site verification, and record failed or pending checks as defects or open QA items. | QA/Test - verify login redirect, wrong-credential error, role registration, search/filter behaviour, and six-school popup evidence before stories are marked Done. |
+
 ## Testing Responsibilities Across the Team
 
 - Each delivery owner is responsible for self-checking their own work before it is presented for QA or peer review.

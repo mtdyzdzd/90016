@@ -59,6 +59,21 @@ The risk register below documents the most important risks identified at the Wee
 | **Risk Identified In:** | Initial Plan (Week 5) |  |  |  |
 | **Mitigation Strategy:** | Accept |  |  |  |
 | **Mitigation Plan:** | Treat the current backlog and planning artefacts as controlled baselines for the PEP stage, and update them transparently when later-sprint clarification becomes available. The team accepts that limited rewording and re-estimation are a normal consequence of progressive elaboration in Scrum. |  |  |  |
+|  |  |  |  |  |
+| R010 | _"The reduced school dataset contains many markers in dense Melbourne areas -> the map becomes hard to read or category filters become slow/confusing -> Sprint 2 users cannot reliably identify nearby outreach targets."_ | 50% | 7 | 3.5 |
+| **Risk Identified In:** | Sprint 2 |  |  |  |
+| **Mitigation Strategy:** | Mitigate |  |  |  |
+| **Mitigation Plan:** | Reduce the dataset exactly to the required five Melbourne areas before publishing, keep category fields explicit, generate marker/filter evidence files, validate marker density after the live page update, use the nearest-results list to support map readability, and avoid rendering the full reduced dataset at first load. |  |  |  |
+|  |  |  |  |  |
+| R011 | _"Login redirect is configured but role-specific registration is not verified -> users cannot register as the required outreach officer or student role -> Sprint 2 authentication is only partially satisfied and Sprint 3 role-dependent features are weakened."_ | 40% | 7 | 2.8 |
+| **Risk Identified In:** | Sprint 2 |  |  |  |
+| **Mitigation Strategy:** | Mitigate |  |  |  |
+| **Mitigation Plan:** | Split login redirect and role registration into separate backlog items, verify registration settings early, and record a defect if WordPress cannot support the role-selection requirement without an approved configuration. |  |  |  |
+|  |  |  |  |  |
+| R012 | _"Local Sprint 2 data preparation is completed but the live WordPress page could still show the Sprint 1 map -> showcase evidence does not match Sprint 2 requirements -> map/search/filter stories cannot be honestly accepted."_ | 60% | 8 | 4.8 |
+| **Risk Identified In:** | Sprint 2 |  |  |  |
+| **Mitigation Strategy:** | Mitigate |  |  |  |
+| **Mitigation Plan:** | Record the live-site gap as a defect, back up the page and WP Go Maps data before changes, keep an editable Gutenberg page shell, update the live school map/search/filter component path, and close the defect only after live QA passes. |  |  |  |
 
 ## Risk Assessment Notes
 
@@ -71,6 +86,9 @@ The risk register below documents the most important risks identified at the Wee
 - **R007:** Avoid is used here because advanced routing is a discretionary scope choice, not an unavoidable external risk.
 - **R008:** Accept is appropriate because the absence of real users is an assignment constraint; the team can only limit the impact through simulation and team review.
 - **R009:** This is accepted because some progressive refinement is normal in controlled Scrum planning, provided the updates remain traceable.
+- **R010:** Sprint 2 increases map scale from 5 Sprint 1 markers to about 900 school records, so marker density and filter usability are now material risks.
+- **R011:** Authentication should not be considered fully complete until registration can distinguish the two required user types.
+- **R012:** This risk materialised on 11 May. The page architecture has been corrected back to an editable Gutenberg shell and the 12 May page verifies reduced school-map content, default state, search, nearby results, and sampled filters. The remaining risk is now limited to US-07 evidence depth for fuller filter combinations and all six nearest-school popups.
 
 ## Ongoing Risk Tracking (Sprint 1 Close-out)
 
@@ -83,9 +101,20 @@ The risk register below documents the most important risks identified at the Wee
 | R005 | Controlled | QA and documentation time was compressed late in the sprint, but final validation and evidence were completed before the submission checkpoint. | Sprint Backlog close-out, route screenshot evidence, and Sprint Showcase update. |
 | R006 | Materialised as controlled clarification | Updated Sprint 1 requirement text narrowed `US-02` to City of Melbourne area library locations and removed university/public library colour distinction. This reduced required validation scope without removing the `US-02` story from the sprint. | Product Backlog, Sprint Planning, Sprint Backlog, QA, Showcase, Decisions and Actions, Risk Monitoring, and Burn-down updates. |
 
+## Ongoing Risk Tracking (Sprint 2 Checkpoint)
+
+| Risk ID | Status as of 2026-05-12 | Current Observation | Linked Sprint 2 Work |
+| ------- | ----------------------- | ------------------- | -------------------- |
+| R002 | Controlled for data/search; active for remaining US-07 evidence | Reduced school dataset is prepared locally with 913 open records. The live controlled widget verifies default Melbourne Connect state, location/coordinate search, nearby results, and one enriched popup. | US-05, US-06, `S2_Reduced_School_Locations_2025.csv`, `S2-QA-001`, `S2-QA-015`, `S2-QA-016`, `S2-QA-017`. |
+| R005 | Active | Sprint 2 scope is broader than Sprint 1. US-05, US-06, and US-08 passed live-site QA, while US-07 remains partially verified and US-09 remains open. | Burn-down, stand-up follow-up, QA tracking. |
+| R006 | Active | Sprint 2 changes the domain from campus/library markers to school markers and adds authentication/registration requirements. | Product Backlog US-05 to US-09 and Sprint 2 Planning. |
+| R010 | Partially controlled | The school dataset is live through the controlled widget. First-load marker density is controlled by the Melbourne Connect 1 km default, the nearby list updates with search/filter inputs, and marker colours distinguish school sectors. Fuller filter-combination checks still need verification. | US-05, US-06, US-07. |
+| R011 | Active for US-09 | Login redirect and invalid-login error are verified, but outreach officer/student registration is not available. | US-08, US-09, `DEF-008`. |
+| R012 | Controlled for US-05/US-06; active for US-07 evidence | The live page has been restored to an editable Gutenberg shell after the full-page prototype was rejected, and the controlled school-map widget now passes US-05 and US-06 live checks. | `DEF-007`, `DEF-010`, US-05 to US-07, Sprint Showcase. |
+
 ## Sprint 1 Risk Response Tracking Strategy
 
-Sprint 1 used the **Actual / Reforecast Remaining** line in the burn-down chart as a practical risk-response tracking mechanism. The team kept the original story-point commitment and story-level burn-down unchanged, but used the reforecast line to make risk impact visible when remaining effort changed inside committed stories.
+Sprint 1 used the **Actual / Reforecast Remaining** line in the burn-down chart as a practical risk-response tracking mechanism. The team kept the original story-point commitment and the accepted-story burn-down unchanged, but used the reforecast line to make risk impact visible when remaining effort changed inside committed stories.
 
 This strategy was applied to:
 
@@ -101,7 +130,7 @@ These items were identified during Sprint 1 close-out. They do not change the co
 | Risk Area | Risk Statement | Current Treatment |
 | --------- | -------------- | ----------------- |
 | Live evidence accessibility | _"The WordPress page or map plugin assets are unavailable during review -> the reviewer cannot reproduce the live demonstration -> Sprint 1 implementation evidence appears weaker than the completed artefacts."_ | Screenshots are retained in `Sprint_1/etc/` and linked from Showcase and QA. The live WordPress page was re-checked during close-out, and the Sprint 1 release tag identifies the final baseline. |
-| Dataset traceability | _"The required library dataset reduction is not explicit enough -> the reviewer may question whether US-02 used latest-year library records only -> acceptance evidence may appear under-supported."_ | QA and Showcase now state the latest-year/library-only rule, using City Library as the required City of Melbourne evidence marker and treating optional university library markers as contextual only. |
+| Dataset traceability | _"The required library dataset reduction is not explicit enough -> the reviewer may question whether US-02 used latest-year library records only -> acceptance evidence may appear under-supported."_ | QA and Showcase now state the latest-year/library-only rule and limit required US-02 evidence to the City of Melbourne library marker. Optional university library markers are contextual only. |
 | Submission mechanics | _"The final Git commit, release tag, or conditional video evidence is not aligned with the submitted artefacts -> the repository baseline becomes unclear -> assessment traceability is reduced."_ | The final Sprint 1 artefacts are committed on `main`, and the Sprint 1 release tag identifies that baseline. Record video only if Sprint 1 submission instructions explicitly request it. |
 
 ## Risk Review Approach

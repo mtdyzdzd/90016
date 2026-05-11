@@ -15,6 +15,17 @@
 | **Attendees** | Development Team, Scrum Master, Product Owner |
 | **Purpose** | Reflect on delivery, Scrum artefact quality, risk handling, QA, and actions to apply in Sprint 2. |
 | **Status** | Completed as a close-out retrospective using Sprint Backlog, Stand-up, Risk Monitoring, Defect Log, QA, and Showcase evidence. |
+| **Structured Format Used** | Start / Stop / Continue, supported by a short 4Ls prompt: liked, learned, lacked, and longed for. |
+
+## Member Input Acknowledgement
+
+| Role | Contribution Reflected in This Retrospective |
+| ---- | -------------------------------------------- |
+| Scrum Master | Commented on checkpoint rhythm, blocker visibility, and the need to update burn-down/backlog entries during the sprint. |
+| Product Owner | Commented on requirement clarification handling, especially the US-02 scope change and the need to avoid overclaiming. |
+| Map and Data Lead | Commented on WordPress feasibility, data preparation, route configuration, and final marker colour correction. |
+| UI and Interaction Lead | Commented on marker popup behaviour, direction interaction, and route display constraints. |
+| QA and Test Lead | Commented on DoD discipline, late visual/category checks, defect logging, and evidence readiness. |
 
 ## What Went Well
 

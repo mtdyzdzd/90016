@@ -48,6 +48,8 @@ The teaching staff (Andrew Valentine and Rajesh Chittor Sundaram) are the client
 
    **Influence on the PEP:** This assumption affects backlog dependencies for mapping stories, supports effort estimation, and is linked to the data accuracy and completeness risk in the Risk Register.
 
+   **Sprint 2 update:** The official Victorian School Locations 2025 CSV has been reduced locally to 913 open school records across the five required Melbourne areas. This supports Sprint 2 planning and QA, but the assumption is not fully closed until those records are imported/configured and verified on the live WordPress map.
+
 5. **The teaching staff are the only formal stakeholder channel for requirements clarification and acceptance.**
 
    This assumes that requirement interpretation, clarification, and feedback will occur through the teaching staff rather than through direct access to real outreach officers, students, or schools.
@@ -60,11 +62,17 @@ The teaching staff (Andrew Valentine and Rajesh Chittor Sundaram) are the client
 
    **Influence on the PEP:** This assumption informs the Definition of Done, keeps Sprint 1 scope focused on publishable outcomes, and limits the extent of real-world usability claims the team can make at this stage.
 
+7. **Authentication can use WordPress-supported access control, but role registration still needs explicit verification.**
+
+   Sprint 2 allows the team to use the default WordPress login page if it satisfies the access-control requirement. Public unauthenticated access currently redirects to the WordPress login page, so the login-redirect assumption is partly supported. However, the separate requirement to register as either a university outreach officer or university student must be verified before the authentication scope is treated as complete.
+
+   **Influence on the PEP:** This assumption separates `US-08` from `US-09`, prevents overclaiming authentication completion, and links role-registration uncertainty to the Sprint 2 defect and risk records. As of 11 May 2026, US-08 is verified and US-09 remains open because public registration is disabled.
+
 ## Constraints
 
 1. **Time constraint: the project must be planned and delivered within fixed assessment deadlines.**  
 
-   The PEP submission is due on 12 April 2026, and Sprint 1 runs from 13 April 2026 to 27 April 2026. This leaves limited time for refinement before delivery work begins.
+   The PEP submission was due on 12 April 2026, Sprint 1 ran from 13 April 2026 to 27 April 2026, and the current Sprint 2 planning baseline uses 4 May 2026 to 17 May 2026. This leaves limited time for live WordPress configuration and QA after data preparation.
 
    **Rationale:** The schedule is fixed by the subject and cannot be extended by the team.
 
@@ -82,7 +90,7 @@ The teaching staff (Andrew Valentine and Rajesh Chittor Sundaram) are the client
 
 4. **Scope and priority constraint: sprint sequencing is predetermined by the teaching staff.**
 
-   Sprint 1 must focus on university buildings, library locations, and basic direction finding before later school-search or outreach-activity functionality is addressed.
+   Sprint 1 must focus on university buildings, library locations, and basic direction finding before later school-search or outreach-activity functionality is addressed. Sprint 2 must then move to school locations, search, category filtering, six nearest secondary-school enrichment, and authentication.
 
    **Rationale:** The team cannot reorder major features to suit preference; the published sprint outcomes drive backlog ordering.
 
@@ -112,3 +120,16 @@ These constraints are interrelated rather than independent, and their impact bec
    Because the team cannot validate interpretations with real users or continuously available clients, any ambiguity in the published Sprint 1 outcome has to be resolved internally first and then documented carefully. This affects the scope boundary for **US-03** and **US-04** in particular, where the minimum acceptable detail set and the minimum acceptable direction workflow must remain aligned with the released artefacts until teaching staff provide formal clarification.
 
 Taken together, these interrelationships explain why Sprint 1 is planned conservatively at 10 story points, why QA and traceability must be treated as part of delivery rather than as optional documentation work, and why the team must keep risk, backlog, planning, and communication artefacts closely aligned whenever one constraint begins to intensify another.
+
+### Sprint 2 Constraint Update
+
+Sprint 2 increases the scale of the map from selected campus/library markers to a reduced school dataset of about 900 records. This makes the platform and time constraints more significant than in Sprint 1:
+
+1. **Large dataset + WordPress-only platform -> map readability and category-filter behaviour must be verified on the live site.**
+   Local CSV preparation is not enough for DoD because the accepted outcome depends on interactive WordPress behaviour.
+
+2. **Authentication requirement + default WordPress login -> redirect may be solved before role registration is solved.**
+   The team must keep login redirect and role-specific registration separate so the completed part does not hide the open part.
+
+3. **Sprint 1 page still visible + Sprint 2 showcase expectations -> live-site evidence must be updated before claiming Sprint 2 map completion.**
+   The current 11 May live-site check shows Sprint 1 map content, so Sprint 2 map/search/filter stories remain open until the school map is visible and tested.
