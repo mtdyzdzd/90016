@@ -26,16 +26,17 @@ Deliver a Sprint 2 increment that allows an authenticated user to explore Victor
 
 ## Sprint 2 Requirement Baseline
 
-| Requirement Area | Sprint 2 Interpretation |
-| ---------------- | ----------------------- |
-| School dataset | Use Victorian School Locations 2025, reduced to open school records in Inner Eastern Melbourne, North Eastern Melbourne, Outer Eastern Melbourne, Western Melbourne, Southern Melbourne. |
-| Map foundation | Build on the Sprint 1 map pattern instead of replacing the page with an unrelated implementation. |
-| Default location and distance | Melbourne Connect is the default location. Default distance is 1 km. Distance units are kilometres. |
-| Location search | Users can search by location name or coordinates and the map focuses on the searched location. |
-| Nearby list | The page should show up to the 10 closest school results under the map, including school name, education sector, and school type. |
-| Category filters | Users can filter by combinations of suburb, education sector, school type, and area. |
-| Six nearest secondary schools | The six secondary schools closest to Melbourne Connect must have a marker popup containing the school logo and website link, and must be filterable as a subset. |
-| Authentication | Unauthenticated users are redirected to login. Users must be able to register as either university outreach officer or university student. |
+| Requirement Area              | Sprint 2 Interpretation                                                                                                                                                                  |
+| ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| School dataset                | Use Victorian School Locations 2025, reduced to open school records in Inner Eastern Melbourne, North Eastern Melbourne, Outer Eastern Melbourne, Western Melbourne, Southern Melbourne. |
+| Map foundation                | Build on the Sprint 1 map pattern instead of replacing the page with an unrelated implementation.                                                                                        |
+| Default location and distance | Melbourne Connect is the default location. Default distance is 1 km. Distance units are kilometres.                                                                                      |
+| Location search               | Users can search by location name or coordinates and the map focuses on the searched location.                                                                                           |
+| Nearby list                   | The page should show up to the 10 closest school results under the map, including school name, education sector, and school type.                                                        |
+| Category filters              | Users can filter by combinations of suburb, education sector, school type, and area.                                                                                                     |
+| Six nearest secondary schools | The six secondary schools closest to Melbourne Connect must have a marker popup containing the school logo and website link, and must be filterable as a subset.                         |
+| Authentication                | Unauthenticated users are redirected to login before school location features are accessed.                                                                                              |
+| Role registration             | New users should be able to register as university promoters or students. And any WordPress restrictions must be documented so that they can be follow up on Sprint 3.                   |
 
 ## Page Architecture Decision
 
@@ -55,6 +56,7 @@ The source file is the official Victorian School Locations 2025 CSV linked from 
 - `Sprint_2/etc/S2_Nearest_Secondary_Schools.csv`
 - `Sprint_2/etc/S2_WPGoMaps_Marker_Import.csv`
 - `Sprint_2/etc/S2_WPGoMaps_Filter_Model.csv`
+- `Sprint_2/etc/S2_Data_Evidence.md`
 - `Sprint_2/etc/generate_sprint2_school_outputs.py`
 - `Sprint_2/etc/S2_Component_Restore_Verification_2026-05-11.md`
 
@@ -81,15 +83,16 @@ The Sprint 1 release/submission on **27 April 2026** is the prior repository bas
 
 ## Selected Sprint 2 User Stories
 
-| User Story ID | User Story | Story Points | Planning Rationale |
-| ------------- | ---------- | ------------ | ------------------ |
-| US-05 | As an outreach officer or student, I want to view the reduced Victorian school-location dataset on an interactive map centred on Melbourne Connect, so that I can identify nearby school sites for outreach planning. | 8 | Larger than Sprint 1 map stories because it introduces about 900 records, dataset reduction, import validation, and performance/readability checks. |
-| US-06 | As an outreach officer or student, I want to search by location name or coordinates and see the nearest 10 school results, so that I can plan outreach around a nominated location. | 5 | Baseline Sprint 2 interaction story. It reuses the map but adds geocoding/location focus, distance ordering, and a nearby-results list. |
-| US-07 | As an outreach officer or student, I want to filter school markers by suburb, education sector, school type, area, and nearest-six secondary schools, so that I can compare outreach targets by category. | 5 | Comparable to US-06 because it depends on category modelling, filter combinations, and marker/list synchronisation. |
-| US-08 | As a user, I want unauthenticated access to redirect to login with username/password error handling, so that website access is protected before school-location features are viewed. | 3 | Smaller story because public redirect is already visible on the current site through WordPress login behaviour, but formal QA still records the result. |
-| US-09 | As a new user, I want to register as either a university outreach officer or a university student, so that the site can support role-based flows in later sprints. | 3 | Separate from US-08 to avoid hiding role-registration work inside general login. |
+| User Story ID | User Story                                                                                                                                                                                                            | Story Points | Planning Rationale                                                                                                                                      |
+| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| US-05         | As an outreach officer or student, I want to view the reduced Victorian school-location dataset on an interactive map centred on Melbourne Connect, so that I can identify nearby school sites for outreach planning. | 8            | Larger than Sprint 1 map stories because it introduces about 900 records, dataset reduction, import validation, and performance/readability checks.     |
+| US-06         | As an outreach officer or student, I want to search by location name or coordinates and see the nearest 10 school results, so that I can plan outreach around a nominated location.                                   | 5            | Baseline Sprint 2 interaction story. It reuses the map but adds geocoding/location focus, distance ordering, and a nearby-results list.                 |
+| US-07         | As an outreach officer or student, I want to filter school markers by suburb, education sector, school type, area, and nearest-six secondary schools, so that I can compare outreach targets by category.             | 5            | Comparable to US-06 because it depends on category modelling, filter combinations, and marker/list synchronisation.                                     |
+| US-08         | As a user, I want unauthenticated access to redirect to login with username/password error handling, so that website access is protected before school-location features are viewed.                                  | 3            | Smaller story because public redirect is already visible on the current site through WordPress login behaviour, but formal QA still records the result. |
+| US-09         | As a new user, I want to register as either a university outreach officer or a university student, so that the site can support role-based flows in later sprints.                                                    | 3            | Separate from US-08 to avoid hiding role-registration work inside general login.                                                                        |
 
 **Total planned Sprint 2 effort:** 24 SP
+
 
 ## Selected User Story Acceptance Criteria
 
@@ -107,13 +110,13 @@ The team uses relative estimation with Fibonacci story points. `US-06` is the Sp
 
 ## Sprint 2 Task Breakdown
 
-| User Story ID | Sprint Backlog Task Summary |
-| ------------- | --------------------------- |
-| US-05 | Reduce the school dataset; prepare map-ready fields; import or configure school markers; keep Melbourne Connect as default centre; validate marker visibility and 1 km default distance. |
-| US-06 | Configure location search by name/coordinates; calculate or display nearest results; show up to 10 nearby schools with school name, education sector, and school type; test empty or invalid search handling. |
-| US-07 | Model suburb, sector, type, area, and nearest-six categories; configure category legend/filter controls; add six nearest secondary school website/logo popup enrichment; validate combined filter behaviour. |
-| US-08 | Verify unauthenticated redirect; verify login page contains username/password fields; verify wrong-credential error; record access-control evidence. |
-| US-09 | Configure or document registration path; support outreach officer and student role selection; test role creation; record any WordPress limitation as defect or risk. |
+| User Story ID | Sprint Backlog Task Summary                                                                                                                                                                                   |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| US-05         | Reduce the school dataset; prepare map-ready fields; import or configure school markers; keep Melbourne Connect as default centre; validate marker visibility and 1 km default distance.                      |
+| US-06         | Configure location search by name/coordinates; calculate or display nearest results; show up to 10 nearby schools with school name, education sector, and school type; test empty or invalid search handling. |
+| US-07         | Model suburb, sector, type, area, and nearest-six categories; configure category legend/filter controls; add six nearest secondary school website/logo popup enrichment; validate combined filter behaviour.  |
+| US-08         | Verify unauthenticated redirect; verify login page contains username/password fields; verify wrong-credential error; record access-control evidence.                                                          |
+| US-09         | Configure or document registration path; support outreach officer and student role selection; test role creation; record any WordPress limitation as defect or risk.                                          |
 
 ## Commitment Statement
 
