@@ -6,7 +6,7 @@
 
 ------
 
-## Sprint 2 Story Status at 11 May 2026 Checkpoint
+## Sprint 2 Story Status at 12 May 2026 Close-out
 
 | User Story ID | Story Points | Current Status | Checkpoint Note |
 | ------------- | ------------ | -------------- | --------------- |
@@ -14,7 +14,7 @@
 | US-06 | 5 | Done | Location-name search, coordinate search, nearby results, and no-match handling were verified on the live page. Results show school name, sector, type, suburb, and distance. |
 | US-07 | 5 | Done | Filter controls, one-/two-/three-category combinations, nearest-six behaviour, sector-coloured markers, and all six nearest-school logo/website popups are verified on the live page. |
 | US-08 | 3 | Done | Public access redirects to the WordPress login page, username/password fields are present, and invalid credentials display an error. |
-| US-09 | 3 | Open | Public registration redirects to the local signup page, but registration is disabled and no outreach officer/student role selection is available. |
+| US-09 | 3 | Done | Public registration is available through `/register/`, the form includes the required outreach officer/student user-type selection, a temporary registered account was recorded with the selected role, and the registered user could access the protected map page. |
 
 ## Sprint Backlog for Sprint 2
 
@@ -22,7 +22,7 @@ Story points are shown in the story-status summary above. The task tracking tabl
 
 `P` = Planned, `IP` = In Progress, `R` = Review/QA, `D` = Done, `B` = Blocked, `NW` = No scheduled work.
 
-The Sprint 2 work record is intentionally sequenced through **1 May to 7 May 2026** and the live correction/final verification checkpoint on **11 May 2026**. There is no work content recorded for **8 May to 10 May 2026** or **12 May 2026**. The Sprint 1 release/submission on **27 April 2026** is treated as the prior baseline only and is not counted as a Sprint 2 burn-down day. The Sprint 2 burn-down window starts on **28 April 2026** and ends at **12 May 2026**.
+The Sprint 2 work record is intentionally sequenced through **1 May to 7 May 2026**, the live correction/final school-map verification checkpoint on **11 May 2026**, and the final role-registration verification on **12 May 2026**. There is no work content recorded for **8 May to 10 May 2026**. The Sprint 1 release/submission on **27 April 2026** is treated as the prior baseline only and is not counted as a Sprint 2 burn-down day. The Sprint 2 burn-down window starts on **28 April 2026** and ends at **12 May 2026**.
 
 | User Story ID | User Story | Task ID | Task Description | Owner | Status | May 1 | May 2 | May 3 | May 4 | May 5 | May 6 | May 7 | May 11 | May 12 | Follow-up |
 | ------------- | ---------- | ------- | ---------------- | ----- | ------ | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ------ | ------ | --------- |
@@ -42,9 +42,9 @@ The Sprint 2 work record is intentionally sequenced through **1 May to 7 May 202
 | US-08 | As a user, I want unauthenticated access to redirect to login with username/password error handling, so that website access is protected before school-location features are viewed. | US8_T1 | Verify unauthenticated users are redirected to `wp-login.php` when accessing the site. | @Conghao Lin | Done | P | IP | R | R | R | R | R | D |  | Public request returns a 302 login redirect. |
 |  |  | US8_T2 | Verify the login page contains username/password fields and displays errors for incorrect credentials. | @Conghao Lin | Done |  | P | IP | IP | R | R | R | D |  | Invalid username test displays a login error. |
 |  |  | US8_T3 | Record whether default WordPress login is the selected design decision for Sprint 2. | @Zihan Shi | Done |  |  | P | IP | D | D | R | D |  | Decision recorded in Main artefacts. |
-| US-09 | As a new user, I want to register as either a university outreach officer or a university student, so that the site can support role-based flows in later sprints. | US9_T1 | Confirm whether registration is enabled in WordPress and whether role selection is available through configuration or an approved plugin. | @Fazheng Xu | Blocked | P | P | IP | IP | R | R | B | B |  | Public registration is disabled. |
-|  |  | US9_T2 | Configure registration path for university outreach officer and university student. | @Jiajun Jiang | Open |  |  | P | P | IP | IP | B | B |  | No working configuration path is available yet. |
-|  |  | US9_T3 | Validate role-specific registration and record any limitation as a defect or risk. | @Conghao Lin | Open |  |  |  | P | IP | R | B | B |  | Tracked by `DEF-008`. |
+| US-09 | As a new user, I want to register as either a university outreach officer or a university student, so that the site can support role-based flows in later sprints. | US9_T1 | Confirm whether registration is enabled in WordPress and whether role selection is available through configuration or an approved plugin. | @Fazheng Xu | Done | P | P | IP | IP | R | R | B | B | D | Public registration was enabled through the approved Forminator path, while Force Login continues to protect the map. |
+|  |  | US9_T2 | Configure registration path for university outreach officer and university student. | @Jiajun Jiang and @Fazheng Xu | Done |  |  | P | P | IP | IP | B | B | D | `/register/` exposes the user-type form and native/legacy registration routes redirect there. |
+|  |  | US9_T3 | Validate role-specific registration and record any limitation as a defect or risk. | @Conghao Lin and @Fazheng Xu | Done |  |  |  | P | IP | R | B | B | D | `DEF-008` closed after temporary user `graycat` registered as `University Student` and reached the protected map page. |
 
 ## Non-working Dates
 
@@ -53,7 +53,7 @@ The Sprint 2 work record is intentionally sequenced through **1 May to 7 May 202
 | 2026-05-08 | No Sprint 2 work content recorded. |
 | 2026-05-09 | No Sprint 2 work content recorded. |
 | 2026-05-10 | No Sprint 2 work content recorded. |
-| 2026-05-12 | No Sprint 2 work content recorded yet. Update this row only if new work is completed. |
+| 2026-05-12 | Final US-09 role-registration verification completed. |
 
 ## Story-level Remaining SP Tracking
 
@@ -73,7 +73,7 @@ The Sprint 2 work record is intentionally sequenced through **1 May to 7 May 202
 | May 9 | 24 | No Sprint 2 work content recorded. |
 | May 10 | 24 | No Sprint 2 work content recorded. |
 | May 11 | 3 | US-08, US-05, US-06, and US-07 reach live acceptance by the final 11 May checkpoint. US-09 remains open because role registration is unavailable. |
-| May 12 | 3 | No Sprint 2 work content recorded yet; remaining SP is unchanged. |
+| May 12 | 0 | US-09 is accepted after role-registration verification, reducing remaining accepted-story SP to 0. |
 
 ## Implementation Notes
 
@@ -81,8 +81,8 @@ The Sprint 2 work record is intentionally sequenced through **1 May to 7 May 202
 
 **Dataset evidence:** The reduced dataset contains 913 open school records. The six nearest secondary schools are University High School, Academy of Mary Immaculate, Simonds Catholic College, Holmes Grammar School, Ozford College, and Princes Hill Secondary College. Marker import evidence, filter model files, and the CSV-generation helper script are stored under `Sprint_2/etc/`.
 
-**Live verification evidence:** On 11 May 2026, the home page displayed the Sprint 2 school map, default Melbourne Connect focus, 1 km distance, kilometre units, nearby results, location-name search, coordinate search, no-match handling, sector/type/area/suburb filters, one-/two-/three-category filter combinations, nearest-six filtering, sector-coloured markers, all six nearest-secondary popups containing logo images, school fields, website links, and directions links, and a centred wide-screen Sprint 2 page shell.
+**Live verification evidence:** On 11 May 2026, the home page displayed the Sprint 2 school map, default Melbourne Connect focus, 1 km distance, kilometre units, nearby results, location-name search, coordinate search, no-match handling, sector/type/area/suburb filters, one-/two-/three-category filter combinations, nearest-six filtering, sector-coloured markers, all six nearest-secondary popups containing logo images, school fields, website links, and directions links, and a centred wide-screen Sprint 2 page shell. On 12 May 2026, continuity verification added the visible distance range circle and in-page selected-school route preview without restoring obsolete campus/library markers into the school map.
 
-**Authentication evidence:** Public unauthenticated access redirects to the WordPress login page, and invalid credentials display an error. Role-specific registration remains unresolved because the public registration page reports that registration is disabled.
+**Authentication evidence:** Public unauthenticated access redirects to the WordPress login page, invalid credentials display an error, and role-specific registration is available through `/register/`. The temporary `graycat` account was registered as `University Student` and could access the protected map page.
 
 **Work allocation note:** @Fazheng Xu carries the main Sprint 2 data/evidence workload: reducing the school dataset, preparing nearest-six evidence, generating filter/import artefacts, maintaining the current widget evidence, and aligning Scrum artefacts. @Jiajun Jiang remains responsible for interaction implementation support, @Conghao Lin remains QA lead, @Zihan Shi owns requirement interpretation, and @Manting Yu owns checkpoint process control.

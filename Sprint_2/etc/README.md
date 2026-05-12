@@ -4,6 +4,8 @@ This folder is kept as a public-facing evidence set for Sprint 2. It contains:
 
 - accepted Sprint 2 chart output,
 - live-site verification notes,
+- US-09 role-registration verification notes,
+- range-circle and route-preview retention notes,
 - showcase screenshots for the main live demo paths,
 - reduced school-location CSV evidence,
 - nearest-six secondary-school evidence,

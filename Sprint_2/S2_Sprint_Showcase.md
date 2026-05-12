@@ -11,8 +11,8 @@
 | Category | Details |
 | -------- | ------- |
 | Sprint Goal | Deliver school-location map/search/filter functionality and authenticated site access for Sprint 2 while preserving the Sprint 1 map foundation. |
-| Showcase Status | Component-based live school-map checkpoint as of 11 May 2026. |
-| Evidence Principle | Only verified behaviour is listed as complete. US-05, US-06, and US-07 are accepted; US-09 remains visible because role-specific registration is still incomplete. |
+| Showcase Status | Component-based live school-map checkpoint as of 11 May 2026, with final role-registration verification on 12 May 2026. |
+| Evidence Principle | Only verified behaviour is listed as complete. US-05 to US-08 are accepted through live-site checks, and US-09 is accepted after the public role-registration path is verified. |
 
 ## Completed / Verified Items
 
@@ -34,8 +34,10 @@
 | Category filters | One-, two-, and three-category combinations were live-tested across suburb, sector, type, area, and nearest-six cases. | Verified |
 | Sector marker colours | Markers use sector-based colours with stronger styling for nearest-six schools. | Verified |
 | Nearby secondary school popup | All six nearest-secondary popups show logo images, school fields, website links, and directions links. | Verified |
+| Range circle and route preview continuity | The live map displays the active search-distance circle and shows an in-page route preview when a marker or nearby-result item is selected. | Verified |
 | Login redirect for unauthenticated users | Public request to the site redirects to `wp-login.php`. | Verified |
 | Invalid-login error | A clearly invalid username test returned a WordPress login error. | Verified |
+| Role-specific registration | `/register/` shows the Forminator registration form with University student and University outreach officer options. Temporary user `graycat` was recorded as `University Student` and could access the protected map page after login. | Verified |
 
 ## Screenshot Evidence
 
@@ -46,6 +48,7 @@ The screenshots below support the asynchronous showcase. They are not a replacem
 | ![Default Melbourne Connect school map](etc/S2_Showcase_Default_Map.png) | Melbourne Connect default search, 1 km distance, kilometre units, controlled marker visibility, and nearby school list. |
 | ![Category-filter combination](etc/S2_Showcase_Filter_Combination.png) | Combined sector, type, and area filters with matching map/list results. |
 | ![Nearest-six popup with logo and website](etc/S2_Showcase_Nearest_Six_Popup.png) | Nearest-six secondary-school filter, popup logo, website link, and directions link. |
+| ![Range circle and route preview](etc/S2_Showcase_Range_Route_Preview.png) | Visible search range, controlled nearby results, selected-school popup, route-preview button, and red in-page route line. |
 
 ## Prepared School Data for Demo
 
@@ -60,9 +63,7 @@ The screenshots below support the asynchronous showcase. They are not a replacem
 
 ## Open / Postponed Items
 
-| Item | Current State | Follow-up Action |
-| ---- | ------------- | ---------------- |
-| Role-specific registration | Public registration redirects to the local signup page, but registration is disabled and outreach officer/student role options are not present. | Confirm whether registration can be enabled safely and whether role selection can be added through an approved plugin or site setting. |
+No Sprint 2 user story remains open at the 12 May close-out checkpoint. Sprint 3 should still decide how the two roles are used for activity creation, activity registration, and review permissions.
 
 ## Demo Summary
 
@@ -78,12 +79,14 @@ The 11 May checkpoint can demonstrate a real Sprint 2 increment while keeping in
 8. Apply one-, two-, and three-category filter combinations and show the result count changes.
 9. Select nearest-six secondary schools and show the prepared six-school result set.
 10. Open nearest-secondary popups and show logo, address, sector, type, area, suburb, distance, website, and directions links.
-11. Review the reduced dataset file and confirm it contains 913 open school records.
-12. Review the six nearest secondary school evidence file.
-13. Review the generated marker import CSV, filter model CSV, and CSV-generation helper script.
-14. Verify unauthenticated access redirects to login and invalid credentials display an error.
+11. Select a nearby school result and show that the range circle remains visible and a red route preview appears in the map.
+12. Review the reduced dataset file and confirm it contains 913 open school records.
+13. Review the six nearest secondary school evidence file.
+14. Review the generated marker import CSV, filter model CSV, and CSV-generation helper script.
+15. Verify unauthenticated access redirects to login and invalid credentials display an error.
+16. Open `/register/`, show the required user-type field, and explain the temporary `graycat` role-registration verification.
 
-US-05, US-06, and US-07 can be demonstrated as accepted at the 11 May checkpoint. US-09 should not be demonstrated as complete because registration is disabled.
+US-05, US-06, and US-07 can be demonstrated as accepted at the 11 May checkpoint. US-08 is accepted through the login redirect and invalid-login checks. US-09 can be demonstrated as accepted through the 12 May registration evidence.
 
 ## Stakeholder Feedback and Action Items
 
@@ -95,6 +98,7 @@ US-05, US-06, and US-07 can be demonstrated as accepted at the 11 May checkpoint
 | Full-page prototype removed the WordPress component-editing trail. | Restore the page to a Gutenberg shell with one controlled school-map widget; the accepted implementation path is the live component-based page. | @Jiajun Jiang and @Fazheng Xu | Completed |
 | Sprint 2 school markers should not overwrite the Sprint 1 map baseline. | Keep Sprint 2 generated data/page evidence separate from the Sprint 1 campus/library baseline. | @Fazheng Xu and @Conghao Lin | Completed |
 | Sprint 1 component limitations need a clear Sprint 2 resolution path. | Record that the controlled school-map widget is a bounded component compromise for the larger searchable/filterable school dataset, while the hero and page shell remain editable Gutenberg blocks. | @Fazheng Xu | Completed |
-| Location-name search, coordinate search, default 1 km behaviour, nearby results, category filters, and nearest-secondary popup checks now pass. | Accept US-05, US-06, and US-07; keep US-09 open for role-specific registration. | @Fazheng Xu and @Conghao Lin | Completed |
+| Location-name search, coordinate search, default 1 km behaviour, nearby results, category filters, and nearest-secondary popup checks now pass. | Accept US-05, US-06, and US-07; keep US-09 separate until role registration is verified. | @Fazheng Xu and @Conghao Lin | Completed |
 | Wide-screen review found excessive blank space to the right of the Sprint 2 content. | Centre the existing Gutenberg shell with a targeted CSS rule and verify that the map component remains unchanged. | @Fazheng Xu and @Jiajun Jiang | Completed |
-| Role-specific registration remains unavailable. | Keep US-09 open and track as `DEF-008`. | @Zihan Shi and @Fazheng Xu | Open |
+| Role-specific registration was verified on 12 May. | Close US-09 and `DEF-008`; record `/register/`, the two user-type options, the temporary account role check, and registered-user map access. | @Zihan Shi and @Fazheng Xu | Completed |
+| Sprint 2 did not explicitly remove Sprint 1 direction behaviour. | Retain an in-page route preview for selected school markers and record the visible range-circle verification. | @Fazheng Xu and @Jiajun Jiang | Completed |

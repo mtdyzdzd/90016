@@ -62,17 +62,17 @@ The teaching staff (Andrew Valentine and Rajesh Chittor Sundaram) are the client
 
    **Influence on the PEP:** This assumption informs the Definition of Done, keeps Sprint 1 scope focused on publishable outcomes, and limits the extent of real-world usability claims the team can make at this stage.
 
-7. **Authentication can use WordPress-supported access control, but role registration still needs explicit verification.**
+7. **Authentication can use WordPress-supported access control, but login and role registration must be verified separately.**
 
-   Sprint 2 allows the team to use the default WordPress login page if it satisfies the access-control requirement. Public unauthenticated access currently redirects to the WordPress login page, so the login-redirect assumption is partly supported. However, the separate requirement to register as either a university outreach officer or university student must be verified before the authentication scope is treated as complete.
+   Sprint 2 allows the team to use the default WordPress login page if it satisfies the access-control requirement. Public unauthenticated access redirects to the WordPress login page, so the login-redirect assumption is supported. The separate requirement to register as either a university outreach officer or university student was verified on 12 May through the public `/register/` form, role options, a temporary student-role account, and registered-user map access.
 
-   **Influence on the PEP:** This assumption separates `US-08` from `US-09`, prevents overclaiming authentication completion, and links role-registration uncertainty to the Sprint 2 defect and risk records. As of 11 May 2026, US-08 is verified and US-09 remains open because public registration is disabled.
+   **Influence on the PEP:** This assumption separates `US-08` from `US-09`, prevents overclaiming authentication completion, and links role-registration uncertainty to the Sprint 2 defect and risk records. As of 12 May 2026, US-08 and US-09 are both verified, with the earlier registration blocker retained in `DEF-008` as a closed defect.
 
 ## Constraints
 
 1. **Time constraint: the project must be planned and delivered within fixed assessment deadlines.**  
 
-   The PEP submission was due on 12 April 2026, Sprint 1 ran from 13 April 2026 to 27 April 2026, and the Sprint 1 release/submission on 27 April 2026 is treated as the prior baseline only. It is not counted as a Sprint 2 burn-down day. The Sprint 2 burn-down starts on 28 April 2026, with detailed Sprint 2 work recorded for 1 May to 7 May and 11 May. The 12 May row is intentionally left with no Sprint 2 work content unless new work is completed later.
+   The PEP submission was due on 12 April 2026, Sprint 1 ran from 13 April 2026 to 27 April 2026, and the Sprint 1 release/submission on 27 April 2026 is treated as the prior baseline only. It is not counted as a Sprint 2 burn-down day. The Sprint 2 burn-down starts on 28 April 2026, with detailed Sprint 2 work recorded for 1 May to 7 May, 11 May, and the 12 May US-09 close-out checkpoint.
 
    **Rationale:** The schedule is fixed by the subject and cannot be extended by the team.
 
@@ -129,7 +129,7 @@ Sprint 2 increases the scale of the map from selected campus/library markers to 
    Local CSV preparation is not enough for DoD because the accepted outcome depends on interactive WordPress behaviour.
 
 2. **Authentication requirement + default WordPress login -> redirect may be solved before role registration is solved.**
-   The team must keep login redirect and role-specific registration separate so the completed part does not hide the open part.
+   The team kept login redirect and role-specific registration separate so the completed part did not hide the open part. This made the 12 May US-09 closure traceable instead of silently folding it into US-08.
 
 3. **Sprint 1 page initially still visible + Sprint 2 showcase expectations -> live-site evidence must be updated before claiming Sprint 2 map completion.**
-   The initial 11 May live-site check still showed Sprint 1 map content. The final 11 May follow-up corrected the page path to an editable Gutenberg shell plus a controlled Sprint 2 school-map widget, verified the map/search/filter/popup requirements for US-05 to US-07, and centred the wide page shell. US-09 remains open because role-specific registration is unavailable.
+   The initial 11 May live-site check still showed Sprint 1 map content. The final 11 May follow-up corrected the page path to an editable Gutenberg shell plus a controlled Sprint 2 school-map widget, verified the map/search/filter/popup requirements for US-05 to US-07, and centred the wide page shell. The final 12 May follow-up verified US-09 role-specific registration.

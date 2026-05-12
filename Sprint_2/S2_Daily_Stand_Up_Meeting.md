@@ -10,7 +10,7 @@
 
 The team continues the SWEN90016-compatible pattern of checkpoint updates. Sprint 1 feedback is applied by explicitly following up previous action items instead of only listing new work.
 
-Sprint 2 work is recorded from **1 May to 7 May 2026**, then again on **11 May 2026** for correction, live verification, and wide-layout centring. The Sprint 1 release/submission on **27 April 2026** is treated as the prior baseline only and is not counted as a Sprint 2 burn-down day. The Sprint 2 burn-down window starts on **28 April 2026**, while the detailed Sprint 2 checkpoint log begins on 1 May. The dates **8 May to 10 May 2026** and **12 May 2026** are recorded as dates with no Sprint 2 work content.
+Sprint 2 work is recorded from **1 May to 7 May 2026**, then again on **11 May 2026** for correction, live verification, and wide-layout centring, and on **12 May 2026** for final role-registration verification. The Sprint 1 release/submission on **27 April 2026** is treated as the prior baseline only and is not counted as a Sprint 2 burn-down day. The Sprint 2 burn-down window starts on **28 April 2026**, while the detailed Sprint 2 checkpoint log begins on 1 May. The dates **8 May to 10 May 2026** are recorded as dates with no Sprint 2 work content.
 
 ## Stand-up / Checkpoint Log
 
@@ -128,17 +128,21 @@ No Sprint 2 work content recorded.
 
 ### Date: 2026-05-12
 
-No Sprint 2 work content recorded yet. This section should be updated only if new work is completed on 12 May.
+| Team Member | What was done | Next planned work | Blockers / Risks | Action Item |
+| ----------- | ------------- | ----------------- | ---------------- | ----------- |
+| @Fazheng Xu | Configured the plugin-first US-09 registration path, verified `/register/`, native register redirects, role record for temporary user `graycat`, and protected-map access after login. | Update linked Sprint 2 artefacts and burn-down to close US-09. | None after verification. | AI2-007 can be closed. |
+| @Conghao Lin | Reviewed the US-09 acceptance path as QA evidence rather than merging it into US-08 login redirect. | Confirm final QA and defect updates are consistent. | None after verification. | Close `DEF-008`. |
+| @Zihan Shi | Requirement interpretation remains separated: US-08 covers protected login; US-09 covers role registration. | Confirm Sprint 3 role-dependent stories can build from the two configured roles. | None after verification. | Carry role use into Sprint 3 planning. |
 
 ## Action Items Log
 
 | ID | Task | Assigned To | Status | Due Date | Follow-up Status |
 | -- | ---- | ----------- | ------ | -------- | ---------------- |
-| AI2-001 | Maintain Sprint 2 checkpoint action follow-up and update burn-down only when whole stories are accepted. | @Manting Yu | Completed | 2026-05-11 | Followed from 1 May through 11 May; burn-down accepts US-08 on 11 May and US-05/US-06/US-07 on 11 May, leaving US-09 visible. |
+| AI2-001 | Maintain Sprint 2 checkpoint action follow-up and update burn-down only when whole stories are accepted. | @Manting Yu | Completed | 2026-05-12 | Followed from 1 May through 12 May; burn-down accepts US-08 and US-05/US-06/US-07 on 11 May, then accepts US-09 on 12 May after role-registration verification. |
 | AI2-002 | Record Sprint 2 story split, acceptance criteria, and scope decisions in planning/backlog artefacts. | @Zihan Shi | Completed | 2026-05-11 | Completed in Sprint Planning and Product Backlog updates. |
 | AI2-003 | Prepare reduced School Locations 2025 dataset and nearest-six secondary school evidence. | @Fazheng Xu | Completed | 2026-05-11 | Completed with 913-record reduced CSV, six-school CSV, import/filter evidence, and the CSV-generation helper script. |
 | AI2-004 | Configure or verify the live school map, search, category filters, and popup enrichment. | @Fazheng Xu and @Jiajun Jiang | Completed | 2026-05-11 | The live page verifies reduced school-map load, Melbourne Connect default state, location/coordinate search, nearby results, one-/two-/three-category filters, nearest-six filtering, sector marker colours, and all six logo/website popups. |
 | AI2-005 | Add Sprint 2 QA tests for dataset, map, search, filters, login, and registration. | @Conghao Lin | Completed | 2026-05-11 | QA table records pass/fail/open status. |
 | AI2-006 | Verify invalid-login error without using real credentials. | @Conghao Lin | Completed | 2026-05-11 | Invalid username test returned a WordPress login error. |
-| AI2-007 | Confirm role-registration path for outreach officer and university student. | @Fazheng Xu and @Zihan Shi | Open | 2026-05-14 | Public registration is disabled; keep US-09 open. |
+| AI2-007 | Confirm role-registration path for outreach officer and university student. | @Fazheng Xu and @Zihan Shi | Completed | 2026-05-12 | `/register/` provides the two required user types; temporary user `graycat` was recorded as `University Student` and could access the protected map page. |
 | AI2-008 | Centre the Sprint 2 page shell on wide screens without replacing the component structure. | @Fazheng Xu and @Jiajun Jiang | Completed | 2026-05-11 | The live page shell is centred through a targeted CSS rule while preserving Gutenberg structure and the controlled school-map widget. |
