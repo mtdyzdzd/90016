@@ -47,9 +47,9 @@ The **Actual / Reforecast Remaining** line is retained from the Sprint 1 burn-do
 This was useful in Sprint 2 because:
 
 - `R002` was controlled once the official school dataset was reduced to 913 open records in the five required Melbourne areas.
-- `R010` was reduced at data-preparation level by creating marker import and filter model files, and later controlled by the generated map widget that avoids displaying all 913 records at once.
+- `R010` was reduced at data-preparation level by creating marker import and filter model files, and later controlled by the dedicated school-map section that avoids displaying all 913 records at once.
 - `R011` remained active until 12 May because login redirect was verified before role-specific registration. It is controlled after the `/register/` Forminator path, role selection, role record, and registered-user access are verified.
-- `R012` materialised when the live page initially still showed Sprint 1 content. It is controlled for US-05 to US-07 because the current page uses an editable Gutenberg shell plus a controlled Sprint 2 school-map widget.
+- `R012` materialised when the live page initially still showed Sprint 1 content. It is controlled for US-05 to US-07 because the current page uses an editable Gutenberg shell plus a dedicated Sprint 2 school-map section.
 
 ## Burn Down Data Table
 
@@ -64,7 +64,7 @@ This was useful in Sprint 2 because:
 | 7 | May 4 | 14 | 24 | 18 | Nearest-six secondary-school analysis and website/logo evidence reduce expected remaining work for US-07, but US-07 is not accepted. |
 | 8 | May 5 | 12 | 24 | 16 | Search input handling, coordinate support, and nearby-results design are prepared for the component path, but US-06 is not accepted. |
 | 9 | May 6 | 10 | 24 | 15 | Authentication QA cases and WordPress component rollback checks are prepared. |
-| 10 | May 7 | 9 | 24 | 13 | Marker import file, filter model, generated widget plan, and live-update checklist are prepared. US-05 to US-07 still require live component verification. |
+| 10 | May 7 | 9 | 24 | 13 | Marker import file, filter model, dedicated map-section plan, and live-update checklist are prepared. US-05 to US-07 still require live component verification. |
 | 11 | May 8 | 7 | 24 | 13 | No Sprint 2 work content recorded. |
 | 12 | May 9 | 5 | 24 | 13 | No Sprint 2 work content recorded. |
 | 13 | May 10 | 3 | 24 | 13 | No Sprint 2 work content recorded. |

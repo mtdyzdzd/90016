@@ -21,7 +21,7 @@
 - **Scrum Master input:** The team applied Sprint 1 feedback by keeping story-point burn-down at user-story level only.
 - **Product Owner input:** Sprint 2 scope was split more clearly than Sprint 1, especially by separating login redirect from role-specific registration.
 - **Map/Data Lead input:** The required dataset reduction, nearest-six evidence, marker import CSV, filter model CSV, and live-verification evidence are reproducible; the local evidence file contains 913 records in the required five Melbourne areas.
-- **UI/Interaction Lead input:** The live site was restored to an editable Gutenberg shell after the full-page prototype was rejected, then updated with a controlled Sprint 2 school-map widget.
+- **UI/Interaction Lead input:** The live site was restored to an editable Gutenberg shell after the full-page prototype was rejected, then updated with a dedicated Sprint 2 school-map section.
 - **Design/layout input:** The wide-screen review issue was corrected by centring the existing Sprint 2 shell instead of replacing the page structure.
 - **QA/Test Lead input:** QA now separates prepared data/script artefacts, verified live map/search/filter/popup checks, login checks, and role-registration checks.
 
@@ -47,9 +47,9 @@
 | ----------------- | --------------- | ---------------------- |
 | Role-specific registration was unavailable until 12 May. | US-09 is now accepted. | Carry the two configured roles into Sprint 3 access-control decisions. |
 | About 900 school records may affect readability. | The live page defaults to Melbourne Connect and 1 km, so it shows nearby results instead of all records at once; filters further narrow the map/list. | Preserve the default-density and filter behaviour in future map changes. |
-| Wide-screen layout could look unbalanced. | The Sprint 2 shell is centred within the wide viewport while preserving the Gutenberg shell and controlled widget. | Re-check desktop and mobile layout whenever the page shell or map widget is changed. |
+| Wide-screen layout could look unbalanced. | The Sprint 2 shell is centred within the wide viewport while preserving the Gutenberg shell and dedicated school-map section. | Re-check desktop and mobile layout whenever the page shell or map section is changed. |
 | Sprint 2 QA could compress near the deadline. | US-08 passed live QA on 11 May; US-05, US-06, and US-07 passed live QA on 11 May. | Run QA as soon as each story is live rather than waiting for final close-out. |
-| Full-page prototype removed component traceability. | Corrected by restoring a Gutenberg shell and keeping only the school-map behaviour inside a controlled widget. | Keep future site changes inside the component path unless a deliberate architecture decision is recorded. |
+| Full-page prototype removed component traceability. | Corrected by restoring a Gutenberg shell and keeping the school-map behaviour inside a dedicated map section rather than a full-page replacement. | Keep future site changes inside the component path unless a deliberate architecture decision is recorded. |
 
 ## Actionable Items for Sprint 2 Close-out
 

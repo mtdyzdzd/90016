@@ -8,7 +8,7 @@ This checklist records the Sprint 2 close-out check against the published Sprint
 
 | ID | Sprint 2 Requirement | Status | Evidence / Notes |
 | -- | -------------------- | ------ | ---------------- |
-| S2-REQ-01 | WordPress page displays the Sprint 2 school-location map as an increment on the Sprint 1 map foundation. | Complete with documented architecture decision | The live page uses a Gutenberg shell plus one controlled school-map widget. The rejected full-page prototype is not the accepted implementation path. |
+| S2-REQ-01 | WordPress page displays the Sprint 2 school-location map as an increment on the Sprint 1 map foundation. | Complete with documented architecture decision | The live page uses a Gutenberg shell plus a dedicated Leaflet-based school-map section. The rejected full-page prototype is not the accepted implementation path. |
 | S2-REQ-02 | School data is reduced to the required five Melbourne areas with about 900 records. | Complete | `Sprint_2/etc/S2_Reduced_School_Locations_2025.csv` contains 913 open school records. |
 | S2-REQ-03 | Marker clicks show school details. | Complete | QA and Showcase record popup checks, including school fields for nearest-secondary popups. |
 | S2-REQ-04 | Users can search by location name or coordinates, and the map focuses on the searched location. | Complete | `S2-QA-004` and `S2-QA-005` pass on 2026-05-11. |
@@ -23,7 +23,7 @@ This checklist records the Sprint 2 close-out check against the published Sprint
 | S2-REQ-13 | Page layout is suitable for review and does not leave excessive wide-screen right-side blank space. | Complete | `S2-QA-020` records the 11 May centring adjustment while preserving the component structure. |
 | S2-REQ-14 | 27 April is not counted as a Sprint 2 burn-down day. | Checked | 27 April is recorded only as the Sprint 1 release/submission baseline. The Sprint 2 burn-down starts on 28 April. |
 | S2-REQ-15 | 12 May work content is recorded only if new work is completed. | Checked | US-09 role-registration verification is recorded as a 12 May close-out checkpoint rather than backfilled into 11 May. |
-| S2-REQ-16 | WP Go Maps Pro is the provided map plugin path. | Documented implementation compromise | Generated WP Go Maps import/filter evidence is retained, but the accepted live page uses one controlled school-map widget to avoid overwriting the only Sprint 1 map baseline and to satisfy search/filter/density behaviour. The decision and risk records explain this constraint rather than hiding it. |
+| S2-REQ-16 | WP Go Maps Pro is the provided map plugin path. | Documented implementation compromise | Generated WP Go Maps import/filter evidence is retained, but the accepted live page uses a dedicated school-map section to avoid overwriting the only Sprint 1 map baseline and to satisfy search/filter/density behaviour. The decision and risk records explain this constraint rather than hiding it. |
 | S2-REQ-17 | Sprint 1 map behaviours are not removed unless Sprint 2 explicitly changes the scope. | Complete | The Sprint 2 requirement changes the visible domain to schools, so campus/library markers are not restored into the default school view. Marker popups, controlled marker density, visible distance range, and selected-marker direction feedback are retained through `S2-QA-021`, `S2-QA-022`, and `Sprint_2/etc/S2_Range_Route_Retention_Verification_2026-05-12.md`. |
 
 ## Sprint 1 Feedback Alignment Checklist

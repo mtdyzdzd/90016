@@ -11,7 +11,7 @@
 | Category | Details |
 | -------- | ------- |
 | Sprint Goal | Deliver school-location map/search/filter functionality and authenticated site access for Sprint 2 while preserving the Sprint 1 map foundation. |
-| Showcase Status | Component-based live school-map checkpoint as of 11 May 2026, with final role-registration verification on 12 May 2026. |
+| Showcase Status | Gutenberg-shell live school-map checkpoint as of 11 May 2026, with final role-registration verification on 12 May 2026. |
 | Evidence Principle | Only verified behaviour is listed as complete. US-05 to US-08 are accepted through live-site checks, and US-09 is accepted after the public role-registration path is verified. |
 
 ## Completed / Verified Items
@@ -22,8 +22,8 @@
 | Repeatable data generation | `Sprint_2/etc/generate_sprint2_school_outputs.py` regenerates the reduced CSV, nearest-six CSV, WP Go Maps marker import CSV, filter model CSV, and data evidence notes. | Verified |
 | Separate Sprint 2 evidence path | `Sprint_2/etc/` contains verification notes, reduced data, marker import evidence, filter model evidence, chart output, and the CSV-generation helper script without overwriting the Sprint 1 campus/library baseline. | Verified |
 | WordPress component restoration | The home page was restored to an editable Gutenberg shell and the clickable header is visible again. | Verified |
-| Sprint 2 page component update | The live home page uses Gutenberg blocks for the editable shell plus one controlled school-map widget rather than a single full-page prototype. | Verified |
-| Architecture rationale | The hero remains Gutenberg block markup with CSS for visual precision; the map uses a controlled HTML widget as a risk response to the Sprint 1 component limits recorded in `DEF-003`, `DEF-005`, and `DEF-006`. Without this bounded widget, the larger Sprint 2 map could repeat the earlier limits around plugin configuration, close-detail usability, category handling, and default route/marker behaviour while also needing coordinate search, nearest results, sector colours, and 913-record density control. | Verified |
+| Sprint 2 page component update | The live home page uses Gutenberg blocks for the editable shell plus a dedicated Leaflet-based school-map section rather than a single full-page prototype. | Verified |
+| Architecture rationale | The hero remains Gutenberg block markup with CSS for visual precision; the map is a dedicated interactive school-map section that responds to the Sprint 1 component limits recorded in `DEF-003`, `DEF-005`, and `DEF-006`. This path keeps the page shell editable while supporting coordinate search, nearest results, sector colours, 913-record density control, range-circle feedback, and route preview. | Verified |
 | Baseline-protection evidence | Component restore and live-site verification notes record that the Sprint 1 campus/library baseline was protected before Sprint 2 school-map work continued. | Verified |
 | Wide-screen layout centring | The live page shell is centred within the wide viewport so the Sprint 2 map and evidence card do not sit against the far left with excessive blank space on the right. | Verified |
 | Live school markers | The live page displays filtered school markers from the reduced dataset instead of showing all 913 records at once. | Verified |
@@ -41,7 +41,7 @@
 
 ## Screenshot Evidence
 
-The screenshots below support the asynchronous showcase. They are not a replacement for the live site; they provide supporting evidence for the main demo paths.
+The screenshots below support the asynchronous showcase. They are retained because they clearly show the current main demo paths: default Melbourne Connect view, filter combination, nearest-six popup evidence, and route/range continuity.
 
 | Screenshot | Demonstrated Behaviour |
 | ---------- | ---------------------- |
@@ -70,7 +70,7 @@ No Sprint 2 user story remains open at the 12 May close-out checkpoint. Sprint 3
 The 11 May checkpoint can demonstrate a real Sprint 2 increment while keeping incomplete acceptance criteria visible:
 
 1. Open the site as an authenticated user and confirm the clickable site header remains visible.
-2. Confirm the page is built from Gutenberg blocks plus one controlled school-map widget, not from one large full-page prototype.
+2. Confirm the page is built from a Gutenberg page shell plus the dedicated school-map section, not from one large full-page prototype.
 3. Show the Sprint 2 hero and map section with the same rounded-card visual language as the Sprint 1 page.
 4. Confirm the page shell is centred on a wide screen and keeps the editable WordPress header and Gutenberg shell.
 5. Confirm the default school map uses Melbourne Connect, 1 km, and kilometre units.
@@ -95,9 +95,9 @@ US-05, US-06, and US-07 can be demonstrated as accepted at the 11 May checkpoint
 | Sprint 1 feedback warned against partial story-point burn-down. | Sprint 2 burn-down uses accepted-story remaining SP only. | @Manting Yu | Completed |
 | Sprint 1 feedback warned against task-level story point distribution. | Sprint 2 backlog keeps story points in the story-status summary and removes story-point values from the task tracking table. | @Fazheng Xu | Completed |
 | Sprint 1 feedback asked for action-item follow-up in stand-up records. | Sprint 2 stand-up log includes previous-work/follow-up and action status. | @Manting Yu | Completed |
-| Full-page prototype removed the WordPress component-editing trail. | Restore the page to a Gutenberg shell with one controlled school-map widget; the accepted implementation path is the live component-based page. | @Jiajun Jiang and @Fazheng Xu | Completed |
+| Full-page prototype removed the WordPress component-editing trail. | Restore the page to a Gutenberg shell with a dedicated school-map section; the accepted implementation path is the live component-based page. | @Jiajun Jiang and @Fazheng Xu | Completed |
 | Sprint 2 school markers should not overwrite the Sprint 1 map baseline. | Keep Sprint 2 generated data/page evidence separate from the Sprint 1 campus/library baseline. | @Fazheng Xu and @Conghao Lin | Completed |
-| Sprint 1 component limitations need a clear Sprint 2 resolution path. | Record that the controlled school-map widget is a bounded component compromise for the larger searchable/filterable school dataset, while the hero and page shell remain editable Gutenberg blocks. | @Fazheng Xu | Completed |
+| Sprint 1 component limitations need a clear Sprint 2 resolution path. | Record that the dedicated school-map section is a bounded component compromise for the larger searchable/filterable school dataset, while the hero and page shell remain editable Gutenberg blocks. | @Fazheng Xu | Completed |
 | Location-name search, coordinate search, default 1 km behaviour, nearby results, category filters, and nearest-secondary popup checks now pass. | Accept US-05, US-06, and US-07; keep US-09 separate until role registration is verified. | @Fazheng Xu and @Conghao Lin | Completed |
 | Wide-screen review found excessive blank space to the right of the Sprint 2 content. | Centre the existing Gutenberg shell with a targeted CSS rule and verify that the map component remains unchanged. | @Fazheng Xu and @Jiajun Jiang | Completed |
 | Role-specific registration was verified on 12 May. | Close US-09 and `DEF-008`; record `/register/`, the two user-type options, the temporary account role check, and registered-user map access. | @Zihan Shi and @Fazheng Xu | Completed |

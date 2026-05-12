@@ -6,18 +6,18 @@ This record verifies the live WordPress home page after the Sprint 2 component-b
 
 ## Implementation Path
 
-The live page is no longer the rejected single full-page Custom HTML prototype. The current page uses a hybrid component path:
+The live page is no longer the rejected single full-page Custom HTML prototype. The current page uses a Gutenberg-shell plus dedicated school-map path:
 
 - Gutenberg blocks for the editable page shell, hero text, side evidence card, and page structure.
-- One controlled map-widget block for the Sprint 2 school search/filter/results behaviour.
-- The generated widget reads the reduced 913-record school dataset and filters visible markers by radius and category controls.
+- A dedicated Leaflet-based school-map section for the Sprint 2 school search/filter/results behaviour.
+- The school-map section reads the reduced 913-record school dataset and filters visible markers by radius and category controls.
 - The earlier WP Go Maps `map ID 2` import path remains as data-preparation evidence, but the current user-facing Sprint 2 map does not render all imported markers by default.
 - Sprint 1 `map ID 1` remains the campus/library baseline and rollback reference.
-- A targeted CSS rule centres the Sprint 2 shell on wide screens so the page does not leave excessive blank space on the right side while preserving the Gutenberg shell and controlled widget.
+- A targeted CSS rule centres the Sprint 2 shell on wide screens so the page does not leave excessive blank space on the right side while preserving the Gutenberg shell and school-map section.
 
-The 913 school records were not added one by one. They were produced through the repeatable CSV-generation helper script and used by the live Sprint 2 map widget.
+The 913 school records were not added one by one. They were produced through the repeatable CSV-generation helper script and used by the live Sprint 2 school-map section.
 
-The map area is implemented as a controlled HTML widget as a bounded response to the Sprint 1 component limits recorded in the defect log. Without this adjustment, the larger Sprint 2 school map could repeat earlier limits around plugin configuration, close-detail usability, and route/marker/category handling while also needing coordinate search, default Melbourne Connect with 1 km density control, nearest-results list, category filtering over the reduced 913-record dataset, sector marker colours, and enriched nearest-six popups. The hero is not a single opaque page script: it remains generated Gutenberg block markup, with a small CSS style block used only to match the rounded-card layout, corrected left/right ratio, and gradient detail from the accepted visual style.
+The map area is implemented as a dedicated interactive section as a bounded response to the Sprint 1 component limits recorded in the defect log. Without this adjustment, the larger Sprint 2 school map could repeat earlier limits around plugin configuration, close-detail usability, and route/marker/category handling while also needing coordinate search, default Melbourne Connect with 1 km density control, nearest-results list, category filtering over the reduced 913-record dataset, sector marker colours, and enriched nearest-six popups. The hero is not a single opaque page script: it remains generated Gutenberg block markup, with a small CSS style block used only to match the rounded-card layout, corrected left/right ratio, and gradient detail from the accepted visual style.
 
 ## Formal Evidence Files
 
@@ -37,9 +37,9 @@ The live page remains the source of truth for the current component-based school
 | Check | Result | Evidence |
 | ----- | ------ | -------- |
 | Clickable site header visible | Pass | The site title and navigation links remain visible above the Sprint 2 content. |
-| Component-based page structure | Pass | The page content is generated as Gutenberg block markup for the visible page shell plus one controlled Sprint 2 map-widget block. |
+| Component-based page structure | Pass | The page content is generated as Gutenberg block markup for the visible page shell plus a dedicated Sprint 2 school-map section. |
 | User-facing page content | Pass | The lower page content now shows nearest secondary schools and outreach map focus, rather than internal verification-workflow text. |
-| Sprint 2 map rendering | Pass | The live page renders the generated school-map widget with Leaflet map tiles, controls, nearby results, and marker popups. |
+| Sprint 2 map rendering | Pass | The live page renders the school-map section with Leaflet map tiles, controls, nearby results, and marker popups. |
 | School marker density | Pass | Default first load uses Melbourne Connect and 1 km, showing 6 matching nearby schools rather than all 913 records at once. |
 | Sprint 1 baseline protected | Pass | Sprint 2 school evidence is generated separately and does not overwrite the Sprint 1 map baseline. |
 | Visual continuity | Pass | The top clickable WordPress header is visible, the Sprint 2 hero uses the same rounded-card language, and the gradient block is preserved with the corrected left/right card ratio. |
@@ -68,4 +68,4 @@ The live page remains the source of truth for the current component-based school
 
 ## Maintenance Note
 
-The live-site update followed the WordPress admin UI using Gutenberg block markup and a controlled map widget. The Sprint 2 dataset was prepared through repeatable CSV generation rather than manual marker entry.
+The live-site update followed the WordPress admin UI using Gutenberg block markup and a dedicated school-map section. The Sprint 2 dataset was prepared through repeatable CSV generation rather than manual marker entry.

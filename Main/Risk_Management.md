@@ -105,12 +105,12 @@ The risk register below documents the most important risks identified at the Wee
 
 | Risk ID | Status as of 2026-05-11 | Current Observation | Linked Sprint 2 Work |
 | ------- | ----------------------- | ------------------- | -------------------- |
-| R002 | Controlled for data/search/filter evidence | Reduced school dataset is prepared locally with 913 open records. The live controlled widget verifies default Melbourne Connect state, location/coordinate search, nearby results, category-filter combinations, nearest-six filtering, and all six enriched popups. | US-05, US-06, US-07, `S2_Reduced_School_Locations_2025.csv`, `S2-QA-001`, `S2-QA-015`, `S2-QA-016`, `S2-QA-017`. |
+| R002 | Controlled for data/search/filter evidence | Reduced school dataset is prepared locally with 913 open records. The live dedicated school-map section verifies default Melbourne Connect state, location/coordinate search, nearby results, category-filter combinations, nearest-six filtering, and all six enriched popups. | US-05, US-06, US-07, `S2_Reduced_School_Locations_2025.csv`, `S2-QA-001`, `S2-QA-015`, `S2-QA-016`, `S2-QA-017`. |
 | R005 | Controlled | Sprint 2 scope is broader than Sprint 1. US-05 to US-09 have now passed live-site or configuration QA. | Burn-down, stand-up follow-up, QA tracking. |
 | R006 | Active | Sprint 2 changes the domain from campus/library markers to school markers and adds authentication/registration requirements. | Product Backlog US-05 to US-09 and Sprint 2 Planning. |
-| R010 | Controlled for US-05 to US-07 | The school dataset is live through the controlled widget. First-load marker density is controlled by the Melbourne Connect 1 km default, the nearby list updates with search/filter inputs, marker colours distinguish school sectors, and category-filter combinations are verified. | US-05, US-06, US-07. |
+| R010 | Controlled for US-05 to US-07 | The school dataset is live through the dedicated school-map section. First-load marker density is controlled by the Melbourne Connect 1 km default, the nearby list updates with search/filter inputs, marker colours distinguish school sectors, and category-filter combinations are verified. | US-05, US-06, US-07. |
 | R011 | Controlled | Login redirect, invalid-login error, role-specific registration form, user-type selection, role record, and registered-user access are verified. | US-08, US-09, `DEF-008`. |
-| R012 | Controlled for US-05 to US-07 | The live page has been restored to an editable Gutenberg shell after the full-page prototype was rejected, and the controlled school-map widget now passes US-05, US-06, and US-07 live checks. | `DEF-007`, `DEF-010`, US-05 to US-07, Sprint Showcase. |
+| R012 | Controlled for US-05 to US-07 | The live page has been restored to an editable Gutenberg shell after the full-page prototype was rejected, and the dedicated school-map section now passes US-05, US-06, and US-07 live checks. | `DEF-007`, `DEF-010`, US-05 to US-07, Sprint Showcase. |
 
 ## Sprint 1 Risk Response Tracking Strategy
 
