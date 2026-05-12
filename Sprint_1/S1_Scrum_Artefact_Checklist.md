@@ -50,7 +50,7 @@ This checklist records the Sprint 1 close-out check against the published Sprint
 | Acceptance criteria use BDD-style wording. | Checked | Product Backlog, Sprint Planning, and QA use Given/When/Then acceptance criteria or test scenarios. |
 | Estimates and task breakdown are visible. | Checked | Sprint Planning records relative estimation rationale and Sprint Backlog records task ownership/tracking. |
 | Requirement changes are not hidden. | Checked | `US-02` library-scope deletion is recorded in backlog, planning, burn-down, risk, decisions, QA, showcase, and retrospective. |
-| Burn-down is not artificially smoothed. | Checked | Ideal line stays fixed; actual/reforecast line shows Day 5 downward change and Day 12 upward rework. The actual/reforecast line is also described as a risk-response tracking signal for `R004` and `R006`. |
+| Burn-down records visible requirement clarification and rework. | Checked | Ideal line stays fixed; actual/reforecast line shows Day 5 downward change and Day 12 upward rework. The actual/reforecast line is also described as a risk-response tracking signal for `R004` and `R006`. |
 | Defects and unresolved constraints are recorded. | Checked | `DEF-001` to `DEF-006` record API, route visibility, Code Snippets, marker colour, zoom, and direction category constraints. |
 | Evidence is stored and linked. | Checked | Screenshots are stored under `Sprint_1/etc/`, including `S1_Directions_Route.png`. |
 | Release tag and final commit comments. | Checked | The final Sprint 1 submission commit is on `main`, and the Sprint 1 release tag points to the current submission baseline. |

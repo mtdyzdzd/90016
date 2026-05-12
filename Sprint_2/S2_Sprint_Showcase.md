@@ -20,7 +20,7 @@
 | ---- | -------- | ------ |
 | Reduced Sprint 2 school dataset | `Sprint_2/etc/S2_Reduced_School_Locations_2025.csv` contains 913 open school records in the required five Melbourne areas. | Verified |
 | Repeatable data generation | `Sprint_2/etc/generate_sprint2_school_outputs.py` regenerates the reduced CSV, nearest-six CSV, WP Go Maps marker import CSV, filter model CSV, and data evidence notes. | Verified |
-| Separate Sprint 2 evidence path | `Sprint_2/etc/` contains reviewer-facing verification notes, reduced data, marker import evidence, filter model evidence, chart output, and the CSV-generation helper script without overwriting the Sprint 1 campus/library baseline. | Verified |
+| Separate Sprint 2 evidence path | `Sprint_2/etc/` contains verification notes, reduced data, marker import evidence, filter model evidence, chart output, and the CSV-generation helper script without overwriting the Sprint 1 campus/library baseline. | Verified |
 | WordPress component restoration | The home page was restored to an editable Gutenberg shell and the clickable header is visible again. | Verified |
 | Sprint 2 page component update | The live home page uses Gutenberg blocks for the editable shell plus one controlled school-map widget rather than a single full-page prototype. | Verified |
 | Architecture rationale | The hero remains Gutenberg block markup with CSS for visual precision; the map uses a controlled HTML widget as a risk response to the Sprint 1 component limits recorded in `DEF-003`, `DEF-005`, and `DEF-006`. Without this bounded widget, the larger Sprint 2 map could repeat the earlier limits around plugin configuration, close-detail usability, category handling, and default route/marker behaviour while also needing coordinate search, nearest results, sector colours, and 913-record density control. | Verified |
@@ -41,7 +41,7 @@
 
 ## Screenshot Evidence
 
-The screenshots below support the asynchronous showcase. They are not a replacement for the live site; they provide reviewer-facing evidence for the main demo paths.
+The screenshots below support the asynchronous showcase. They are not a replacement for the live site; they provide supporting evidence for the main demo paths.
 
 | Screenshot | Demonstrated Behaviour |
 | ---------- | ---------------------- |

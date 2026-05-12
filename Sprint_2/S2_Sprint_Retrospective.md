@@ -56,9 +56,9 @@
 | Action Item | Owner | Due Date | Status |
 | ----------- | ----- | -------- | ------ |
 | Maintain generated data/script evidence for review. | @Fazheng Xu | 2026-05-11 | Completed |
-| Keep live school map/search/filter verification evidence in QA and Showcase after component import. | @Jiajun Jiang and @Conghao Lin | 2026-05-11 | Completed |
-| Keep role-specific registration open until registration can be enabled and role selection tested. | @Conghao Lin and @Zihan Shi | 2026-05-12 | Completed |
-| Update final Sprint 2 showcase if US-09 is resolved before close-out; otherwise carry it forward explicitly. | Scrum Team | 2026-05-12 | Completed |
+| Keep live school map/search/filter verification evidence in QA and Showcase after component import. | @Fazheng Xu, @Jiajun Jiang, and @Conghao Lin | 2026-05-11 | Completed |
+| Keep role-specific registration open until registration can be enabled and role selection tested. | @Fazheng Xu, @Conghao Lin, and @Zihan Shi | 2026-05-12 | Completed |
+| Update final Sprint 2 showcase if US-09 is resolved before close-out; otherwise carry it forward explicitly. | @Fazheng Xu and Scrum Team | 2026-05-12 | Completed |
 
 ## Retrospective Conclusion
 

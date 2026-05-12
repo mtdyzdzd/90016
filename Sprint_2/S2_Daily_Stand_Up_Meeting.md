@@ -82,7 +82,7 @@ Sprint 2 work is recorded from **1 May to 7 May 2026**, then again on **11 May 2
 | ----------- | ------------------------- | ------------ | -------- | ------------------------- |
 | @Manting Yu | Checked 5 May implementation status. | Confirm no work will be recorded for 8 May to 10 May. | None. | Keep non-working dates explicit. |
 | @Zihan Shi | Registration requirement reviewed. | Check public registration path and expected role options. | Registration path may be disabled. | Track role registration separately from login. |
-| @Fazheng Xu | WP Go Maps import files prepared. | Back up current WordPress page and map data before live update. | None. | Keep raw rollback assets locally and store reviewer-facing restore notes in Sprint 2 evidence. |
+| @Fazheng Xu | WP Go Maps import files prepared. | Back up current WordPress page and map data before live update. | None. | Keep raw rollback assets locally and store restore notes in Sprint 2 evidence. |
 | @Jiajun Jiang | Component configuration in progress. | Prepare final live update and map component verification. | Need to verify WP Go Maps settings after import. | Use page state and DOM checks after publishing. |
 | @Conghao Lin | QA table drafted. | Prepare public redirect and invalid-login verification commands. | Need a safe invalid login value. | Use a clearly invalid test username only. |
 

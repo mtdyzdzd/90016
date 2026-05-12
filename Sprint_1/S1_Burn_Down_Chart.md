@@ -17,7 +17,7 @@
 
 The ideal burn-down line was fixed during Sprint Planning. The team made progress each day, but not every daily change was recorded at the time. This chart therefore uses a close-out reconciliation method, daily points were reconstructed from stand-up/checkpoint notes, Sprint Backlog changes, defect records, WordPress evidence, and Definition of Done checks.
 
-To keep the chart honest rather than artificially smooth:
+The Sprint 1 chart is maintained using the following tracking rules:
 
 - Story-point burn-down records the best reconstructed story-completion checkpoint from the Sprint Backlog, stand-up/checkpoint notes, and final close-out evidence.
 - The 2026-04-26 QA table records final regression and evidence reconciliation, not necessarily the first date when each story became implementation-ready or had an initial validation check.

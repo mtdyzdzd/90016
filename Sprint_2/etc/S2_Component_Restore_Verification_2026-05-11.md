@@ -18,7 +18,7 @@ This record is the 11 May rollback/restoration checkpoint. The 11 May follow-up 
 
 ## Rollback Point Before Sprint 2 Component Import
 
-The current WP Go Maps map state was reviewed before further Sprint 2 component work. This record keeps the reviewer-facing summary: map ID 1 contained five marker records and directions remained enabled.
+The current WP Go Maps map state was reviewed before further Sprint 2 component work. This record keeps the verification summary: map ID 1 contained five marker records and directions remained enabled.
 
 ## Sprint 2 Component Preparation
 
