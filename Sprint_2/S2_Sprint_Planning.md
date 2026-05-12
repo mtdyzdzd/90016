@@ -75,11 +75,11 @@ The Sprint 1 release/submission on **27 April 2026** is the prior repository bas
 | 2026-05-02 | Download and inspect the official school dataset; confirm the five required Melbourne areas. |
 | 2026-05-03 | Reduce the dataset to open school records and prepare map-ready category fields. |
 | 2026-05-04 | Calculate distance from Melbourne Connect and identify the six closest secondary schools. |
-| 2026-05-05 | Prepare search, nearest-results, filter, and popup interaction design for the WP Go Maps component path. |
-| 2026-05-06 | Prepare QA cases, authentication verification checks, and WP Go Maps import rollback checks. |
+| 2026-05-05 | Prepare search, nearest-results, filter, and popup interaction design while reviewing whether the existing map plugin path can support the larger Sprint 2 school-map scope. |
+| 2026-05-06 | Prepare QA cases, authentication verification checks, and map-import rollback checks before changing the live page. |
 | 2026-05-07 | Prepare the CSV-generation helper script, marker import CSV, filter model CSV, and live-update checklist. |
 | 2026-05-08 to 2026-05-10 | No Sprint 2 work content recorded. |
-| 2026-05-11 | Restore the live page to the component-style WP Go Maps baseline, back up map ID 1, verify login redirect and invalid-login error, and prepare the school-map component path. |
+| 2026-05-11 | Restore the editable live-page shell, protect the Sprint 1 map baseline, verify login redirect and invalid-login error, and prepare the dedicated Sprint 2 school-map section. |
 | 2026-05-11 | Publish the Sprint 2 Gutenberg shell plus dedicated school-map section; verify reduced school-map load, Melbourne Connect default, 1 km kilometre distance, controlled marker density, location/coordinate search, nearby results, one-/two-/three-category filter combinations, nearest-six filtering, sector marker colours, all six nearest-school logo/website popups, and wide-screen page-shell centring. Keep role registration open. |
 | 2026-05-12 | Configure and verify public role-specific registration through `/register/`: Forminator provides the registration form and user-type field, Force Login protects the map page, native registration routes redirect to `/register/`, and temporary user `graycat` is recorded as `University Student` before accessing the protected map. Also verify Sprint 1 continuity by restoring the visible range-circle layer and the selected-school route preview. |
 

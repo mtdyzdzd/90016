@@ -4,6 +4,8 @@
 
 This record verifies the live WordPress home page after the Sprint 2 component-based school-map update. The current home page is `https://swen90016-wp2.its.unimelb.edu.au/t07-g02/`.
 
+This file is the 11 May school-map and access-control checkpoint, not the final Sprint 2 close-out for role registration. It intentionally leaves US-09 open at this point; the 12 May role-registration close-out is recorded separately in `Sprint_2/etc/S2_US09_Role_Registration_Verification_2026-05-12.md`.
+
 ## Implementation Path
 
 The live page is no longer the rejected single full-page Custom HTML prototype. The current page uses a Gutenberg-shell plus dedicated school-map path:
@@ -54,7 +56,7 @@ The live page remains the source of truth for the current component-based school
 | Nearest-six secondary filter | Pass | Selecting the nearest-six checkbox shows the six prepared secondary schools from the Melbourne Connect evidence set. |
 | Nearby secondary school popup | Pass | All six nearest-secondary popups display logo images, address or school details, education sector, school type, area, suburb, distance, website links, and directions links. |
 | All six nearest school logo checks | Pass | University High School, Academy of Mary Immaculate, Simonds Catholic College, Holmes Grammar School, Ozford College, and Princes Hill Secondary College were individually opened and verified. |
-| Role-specific registration | Fail / Open | Public registration remains disabled and no outreach officer/student role choices are present. |
+| Role-specific registration | Open at 11 May checkpoint | Public registration remained disabled and no outreach officer/student role choices were present at this checkpoint. This was closed by the 12 May role-registration verification record. |
 
 ## Accepted Stories
 
@@ -64,7 +66,7 @@ The live page remains the source of truth for the current component-based school
 | US-06 | Accepted at the 11 May checkpoint. Location-name search, coordinate search, nearest-results listing, and no-match handling are verified. |
 | US-07 | Accepted at the 11 May checkpoint. Category-filter combinations, nearest-six filtering, sector marker colours, and all six live logo/popup checks are verified. |
 | US-08 | Accepted on 2026-05-11. |
-| US-09 | Not accepted; keep open. |
+| US-09 | Open at 11 May checkpoint; closed by the 12 May role-registration verification record. |
 
 ## Maintenance Note
 

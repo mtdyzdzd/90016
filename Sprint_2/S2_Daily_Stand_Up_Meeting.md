@@ -35,7 +35,7 @@ Sprint 2 work is recorded from **1 May to 7 May 2026**, then again on **11 May 2
 | @Manting Yu | AI2-001 started. | Confirm task owners and ensure story points remain story-level only. | None. | Keep task progress separate from accepted-story burn-down. |
 | @Zihan Shi | AI2-002 in progress. | Map Sprint 2 requirement wording to US-05 to US-09 acceptance criteria. | None. | Update Planning and Product Backlog wording. |
 | @Fazheng Xu | AI2-003 started with official source URL. | Inspect fields for school status, area, sector, type, coordinates, and suburb. | Need repeatable script output. | Build data-generation script. |
-| @Jiajun Jiang | AI2-004 started. | Review how Sprint 2 school data can be added through the existing WP Go Maps component path. | Existing live page still shows Sprint 1 content. | Preserve a local rollback point before changing the live page. |
+| @Jiajun Jiang | AI2-004 started. | Review how Sprint 2 school data can be added through the existing map plugin/component path before deciding the final implementation route. | Existing live page still shows Sprint 1 content. | Preserve a local rollback point before changing the live page. |
 | @Conghao Lin | AI2-005 started. | Draft dataset and login redirect tests. | None. | Add test IDs for dataset count and public redirect. |
 
 ### Date: 2026-05-03
