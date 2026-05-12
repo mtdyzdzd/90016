@@ -17,7 +17,7 @@ This checklist records the Sprint 1 close-out check against the published Sprint
 | S1-REQ-07 | Directions can be shown from Melbourne Connect or another entered location to a selected marker/location. | Complete with documented environment constraint | Route evidence is stored in `Sprint_1/etc/S1_Directions_Route.png`. Code Snippets 403 prevented custom validation and is recorded as `DEF-003`. |
 | S1-REQ-08 | The system is ready for further enhancements in Sprints 2 and 3. | Complete with carry-forward risks | Sprint 2 should validate WordPress permissions, plugin configuration, and custom-code assumptions early. |
 | S1-REQ-09 | Route evidence image is available in the Sprint 1 evidence folder. | Complete | `Sprint_1/etc/S1_Directions_Route.png` exists and is linked from `S1_Sprint_Showcase.md`. |
-| S1-REQ-10 | Library data used for required US-02 evidence is reduced to the latest available year and records that represent libraries only. | Complete with documented evidence boundary | QA and Showcase state this data rule. City Library is the required City of Melbourne library evidence marker; optional UoM/RMIT library markers are contextual only. |
+| S1-REQ-10 | Library data used for required US-02 evidence is reduced to the latest available year and records that represent libraries only. | Complete with documented evidence boundary | QA and Showcase state this data rule. City Library is the required City of Melbourne library evidence marker, checked against the 2024 Data Vic library classification (`industry_anzsic4_code = 6010` / `Libraries and Archives`); optional UoM/RMIT library markers are contextual only. |
 
 ## Requirement Clarification Checklist
 
@@ -80,7 +80,7 @@ This checklist records the Sprint 1 close-out check against the published Sprint
 | Risk / Closure Item | Status | Required Action Before Final Submission |
 | ------------------- | ------ | --------------------------------------- |
 | Live WordPress page accessibility and map loading. | Checked | The live WordPress page was re-opened during close-out; the map loaded with five formal markers, marker popups, and route evidence. Screenshots remain in Git as repository evidence if the page requires login or plugin assets fail during review. |
-| Dataset traceability for US-02. | Documented | Keep the required evidence limited to City of Melbourne area library records and ensure any final raw-data note or upload, if requested, matches the latest-year/library-only rule. |
+| Dataset traceability for US-02. | Documented | Required evidence is limited to City Library as the City of Melbourne marker, and QA/Showcase document the Data Vic latest-year/library-only source/filter rule. |
 | Asynchronous demo video expectation. | Conditional / not identified as mandatory for Sprint 1 | Sprint 1 notes ask for a Demo Summary with screenshots/descriptions/videos as appropriate. The Git showcase contains screenshots and a demo sequence; record video only if the assessment channel or tutor explicitly requests it for Sprint 1. |
 | Release tag and commit comments. | Completed | The final commit is on `main` and the Sprint 1 release tag identifies the current submission baseline. |
 | Unresolved constraints. | Documented | `DEF-003`, `DEF-005`, and `DEF-006` are intentionally carried forward and should not be described as hidden or fully solved implementation work. |

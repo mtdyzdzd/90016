@@ -56,6 +56,8 @@ Daily tracking records the remaining story points for the user story. To avoid t
 
 **Map Zoom and Category Constraint Evidence:** Final close-out review recorded two additional accepted constraints. First, close-detail zoom is limited even though the map supports the Sprint 1 zoom/pan and marker-selection demonstration. Second, route start/end waypoint markers use plugin default styling and free-text route inputs cannot be categorised as a known building/library without matching them to stored marker/category data. These are recorded as `DEF-005` and `DEF-006` and carried forward to Sprint 2 planning.
 
+**Close-out QA Reconciliation:** US-03, US-02, and US-01 reached story-level completion checkpoints before the final sprint day. The 2026-04-26 QA work was used as final regression and evidence reconciliation, not as evidence that all story work first became complete on that date. The US-01 building-marker colour issue found during final QA is recorded as `DEF-004`, fixed, and retested before close-out.
+
 ## Task Breakdown Rationale
 
 Each selected user story is broken into tasks covering scope confirmation, data or configuration preparation, implementation, validation against acceptance criteria, and sprint progress coordination. This structure keeps the backlog traceable to Sprint Planning while making blockers and QA work visible during Sprint 1.
