@@ -1,0 +1,63 @@
+# Scrum Roles and Responsibilities - Assignment 2
+
+- Document your Scrum Roles and Responsibilities for Assignment 2.  
+- Refer to Scrum_Roles_Responsibilities_Guide_and_Example.md under the Guides folder for guidance on how to document this section. An example is shown.
+- You can reuse formatting and sections from the guidance for documenting this section
+
+------
+
+The project team consists of 5 members. Each member holds a primary Scrum role while also contributing to delivery workstreams to ensure equitable participation and cross-functional capability across all sprints.
+
+## Scrum Roles Overview
+
+The project uses the standard Scrum roles of Scrum Master, Product Owner, and Development Team, while also assigning clear work-stream ownership for map configuration, data preparation, user interaction design, documentation quality, and quality assurance/test checking. Depending on the final team roster, one person may hold both a Scrum role and a delivery work-stream responsibility.
+
+- **Scrum Master:** Facilitates ceremonies, monitors blockers, coordinates escalation, and keeps delivery work aligned with agreed sprint commitments.
+- **Product Owner:** Maintains backlog clarity, defines acceptance expectations, aligns planning with the published case study, and manages stakeholder-facing clarification.
+- **Development Team:** Delivers the selected sprint work, including map setup, content preparation, direction workflow configuration, user interaction design, and supporting validation activities.
+
+## Roles Documentation
+
+### PEP Phase
+
+| Role / Workstream | Team Member | Responsibilities | Additional Responsibilities |
+| ----------------- | ----------- | ---------------- | --------------------------- |
+| **Scrum Master** | @Manting Yu | Facilitate Week 5 planning sessions, coordinate document ownership across the PEP artefacts, monitor blockers that affect submission readiness, and ensure the communication and escalation approach is defined before Sprint 1 begins. | Developer - contribute to Sprint 1 mapping and data preparation tasks, and support follow-up when blockers need escalation. |
+| **Product Owner** | @Zihan Shi | Translate the case study into backlog items, maintain alignment between sprint outcomes and acceptance criteria, monitor official teaching-staff guidance, and ensure scope assumptions are recorded consistently across the PEP artefacts. | Developer - support acceptance criteria validation and user story testing, especially where scope interpretation affects QA. |
+| **Development Team / Map and Data Lead** | @Fazheng Xu | Prepare the initial draft of the PEP based on the case study, rubric, and provided templates. Translate the published project requirements into structured assumptions, constraints, user stories, acceptance criteria, Sprint 1 planning content, and backlog tasks, while ensuring consistency across the Main and Sprint_1 documents. Identify key dependencies, delivery risks, and scope boundaries to support team discussion and sprint execution planning. | Developer - contribute to Sprint 1 map/data preparation tasks and perform self-checks on data accuracy before work is presented for QA. |
+| **Development Team / UI and Interaction Lead** | @Jiajun Jiang | Define the expected behaviour for marker interaction and basic direction finding, support consistent user-facing wording in the backlog, and identify any interface-level dependencies or ambiguities. | UI/UX - responsible for user interaction design, front-end implementation, and self-testing before handing work to QA. |
+| **Development Team / QA and Test Lead** | @Conghao Lin | Review artefacts for rubric coverage, maintain cross-document consistency, define the initial Definition of Done, and ensure assumptions, risks, backlog items, and Sprint 1 planning references remain traceable. | QA/Test - responsible for acceptance testing, peer review coordination, defect confirmation, and Definition of Done enforcement. |
+
+The Sprint 1 role assignments reflect a continuation of the PEP phase responsibilities, with adjustments to focus on delivery activities. The Scrum Master and Product Owner roles remain unchanged to maintain continuity. Development Team members shift from documentation and planning tasks to implementation and validation work aligned with the Sprint 1 focus areas. Should roles change in Sprint 2 or Sprint 3, this document will be updated with reasons for the change.
+
+### Planned Sprint 1 Phase (13 April 2026 to 27 April 2026)
+
+| Role / Workstream | Team Member | Responsibilities | Additional Responsibilities |
+| ----------------- | ----------- | ---------------- | --------------------------- |
+| **Scrum Master** | @Manting Yu | Run Sprint Planning, stand-ups or async checkpoints, the Sprint Review, and the Retrospective; track blockers affecting US-01 to US-04; and trigger issue-resolution meetings when dependencies or absences put the sprint goal at risk. | Developer - contribute to Sprint 1 mapping and data preparation tasks, and make sure blockers are reflected in sprint artefacts rather than remaining only in chat. |
+| **Product Owner** | @Zihan Shi | Confirm the accepted interpretation of "selected locations" and "basic direction finding," maintain backlog order, and record any clarification received from the teaching staff. | Developer - support acceptance criteria validation and user story testing, and confirm when a scope decision affects QA or backlog updates. |
+| **Development Team / Map and Data Lead** | @Fazheng Xu | Assess how the WordPress environment can represent selected locations, identify the minimum dataset needed for buildings and libraries, and document technical dependencies and assumptions that affect Sprint 1 mapping work. Prepare the selected university building and library location data, configure map-related content and marker placement, support technical setup for Sprint 1 mapping stories, reconfigure the ORS direction setup where needed, and fix the final UoM/RMIT building marker colour gap before close-out. | Documentation Lead - maintain Sprint 1 artefacts and cross-document consistency, reconcile live WordPress behaviour with the Scrum artefacts, and perform self-checks on map/data changes before QA review. |
+| **Development Team / UI and Interaction Lead** | @Jiajun Jiang | Implement or configure the marker detail interaction, support the direction input and selection workflow, and ensure the visible user flow matches the Sprint 1 acceptance criteria. | UI/UX - responsible for user interaction design, front-end implementation, self-testing, and updating work after peer-review feedback. |
+| **Development Team / QA and Test Lead** | @Conghao Lin | Validate Sprint 1 work against the Definition of Done, maintain the Sprint Backlog and supporting evidence, review acceptance criteria coverage, and check that documented progress matches the actual sprint scope. | QA/Test - responsible for acceptance testing, peer review coordination, defect confirmation, and documenting whether stories are truly ready to be treated as Done. |
+
+### Sprint 2 Phase (4 May 2026 to 17 May 2026)
+
+| Role / Workstream | Team Member | Responsibilities | Additional Responsibilities |
+| ----------------- | ----------- | ---------------- | --------------------------- |
+| **Scrum Master** | @Manting Yu | Maintain checkpoint rhythm, require follow-up on previous action items, keep burn-down based on accepted whole stories, and escalate live-site blockers that prevent Sprint 2 showcase evidence. | Developer - support data import coordination and make sure open defects are reflected in Sprint 2 artefacts. |
+| **Product Owner** | @Zihan Shi | Maintain Sprint 2 requirement interpretation for school map, search, category filters, default location/distance, and authentication; keep login redirect and role registration acceptance criteria separate. | Developer - review category/filter wording and confirm whether registration role behaviour satisfies the published requirement. |
+| **Development Team / Map, Data, and Evidence Lead** | @Fazheng Xu | Prepare and validate the reduced Victorian School Locations 2025 dataset, identify the six nearest secondary schools, prepare website-link/logo evidence, generate import/filter artefacts, maintain the current school-map widget evidence, and maintain the live-verification evidence trail. | Documentation Lead - keep Sprint 2 data evidence, Product Backlog, Sprint Backlog, QA, Showcase, risk records, and the CSV-generation helper script aligned. |
+| **Development Team / UI and Interaction Lead** | @Jiajun Jiang | Configure and review the school map interaction, search-by-location behaviour, nearest-result list, category filter controls, and marker popup enrichment on the WordPress site. | UI/UX - ensure the live page moves beyond Sprint 1 content and supports the expected Sprint 2 user flow, while coordinating implementation evidence with @Fazheng Xu. |
+| **Development Team / QA and Test Lead** | @Conghao Lin | Validate Sprint 2 against acceptance criteria, keep local data preparation separate from live-site verification, and record failed or pending checks as defects or open QA items. | QA/Test - verify login redirect, wrong-credential error, role registration, search/filter behaviour, and six-school popup evidence before stories are marked Done. |
+
+## Testing Responsibilities Across the Team
+
+- Each delivery owner is responsible for self-checking their own work before it is presented for QA or peer review.
+- The QA and Test Lead coordinates acceptance checking, but testing is not treated as the responsibility of only one team member.
+- Developers are expected to respond to QA findings, retest their own fixes, and support peer review before a story can satisfy the Definition of Done.
+
+## Role Alignment with Other Artefacts
+
+- Meeting ownership in the Communication Strategy is aligned with the Scrum Master and Product Owner roles defined above.
+- Risk monitoring responsibilities are shared across the Scrum Master, Product Owner, and relevant delivery developer depending on whether the risk is primarily schedule-related, scope-related, or technical.
+- The Product Owner is responsible for maintaining and prioritising the Product Backlog, ensuring alignment between backlog items and sprint outcomes across all sprints.
