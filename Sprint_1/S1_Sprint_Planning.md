@@ -148,17 +148,19 @@ US-04 is estimated above the baseline because it introduces the most uncertain S
 | US-03 | Define the minimum location detail set; configure the marker detail interaction; validate content mapping. |
 | US-04 | Confirm the approved basic direction workflow; configure starting-point input; connect the selected destination to the direction response; validate the end-to-end flow. |
 
-## Sprint 1 Technical Work Already Underway by 2026-04-22
+## Sprint 1 Technical Work Completed by Close-out
 
-Although Sprint 1 is still in progress, the team has already moved beyond planning-only work. The following concrete technical and research-oriented activities have been undertaken during the period from **2026-04-13** to **2026-04-22**:
+Sprint 1 moved beyond planning into WordPress configuration, data preparation, validation, and close-out evidence work. The following technical and research-oriented activities were completed or reconciled during the period from **2026-04-13** to **2026-04-26**:
 
 - Review of the approved WordPress environment to identify what map and marker behaviour can be configured without leaving the allowed platform.
 - Preparation of map-ready building and City of Melbourne area library location fields, including the minimum data needed for marker placement and basic details.
 - Investigation of how a shared WordPress map page can support both university-building and library markers without treating them as separate implementations.
-- Early configuration work for marker-detail behaviour so that `US-03` remains tied to real interaction work rather than only to descriptive planning.
-- Focused feasibility investigation for the minimum acceptable `US-04` direction workflow, including what kind of starting-point input and destination response might realistically be supported.
+- Configuration and close-out checking for marker-detail behaviour so that `US-03` remains tied to real interaction work rather than only to descriptive planning.
+- Focused feasibility investigation and final validation for the minimum acceptable `US-04` direction workflow, including the supported starting-point input and selected-marker destination response.
 
-These activities are tracked in more detail in the Sprint Backlog, the Daily Stand-Up / checkpoint log, and `S1_Technical_Investigation_and_WordPress_Work.md`.
+These activities are tracked in more detail in the Sprint Backlog, the Daily Stand-Up / checkpoint log, the Quality Assurance artefact, and the Defect Log.
+
+This evidence supports the consistency between the Sprint planning hypothesis and the Sprint Backlog execution records at the Sprint boundary.
 
 ## Detailed Task Breakdown
 
@@ -198,8 +200,10 @@ This story is broken down so that scope, interaction, data wiring, and QA can be
 - `US4_T3 🟣` Connect the selected destination to the available basic direction response within the approved environment, or document why the current WordPress-compatible options are not yet sufficient. Owner: `@Fazheng Xu`.
 - `US4_T4` Validate the direction workflow, including visible handling of incomplete, invalid, or unsupported inputs. Owner: `@Conghao Lin`.
 
-This breakdown is intentionally conservative because US-04 carries the highest uncertainty in Sprint 1. `US4_T1 🟣` exists to lock scope before technical work expands; `US4_T2 🟣` and `US4_T3 🟣` carry most of the feasibility risk; and `US4_T4` ensures the story is not treated as complete unless unsupported or incomplete paths are handled honestly.
+This breakdown is intentionally conservative because US-04 carries the highest uncertainty in Sprint 1. `US4_T1 🟣` exists to lock scope before technical work expands; `US4_T2 🟣` and `US4_T3 🟣` carry most of the feasibility risk within the approved WordPress environment; and `US4_T4` ensures the story is not treated as complete unless unsupported or incomplete paths are handled honestly.
+
+This sequencing method ensures that direction-related configuration work remains aligned with the approved Sprint 1 outcome expectations.
 
 ## Sprint Commitment
 
-The team commits to **US-01**, **US-02**, **US-03**, and **US-04** for Sprint 1, with a total planned effort of **10 story points**. This commitment reflects the fixed Sprint 1 outcome released by the teaching team, the lack of project-specific historical velocity, and the need for a conservative commitment level for a new student Scrum team working within a two-week sprint. The detailed task ownership and execution tracking are carried directly into the Sprint 1 Backlog using the same story IDs, scope, and estimates.
+The team commits to **US-01**, **US-02**, **US-03**, and **US-04** for Sprint 1, with a total planned effort of **10 story points**. This commitment reflects the fixed Sprint 1 outcome released by the teaching team, the lack of project-specific historical velocity, and the need for a conservative commitment level for a new student Scrum team working within a two-week sprint. The detailed task ownership and execution tracking are carried directly into the Sprint 1 Backlog using the same story IDs, scope, and estimates. This ensures traceability between Sprint planning commitments and execution records.
