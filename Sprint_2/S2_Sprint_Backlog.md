@@ -72,7 +72,10 @@ The Sprint 2 work record is intentionally sequenced through **1 May to 7 May 202
 | May 8 | 24 | No Sprint 2 work content recorded. |
 | May 9 | 24 | No Sprint 2 work content recorded. |
 | May 10 | 24 | No Sprint 2 work content recorded. |
-| May 11 | 3 | US-08, US-05, US-06, and US-07 reach live acceptance by the final 11 May checkpoint. US-09 remains open because role registration is unavailable. |
+| May 11 - access check | 21 | US-08 reaches live acceptance after login redirect, username/password fields, and invalid-login error behaviour are verified. |
+| May 11 - map check | 13 | US-05 reaches live acceptance after the reduced school map, Melbourne Connect default, 1 km kilometre distance, controlled marker density, sector colours, and wide-screen shell centring are verified. |
+| May 11 - search check | 8 | US-06 reaches live acceptance after location-name search, coordinate search, nearby-results listing, and no-match handling are verified. |
+| May 11 - filter check | 3 | US-07 reaches live acceptance after category-filter combinations, nearest-six filtering, all six nearest-school popup logo/website checks, visible range-circle continuity, and selected-school route preview are verified. US-09 remains open. |
 | May 12 | 0 | US-09 is accepted after role-registration verification, reducing remaining accepted-story SP to 0. |
 
 ## Implementation Notes

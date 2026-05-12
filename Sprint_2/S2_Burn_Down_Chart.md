@@ -21,8 +21,8 @@ Sprint 2 uses the same burn-down structure as the formal Sprint 1 repository bas
 - The story remaining line changes only at whole-story checkpoints, not for partial task progress.
 - The ideal line stays fixed from the start of the sprint window to the final checkpoint.
 - The actual/reforecast line records changes in expected remaining effort caused by implementation clarity, risk reduction, or unresolved blockers.
-- The 11 May live-site QA table is a verification and reconciliation checkpoint. Earlier on 11 May it accepts US-08 after live authentication checks and records that US-05 to US-07 still need live school-map verification.
-- The final 11 May school-map checkpoint records the follow-up component-based school map update: the live page verifies US-05, US-06, and US-07 as whole stories. US-09 remains open at that point because role-specific registration is not yet available.
+- The 11 May live-site QA table is a verification and reconciliation checkpoint. The accepted-story line records same-day acceptance sub-checkpoints rather than collapsing all accepted stories into one drop.
+- The 11 May sub-checkpoints accept US-08 first, then US-05, US-06, and US-07 as each whole story reaches DoD. US-09 remains open at that point because role-specific registration is not yet available.
 - The 12 May checkpoint records the final US-09 role-registration verification and burns the remaining 3 SP only after the story reaches acceptance.
 
 This chart therefore does not burn half story points as partial credit, and it does not treat the rejected full-page prototype as accepted story delivery. Work still progresses from 1 May to 7 May through data reduction, nearest-six evidence, import-file generation, and QA preparation, but story points burn only when the live component behaviour is accepted.
@@ -50,8 +50,8 @@ This was useful in Sprint 2 because:
 
 ## Burn Down Data Table
 
-| Day | Date | Ideal Remaining (SP) | Story Remaining (SP) | Actual / Reforecast Remaining (SP) | Daily Update / Change Note |
-| --- | ---- | -------------------- | -------------------- | ---------------------------------- | -------------------------- |
+| Checkpoint | Date | Ideal Remaining (SP) | Story Remaining (SP) | Actual / Reforecast Remaining (SP) | Daily Update / Change Note |
+| ---------- | ---- | -------------------- | -------------------- | ---------------------------------- | -------------------------- |
 | 1 | Apr 28 | 24.0 | 24 | 24 | Sprint 2 starts after the 27 April Sprint 1 release/submission baseline; Sprint 1 comments and Sprint 2 requirement changes are reviewed. |
 | 2 | Apr 29 | 22.3 | 24 | 24 | Sprint 2 requirement areas are mapped to US-05 to US-09; no story reaches a completion checkpoint. |
 | 3 | Apr 30 | 20.6 | 24 | 24 | WordPress page baseline, formal Sprint 1 artefacts, and Sprint 2 data needs are reviewed; no story reaches a completion checkpoint. |
@@ -65,7 +65,10 @@ This was useful in Sprint 2 because:
 | 11 | May 8 | 6.9 | 24 | 13 | No Sprint 2 work content recorded. |
 | 12 | May 9 | 5.1 | 24 | 13 | No Sprint 2 work content recorded. |
 | 13 | May 10 | 3.4 | 24 | 13 | No Sprint 2 work content recorded. |
-| 14 | May 11 | 1.7 | 3 | 3 | **Final 11 May completed checkpoint:** live-site QA confirms login redirect, username/password fields, invalid-login error behaviour, reduced school map, default Melbourne Connect focus, 1 km distance, kilometre units, controlled marker visibility, location/coordinate search, nearby results, no-match handling, category-filter combinations, nearest-six filtering, sector colours, all six nearest-school popup logo/website checks, and wide-screen page-shell centring. US-09 remains open. |
+| 14a | May 11 | 1.7 | 21 | 11 | **Authentication acceptance checkpoint:** login redirect, username/password fields, and invalid-login error behaviour are verified. US-08 is accepted; US-05 to US-07 and US-09 remain open. |
+| 14b | May 11 | 1.6 | 13 | 7 | **School-map acceptance checkpoint:** the reduced school map, default Melbourne Connect focus, 1 km distance, kilometre units, controlled marker visibility, sector colours, and wide-screen page-shell centring are verified. US-05 is accepted. |
+| 14c | May 11 | 1.4 | 8 | 5 | **Search acceptance checkpoint:** location-name search, coordinate search, nearby-results list, and no-match handling are verified. US-06 is accepted. |
+| 14d | May 11 | 1.2 | 3 | 3 | **Filter and enrichment acceptance checkpoint:** category-filter combinations, nearest-six filtering, sector colours, all six nearest-school popup logo/website checks, range-circle continuity, and selected-school route preview are verified. US-07 is accepted; US-09 remains open. |
 | 15 | May 12 | 0.0 | 0 | 0 | **Final role-registration checkpoint:** `/register/` displays the Forminator registration form with both required user types, temporary user `graycat` is recorded as `University Student`, and the registered user can access the protected Sprint 2 map page. US-09 is accepted. |
 
 ## Burn Down Chart Visual
@@ -77,9 +80,9 @@ The chart image is included as a reviewer-facing evidence file. The data table a
 The chart above plots three signals:
 
 - The **Ideal Burn Down Line** runs straight from 24 SP on 28 April 2026 to 0 SP on 12 May 2026.
-- The **Story Remaining Line** shows accepted whole-story checkpoints only.
+- The **Story Remaining Line** shows accepted whole-story checkpoints only. It uses 11 May sub-checkpoints so the line shows the actual acceptance sequence without giving partial credit for unfinished stories.
 - The **Actual / Reforecast Remaining Line** shows realistic remaining effort after data feasibility, implementation progress, component-architecture correction, and final registration verification became clearer.
-- The chart annotations mark only major interpretation points: data-source clarity, prepared data/filter evidence, the 11 May component correction, the 11 May US-05/US-06/US-07 acceptance checkpoint, and the 12 May US-09 acceptance checkpoint. They are explanatory labels, not extra task-level burn-down events.
+- The chart annotations mark only major interpretation points: data-source clarity, prepared data/filter evidence, no-work dates, the 11 May accepted-story sequence, and the 12 May US-09 acceptance checkpoint. They are explanatory labels, not extra task-level burn-down events.
 
 ## Chart Interpretation
 
@@ -89,13 +92,13 @@ The chart above plots three signals:
 
 **Ideal Burn Down Line:** The ideal line decreases linearly across the full chart window. It is not changed when task progress, non-working dates, or late accepted-story work occurs.
 
-**Story Remaining Line:** This line uses whole-story checkpoints only. It remains at 24 SP until the final 11 May checkpoint because earlier work prepared data, scripts, imports, and QA evidence without meeting the live-site DoD for a whole story:
+**Story Remaining Line:** This line uses whole-story checkpoints only. It remains at 24 SP until 11 May because earlier work prepared data, scripts, imports, and QA evidence without meeting the live-site DoD for a whole story:
 
 - May 3 to May 7: dataset, nearest-six evidence, marker import, filter model, and verification plans progress, but no live component story is accepted yet.
 - May 8 to May 10: no Sprint 2 work content is recorded, so the line remains at 24 SP.
-- May 11: US-08, US-05, US-06, and US-07 reach live acceptance by the final checkpoint, reducing remaining work to 3 SP.
+- May 11: the same-day acceptance sequence is shown as four whole-story checkpoints: US-08 reduces the line to 21 SP, US-05 reduces it to 13 SP, US-06 reduces it to 8 SP, and US-07 reduces it to 3 SP.
 - May 12: US-09 reaches acceptance after public role registration and registered-user access are verified, reducing remaining work to 0 SP.
 
-**Actual / Reforecast Remaining Line:** This line gives the team a process signal. It drops from 24 SP to 22 SP on May 2 when the data source and reduction rule become clear, then falls progressively as import data, nearest-six evidence, and component-readiness work are prepared. It remains flat from May 8 to May 10 because no work content is recorded. On May 11 the rejected full-page prototype and component-baseline correction are recorded, then final live verification reduces the remaining forecast to 3 SP because US-05, US-06, US-07, and US-08 pass live acceptance while US-09 remains visible as open work. On May 12 the registration path is configured and verified, so the reforecast remaining line reaches 0 SP with the accepted-story line.
+**Actual / Reforecast Remaining Line:** This line gives the team a process signal. It drops from 24 SP to 22 SP on May 2 when the data source and reduction rule become clear, then falls progressively as import data, nearest-six evidence, and component-readiness work are prepared. It remains flat from May 8 to May 10 because no work content is recorded. On May 11 it drops through the same acceptance sequence as risks are retired: access protection first, then the map load/default state, then search, then filtering and enriched popup behaviour. On May 12 the registration path is configured and verified, so the reforecast remaining line reaches 0 SP with the accepted-story line.
 
 **Key Observation:** Sprint 2 progress is shown as staged preparation from 1 May to 7 May, followed by corrective verification, component-based school-map verification, and wide-screen page-shell centring on 11 May. The final 12 May checkpoint closes US-09 through role-registration verification. Login redirect, reduced school map loading, Melbourne Connect default behaviour, location/coordinate search, nearby results, no-match handling, category-filter combinations, nearest-six filtering, sector-coloured markers, all six nearest-school logo/website popups, wide layout, and role-specific registration are verified by close-out.
